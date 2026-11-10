@@ -180,6 +180,9 @@ events.out.tfevents.*
 # Local reproduction runs (configs are tracked under paper/configs)
 paper/exp/reproduce/
 
+# Small, reviewable result ledgers (per-run raw outputs stay ignored)
+!paper/results/**/*.csv
+
 # Other
 local/
 .env
