@@ -118,5 +118,43 @@ $env:OMP_NUM_THREADS="14"; $env:MKL_NUM_THREADS="14"
 - 3 个种子的波动很小（分类 ≤ 0.004，回归 ≤ 1%），说明固定划分下基线已收敛，
   后续 TabM 的差异需要超过该波动才可判定为真实提升。
 
+### E3 执行结果（2026-11-10，commit `51ecb5954`）
+
+18/18 用例成功，墙钟 10:16~11:24（约 68 分钟）。配置见本目录
+`E3-<method>-<dataset>.toml`：TabM 取官方 `tabm-sharetrainingbatches/<dataset>`
+的调参结果，只缩减 `k=8`、`2×256`；TabM-packed 与之一一对应，仅 `arch_type` 不同。
+台账 `results/E3/runs.csv`，跨实验汇总 `results/comparison.csv`。
+
+| 数据集 | MLP | MLP† | TabM | TabM-packed |
+| --- | --- | --- | --- | --- |
+| california RMSE | 0.4968 ± 0.0084 | **0.4522 ± 0.0038** | 0.4711 ± 0.0046 | 0.4881 ± 0.0023 |
+| churn Accuracy | 0.8520 ± 0.0036 | **0.8600 ± 0.0018** | 0.8587 ± 0.0018 | 0.8570 ± 0.0023 |
+| house RMSE | 31005 ± 143 | 30912 ± 299 | 30798 ± 388 | **30720 ± 272** |
+
+参数量（3 个种子一致）：TabM 79,944（california）/ 84,112（churn）/ 82,056（house）；
+TabM-packed 546,824 / 565,264 / 563,208，即 **TabM 少 6.5~6.8 倍参数**。
+
+按预先写死的判据：
+
+- **C1（TabM 优于 MLP）支持**：逐种子配对差为 california +0.0257、
+  churn +0.0067、house +207.6（RMSE 更低），三个数据集、三个种子方向一致，
+  且均大于种子波动。
+- **C2（权重共享更省参数）部分支持**：参数量优势巨大且稳定；性能上
+  california +0.0170、churn +0.0017 优于 packed，house 差 −77（落在 ±272~388
+  的种子波动内），符合「性能持平但参数更少」。**但 CPU 墙钟未体现优势**
+  （california TabM 664~946 秒 vs packed 236~394 秒），原因是两者早停点不同
+  （best_step 9,516 vs 5,460），不能据此否定论文的效率结论，需 E5 用固定
+  epoch 数的专门计时再判定。
+- **C4（单独弱、集体强）支持**：集成预测在三个数据集上均优于最好单头
+  （california −0.4711 vs −0.4749；churn 0.8587 vs 0.8568；house −30,798 vs −31,986）。
+
+必须声明的限制：
+
+1. 本实验的 TabM 不带分段线性数值嵌入，而 MLP† 带。因此 **MLP† 在 california
+   明显优于 TabM（0.4522 vs 0.4711）**，churn 基本持平。C1 只在
+   「TabM vs 纯 MLP」意义上成立；与 MLP† 的比较受嵌入差异混淆，需补
+   `tabm-piecewiselinear` 条件后才能判断「提升是否来自集成」。
+2. house 的目标量纲为原始值，RMSE 不可与 california 直接比较，跨数据集只比较相对差。
+3. TabM 的骨干与 k 被缩减，绝对数值不可与论文 Figure 3 逐点对齐，只做同协议内部比较。
 
 > 官方 `exp/` 下的配置与结果未修改；本目录只存放可提交的复现配置，原始输出留在 `exp/reproduce/` 且不进入 Git。
