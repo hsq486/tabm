@@ -66,7 +66,12 @@ foreach ($Method in $Methods) {
 
             $ConfigText = Get-Content -Path $OfficialConfig -Raw
             $ConfigText = $ConfigText -replace "(?m)^seed\s*=\s*\d+", "seed = $Seed"
-            Set-Content -Path $ConfigPath -Value $ConfigText -Encoding UTF8
+            # tomli rejects a UTF-8 BOM; PowerShell 5 Set-Content -Encoding UTF8 adds one.
+            [System.IO.File]::WriteAllText(
+                $ConfigPath,
+                $ConfigText,
+                (New-Object System.Text.UTF8Encoding($false))
+            )
 
             Write-Host "[$Index/$Total] $Method / $Dataset / seed=$Seed"
             $Stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
