@@ -177,6 +177,9 @@ events.out.tfevents.*
 **/exp/debug/*/*.*
 **/exp/debug/*/DONE
 
+# Local reproduction runs (configs are tracked under paper/configs)
+paper/exp/reproduce/
+
 # Other
 local/
 .env
