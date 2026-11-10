@@ -98,4 +98,25 @@ $env:OMP_NUM_THREADS="14"; $env:MKL_NUM_THREADS="14"
   TabM 主方法因 CPU 预算缩减到 k=8、2×256。该不对称对 TabM 更严格，
   报告需在差异表中说明。
 
+### E2 执行结果（2026-11-10，commit `38f6b0067`）
+
+18/18 用例成功（`exit_code = 0` 且生成 `DONE`），总墙钟时间约 39 分钟
+（09:15~09:54），逐次耗时 14 秒~5 分 25 秒。台账 `paper/results/E2/runs.csv`，
+汇总 `paper/results/E2/summary.csv`，原始日志在
+`paper/exp/reproduce/E2-baseline/<method>/<dataset>/<seed>.log`（已被 Git 忽略）。
+
+| 方法 | california RMSE | churn Accuracy | house RMSE |
+| --- | --- | --- | --- |
+| MLP | 0.4968 ± 0.0084 | 0.8520 ± 0.0036 | 31005 ± 143 |
+| MLP† | 0.4522 ± 0.0038 | 0.8600 ± 0.0018 | 30912 ± 299 |
+
+说明：
+
+- `report.json` 的 `metrics.test.score` 为「越大越好」口径，回归任务取其相反数，
+  上表已还原为正的 RMSE。
+- house 的 RMSE 在原始目标量纲上（约 3.1×10⁴），不与 california 的 0.45 直接可比。
+- 3 个种子的波动很小（分类 ≤ 0.004，回归 ≤ 1%），说明固定划分下基线已收敛，
+  后续 TabM 的差异需要超过该波动才可判定为真实提升。
+
+
 > 官方 `exp/` 下的配置与结果未修改；本目录只存放可提交的复现配置，原始输出留在 `exp/reproduce/` 且不进入 Git。
