@@ -75,13 +75,29 @@ foreach ($Method in $Methods) {
 
             Write-Host "[$Index/$Total] $Method / $Dataset / seed=$Seed"
             $Stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+            # With "Stop", PowerShell treats the first stderr write (tqdm progress)
+            # of a native command as a terminating error and kills the run.
+            $SavedErrorAction = $ErrorActionPreference
+            $ErrorActionPreference = "Continue"
             try {
-                & $Python $Model $ConfigPath --force *> $LogPath
+                & $Python $Model $ConfigPath --force 2>&1 |
+                    ForEach-Object {
+                        if ($_ -is [System.Management.Automation.ErrorRecord]) {
+                            $_.ToString()
+                        }
+                        else {
+                            $_
+                        }
+                    } |
+                    Out-File -FilePath $LogPath -Encoding utf8
                 $ExitCode = $LASTEXITCODE
             }
             catch {
                 $ExitCode = -1
                 $_ | Out-String | Add-Content -Path $LogPath
+            }
+            finally {
+                $ErrorActionPreference = $SavedErrorAction
             }
             $Stopwatch.Stop()
 
