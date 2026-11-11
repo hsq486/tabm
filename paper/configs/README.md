@@ -266,9 +266,11 @@ california 形状的合成负载（8 特征、16,512 行、batch 256、14 线程
 
 **四点发现（可直接写入报告的「深入分析」）**：
 
-1. **误差随目标幅度增长**。california 上按真实值分十分位，MAE 从 0.223 升到 0.637；
-   house 从 6,199 升到 55,602。但**相对误差基本恒定**（house 各十分位 30%~40%），
-   说明误差来自目标本身的可变性，而不是模型在低值区失灵。RMSE 主要由最高十分位贡献。
+1. **误差随目标幅度增长，相对误差反而下降**。按目标值等样本分十分位（每档 413 / 456 条），
+   california 的 MAE 从 0.223 升到 0.638，house 从 6,835 升到 55,688；
+   但相对误差是**递减**的：house 第 1 档 47%、第 5 档 26%、第 10 档 31%。
+   即高价样本的绝对误差大，模型对它们的相对刻画并不更差；RMSE 主要由最高一档贡献。
+   注意 house 的低价档含大量相同取值，故分位按样本秩切分而不是按分位点切分。
 2. **house 存在系统性低估**：所有方法的 bias 都为负（−749 ~ −1,288），MLP 最严重。
    这个偏差在只看 RMSE 时被掩盖，是「模型对高价样本欠拟合」的直接证据。
 3. **逐样本胜负不等于平均提升**。california 上 TabM 只在 53.7% 的测试样本上优于 MLP，
@@ -283,5 +285,13 @@ california 形状的合成负载（8 特征、16,512 行、batch 256、14 线程
 
 数据：`results/E6/summary.csv`、`summary_by_seed.csv`、`error_by_decile.csv`、
 `calibration.csv`、`pairwise_vs_tabm.csv`。
+
+图（`paper/scripts/plot_e6.py`，只读上述 CSV，matplotlib 3.10.9，200 dpi）：
+
+| 文件 | 内容 | 说明 |
+| --- | --- | --- |
+| `results/E6/figures/error_by_decile.png` | california / house 的十分位 MAE | house 用对数纵轴 |
+| `results/E6/figures/calibration_churn.png` | churn 可靠性图（图例含 ECE） | 对角线为完美校准 |
+| `results/E6/figures/params_vs_error.png` | california 参数量 vs RMSE | 横轴对数，含嵌入版 |
 
 > 官方 `exp/` 下的配置与结果未修改；本目录只存放可提交的复现配置，原始输出留在 `exp/reproduce/` 且不进入 Git。
