@@ -1,0 +1,13 @@
+﻿timestamp,commit,dataset,k,exit_code,duration_sec,status,report
+"2026-11-10 21:28:18","bba1e5a02","california","1","0","56.2","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\california\k=1\0\report.json"
+"2026-11-10 21:31:09","bba1e5a02","california","2","0","171.8","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\california\k=2\0\report.json"
+"2026-11-10 21:38:05","bba1e5a02","california","4","0","415.8","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\california\k=4\0\report.json"
+"2026-11-10 21:45:49","bba1e5a02","california","8","0","464.2","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\california\k=8\0\report.json"
+"2026-11-10 22:03:17","bba1e5a02","california","16","0","1047.8","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\california\k=16\0\report.json"
+"2026-11-11 10:43:02","bba1e5a02","california","32","0","45595.1","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\california\k=32\0\report.json"
+"2026-11-11 10:43:30","bba1e5a02","churn","1","0","27.5","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\churn\k=1\0\report.json"
+"2026-11-11 10:44:07","bba1e5a02","churn","2","0","37.2","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\churn\k=2\0\report.json"
+"2026-11-11 10:44:59","bba1e5a02","churn","4","0","52","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\churn\k=4\0\report.json"
+"2026-11-11 10:47:22","bba1e5a02","churn","8","0","142.8","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\churn\k=8\0\report.json"
+"2026-11-11 10:51:20","bba1e5a02","churn","16","0","238.5","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\churn\k=16\0\report.json"
+"2026-11-11 10:59:15","bba1e5a02","churn","32","0","474.9","ok","F:\study\大三上\数据分析课设\Tabm\paper\exp\reproduce\E4\churn\k=32\0\report.json"
