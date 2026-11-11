@@ -93,7 +93,7 @@ def error_by_target_decile(
         rows.append(
             {
                 'decile': bucket,
-                'n': int(len(index)),
+                'n': len(index),
                 'target_mean': float(np.mean(target[index])),
                 'mae': float(np.mean(np.abs(prediction[index] - target[index]))),
             }
