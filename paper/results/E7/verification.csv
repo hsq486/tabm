@@ -1,0 +1,8 @@
+check,reference,independent,difference,tolerance,passed
+forward_equivalence_k1,0.1384052336215973,0.1384052336215973,0.0,1e-05,True
+forward_equivalence_k2,0.11097854375839233,0.11097854375839233,0.0,1e-05,True
+forward_equivalence_k4,0.16245494782924652,0.16245494782924652,0.0,1e-05,True
+forward_equivalence_k8,0.11377307772636414,0.11377307772636414,0.0,1e-05,True
+parameter_formula_k1,438,438,0,0,True
+parameter_formula_k8,1152,1152,0,0,True
+k1_reduces_to_mlp,0.11170637607574463,0.11170637607574463,0.0,1e-05,True
