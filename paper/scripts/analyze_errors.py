@@ -81,21 +81,21 @@ def regression_summary(prediction: np.ndarray, target: np.ndarray) -> dict[str, 
 def error_by_target_decile(
     prediction: np.ndarray, target: np.ndarray
 ) -> list[dict[str, float]]:
-    """Group test rows by target decile and report the mean absolute error."""
-    edges = np.quantile(target, np.linspace(0, 1, DECILES + 1))
-    edges = np.unique(edges)
-    index = np.clip(np.searchsorted(edges, target, side='right') - 1, 0, len(edges) - 2)
+    """Group test rows by target rank and report the mean absolute error.
+
+    The split is rank-based (equal counts) rather than quantile-edge based,
+    because `house` contains many tied targets: duplicated edges would collapse
+    the low bins into a handful of rows and make the first decile meaningless.
+    """
+    chunks = np.array_split(np.argsort(target, kind='stable'), DECILES)
     rows = []
-    for bucket in range(len(edges) - 1):
-        mask = index == bucket
-        if not mask.any():
-            continue
+    for bucket, index in enumerate(chunks, start=1):
         rows.append(
             {
-                'decile': bucket + 1,
-                'n': int(mask.sum()),
-                'target_mean': float(np.mean(target[mask])),
-                'mae': float(np.mean(np.abs(prediction[mask] - target[mask]))),
+                'decile': bucket,
+                'n': int(len(index)),
+                'target_mean': float(np.mean(target[index])),
+                'mae': float(np.mean(np.abs(prediction[index] - target[index]))),
             }
         )
     return rows
