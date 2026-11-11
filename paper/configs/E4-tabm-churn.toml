@@ -20,7 +20,7 @@ weight_decay = 0.0
 
 [model]
 arch_type = "tabm"
-k = __K__
+k = 8  # E4 runner overrides this value for each run
 share_training_batches = true
 
 [model.backbone]

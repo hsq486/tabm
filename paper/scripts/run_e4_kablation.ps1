@@ -51,7 +51,7 @@ foreach ($Dataset in $Datasets) {
         $LogPath = Join-Path $RunDir "0.log"
         $ReportPath = Join-Path $RunDir "0\report.json"
 
-        $ConfigText = $TemplateText -replace "__K__", "$K"
+        $ConfigText = $TemplateText -replace '(?m)^k\s*=\s*\d+', "k = $K"
         [System.IO.File]::WriteAllText($ConfigPath, $ConfigText, $enc)
 
         Write-Host "[$Index/$Total] TabM / $Dataset / k=$K"
