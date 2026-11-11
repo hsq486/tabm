@@ -1,0 +1,5 @@
+arch_type,k,n_parameters,step_ms,epoch_seconds,inference_samples_per_sec,threads,batch_size
+plain,1,68353,9.118,0.58,519872.8,14,256
+tabm-mini,8,70216,17.31,1.11,104330.0,14,256
+tabm,8,79944,28.815,1.84,65290.1,14,256
+tabm-packed,8,546824,20.105,1.29,89176.4,14,256
