@@ -776,8 +776,8 @@ for x in sorted(
   scikit-learn 1.3.1、pandas 2.1.1。
 - 机器无 CUDA，训练日志中 `AMP enabled: False`；全程 CPU（14 线程）。
 - `matplotlib` 只用于 E6/E9 出图，不是训练依赖。
-- 依赖清单见 `paper/environment.yaml`、`paper/pyproject.toml`；完整安装与硬件记录见
-  仓库外 `logs/environment.md`。
+- 依赖清单见 `paper/configs/environment.md` 与 `paper/configs/environment.yml`
+  （本机实测环境）；上游的 `paper/environment.yaml` 是 Linux/pixi 版本，本项目未使用。
 
 ## 数据
 
