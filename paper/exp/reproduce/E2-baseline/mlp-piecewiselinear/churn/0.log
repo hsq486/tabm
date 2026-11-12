@@ -1,0 +1,342 @@
+﻿[1mCreating the output[0m
+[1mUsing cached dataset: build_dataset__churn__be7dd7939b3d5d037a113f40d102e721.pickle[0m
+[1mBin counts: [112, 45, 10, 74, 3, 114, 114][0m
+[1mn_parameters = 694402[0m
+[1mAMP enabled: False[0m
+====================================================================================================
+[>>>] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 2026-11-10 09:47:13.816152
+====================================================================================================
+
+{'seed': 0,
+ 'batch_size': 256,
+ 'patience': 16,
+ 'n_epochs': -1,
+ 'gradient_clipping_norm': 1.0,
+ 'amp': True,
+ 'data': {'cache': True,
+          'path': 'data/churn',
+          'num_policy': 'noisy-quantile',
+          'cat_policy': 'ordinal'},
+ 'optimizer': {'type': 'AdamW', 'lr': 0.0005840773386606493, 'weight_decay': 0.0},
+ 'model': {'arch_type': 'plain',
+           'backbone': {'type': 'MLP', 'n_blocks': 2, 'd_block': 736, 'dropout': 0.0},
+           'num_embeddings': {'type': 'PiecewiseLinearEmbeddings', 'd_embedding': 24}},
+ 'bins': {'n_bins': 114}}
+
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:00.000997
+System.Management.Automation.RemoteException
+Epoch 0 Step 0:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 0 Step 0:  20%|██        | 5/25 [00:00<00:00, 46.62it/s]
+Epoch 0 Step 0:  40%|████      | 10/25 [00:00<00:00, 47.83it/s]
+Epoch 0 Step 0:  60%|██████    | 15/25 [00:00<00:00, 48.63it/s]
+Epoch 0 Step 0:  80%|████████  | 20/25 [00:00<00:00, 48.41it/s]
+Epoch 0 Step 0: 100%|██████████| 25/25 [00:00<00:00, 48.61it/s]
+Epoch 0 Step 0: 100%|██████████| 25/25 [00:00<00:00, 48.38it/s]
+(val) 0.814 (test) 0.819 (loss) 0.48689
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:00.631194
+System.Management.Automation.RemoteException
+Epoch 1 Step 25:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 1 Step 25:  24%|██▍       | 6/25 [00:00<00:00, 50.37it/s]
+Epoch 1 Step 25:  48%|████▊     | 12/25 [00:00<00:00, 49.56it/s]
+Epoch 1 Step 25:  68%|██████▊   | 17/25 [00:00<00:00, 49.06it/s]
+Epoch 1 Step 25:  88%|████████▊ | 22/25 [00:00<00:00, 48.46it/s]
+Epoch 1 Step 25: 100%|██████████| 25/25 [00:00<00:00, 48.65it/s]
+(val) 0.832 (test) 0.834 (loss) 0.41329
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:01.250210
+System.Management.Automation.RemoteException
+Epoch 2 Step 50:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 2 Step 50:  20%|██        | 5/25 [00:00<00:00, 47.66it/s]
+Epoch 2 Step 50:  40%|████      | 10/25 [00:00<00:00, 47.53it/s]
+Epoch 2 Step 50:  60%|██████    | 15/25 [00:00<00:00, 47.43it/s]
+Epoch 2 Step 50:  80%|████████  | 20/25 [00:00<00:00, 47.78it/s]
+Epoch 2 Step 50: 100%|██████████| 25/25 [00:00<00:00, 47.86it/s]
+Epoch 2 Step 50: 100%|██████████| 25/25 [00:00<00:00, 47.75it/s]
+(val) 0.846 (test) 0.847 (loss) 0.38612
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:01.878726
+System.Management.Automation.RemoteException
+Epoch 3 Step 75:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 3 Step 75:  20%|██        | 5/25 [00:00<00:00, 49.34it/s]
+Epoch 3 Step 75:  44%|████▍     | 11/25 [00:00<00:00, 51.24it/s]
+Epoch 3 Step 75:  68%|██████▊   | 17/25 [00:00<00:00, 49.54it/s]
+Epoch 3 Step 75:  88%|████████▊ | 22/25 [00:00<00:00, 49.18it/s]
+Epoch 3 Step 75: 100%|██████████| 25/25 [00:00<00:00, 49.09it/s]
+(val) 0.850 (test) 0.858 (loss) 0.34792
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:02.493498
+System.Management.Automation.RemoteException
+Epoch 4 Step 100:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 4 Step 100:  20%|██        | 5/25 [00:00<00:00, 47.35it/s]
+Epoch 4 Step 100:  40%|████      | 10/25 [00:00<00:00, 48.26it/s]
+Epoch 4 Step 100:  60%|██████    | 15/25 [00:00<00:00, 48.76it/s]
+Epoch 4 Step 100:  80%|████████  | 20/25 [00:00<00:00, 48.71it/s]
+Epoch 4 Step 100: 100%|██████████| 25/25 [00:00<00:00, 48.43it/s]
+Epoch 4 Step 100: 100%|██████████| 25/25 [00:00<00:00, 48.43it/s]
+(val) 0.858 (test) 0.862 (loss) 0.33520
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:03.117551
+System.Management.Automation.RemoteException
+Epoch 5 Step 125:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 5 Step 125:  20%|██        | 5/25 [00:00<00:00, 48.38it/s]
+Epoch 5 Step 125:  40%|████      | 10/25 [00:00<00:00, 48.38it/s]
+Epoch 5 Step 125:  64%|██████▍   | 16/25 [00:00<00:00, 49.46it/s]
+Epoch 5 Step 125:  84%|████████▍ | 21/25 [00:00<00:00, 49.49it/s]
+Epoch 5 Step 125: 100%|██████████| 25/25 [00:00<00:00, 49.59it/s]
+(val) 0.861 (test) 0.860 (loss) 0.32656
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:03.727040
+System.Management.Automation.RemoteException
+Epoch 6 Step 150:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 6 Step 150:  20%|██        | 5/25 [00:00<00:00, 48.62it/s]
+Epoch 6 Step 150:  40%|████      | 10/25 [00:00<00:00, 48.14it/s]
+Epoch 6 Step 150:  60%|██████    | 15/25 [00:00<00:00, 47.90it/s]
+Epoch 6 Step 150:  80%|████████  | 20/25 [00:00<00:00, 48.22it/s]
+Epoch 6 Step 150: 100%|██████████| 25/25 [00:00<00:00, 47.70it/s]
+Epoch 6 Step 150: 100%|██████████| 25/25 [00:00<00:00, 47.90it/s]
+(val) 0.849 (test) 0.849 (loss) 0.32346
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:04.343889
+System.Management.Automation.RemoteException
+Epoch 7 Step 175:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 7 Step 175:  20%|██        | 5/25 [00:00<00:00, 48.03it/s]
+Epoch 7 Step 175:  40%|████      | 10/25 [00:00<00:00, 48.33it/s]
+Epoch 7 Step 175:  60%|██████    | 15/25 [00:00<00:00, 48.25it/s]
+Epoch 7 Step 175:  80%|████████  | 20/25 [00:00<00:00, 48.87it/s]
+Epoch 7 Step 175: 100%|██████████| 25/25 [00:00<00:00, 49.04it/s]
+Epoch 7 Step 175: 100%|██████████| 25/25 [00:00<00:00, 48.77it/s]
+(val) 0.861 (test) 0.863 (loss) 0.31830
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:04.948531
+System.Management.Automation.RemoteException
+Epoch 8 Step 200:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 8 Step 200:  20%|██        | 5/25 [00:00<00:00, 49.19it/s]
+Epoch 8 Step 200:  40%|████      | 10/25 [00:00<00:00, 49.20it/s]
+Epoch 8 Step 200:  60%|██████    | 15/25 [00:00<00:00, 48.53it/s]
+Epoch 8 Step 200:  80%|████████  | 20/25 [00:00<00:00, 48.98it/s]
+Epoch 8 Step 200: 100%|██████████| 25/25 [00:00<00:00, 47.36it/s]
+Epoch 8 Step 200: 100%|██████████| 25/25 [00:00<00:00, 48.04it/s]
+(val) 0.865 (test) 0.857 (loss) 0.31163
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:05.574371
+System.Management.Automation.RemoteException
+Epoch 9 Step 225:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 9 Step 225:  20%|██        | 5/25 [00:00<00:00, 49.45it/s]
+Epoch 9 Step 225:  40%|████      | 10/25 [00:00<00:00, 47.29it/s]
+Epoch 9 Step 225:  60%|██████    | 15/25 [00:00<00:00, 47.82it/s]
+Epoch 9 Step 225:  80%|████████  | 20/25 [00:00<00:00, 47.99it/s]
+Epoch 9 Step 225: 100%|██████████| 25/25 [00:00<00:00, 47.84it/s]
+Epoch 9 Step 225: 100%|██████████| 25/25 [00:00<00:00, 47.89it/s]
+(val) 0.851 (test) 0.859 (loss) 0.30493
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:06.193338
+System.Management.Automation.RemoteException
+Epoch 10 Step 250:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 10 Step 250:  20%|██        | 5/25 [00:00<00:00, 49.89it/s]
+Epoch 10 Step 250:  40%|████      | 10/25 [00:00<00:00, 48.86it/s]
+Epoch 10 Step 250:  64%|██████▍   | 16/25 [00:00<00:00, 49.23it/s]
+Epoch 10 Step 250:  84%|████████▍ | 21/25 [00:00<00:00, 48.54it/s]
+Epoch 10 Step 250: 100%|██████████| 25/25 [00:00<00:00, 48.59it/s]
+(val) 0.861 (test) 0.860 (loss) 0.30237
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:06.803693
+System.Management.Automation.RemoteException
+Epoch 11 Step 275:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 11 Step 275:  20%|██        | 5/25 [00:00<00:00, 48.12it/s]
+Epoch 11 Step 275:  40%|████      | 10/25 [00:00<00:00, 47.54it/s]
+Epoch 11 Step 275:  60%|██████    | 15/25 [00:00<00:00, 47.68it/s]
+Epoch 11 Step 275:  80%|████████  | 20/25 [00:00<00:00, 47.87it/s]
+Epoch 11 Step 275: 100%|██████████| 25/25 [00:00<00:00, 48.31it/s]
+Epoch 11 Step 275: 100%|██████████| 25/25 [00:00<00:00, 48.07it/s]
+(val) 0.866 (test) 0.859 (loss) 0.29629
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:07.434740
+System.Management.Automation.RemoteException
+Epoch 12 Step 300:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 12 Step 300:  20%|██        | 5/25 [00:00<00:00, 48.26it/s]
+Epoch 12 Step 300:  40%|████      | 10/25 [00:00<00:00, 48.47it/s]
+Epoch 12 Step 300:  64%|██████▍   | 16/25 [00:00<00:00, 49.70it/s]
+Epoch 12 Step 300:  88%|████████▊ | 22/25 [00:00<00:00, 50.12it/s]
+Epoch 12 Step 300: 100%|██████████| 25/25 [00:00<00:00, 49.68it/s]
+(val) 0.858 (test) 0.858 (loss) 0.29015
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:08.032954
+System.Management.Automation.RemoteException
+Epoch 13 Step 325:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 13 Step 325:  20%|██        | 5/25 [00:00<00:00, 49.47it/s]
+Epoch 13 Step 325:  40%|████      | 10/25 [00:00<00:00, 47.81it/s]
+Epoch 13 Step 325:  60%|██████    | 15/25 [00:00<00:00, 47.98it/s]
+Epoch 13 Step 325:  80%|████████  | 20/25 [00:00<00:00, 48.31it/s]
+Epoch 13 Step 325: 100%|██████████| 25/25 [00:00<00:00, 47.95it/s]
+Epoch 13 Step 325: 100%|██████████| 25/25 [00:00<00:00, 48.08it/s]
+(val) 0.849 (test) 0.850 (loss) 0.28609
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:08.648678
+System.Management.Automation.RemoteException
+Epoch 14 Step 350:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 14 Step 350:  20%|██        | 5/25 [00:00<00:00, 48.02it/s]
+Epoch 14 Step 350:  40%|████      | 10/25 [00:00<00:00, 48.27it/s]
+Epoch 14 Step 350:  60%|██████    | 15/25 [00:00<00:00, 48.77it/s]
+Epoch 14 Step 350:  80%|████████  | 20/25 [00:00<00:00, 48.63it/s]
+Epoch 14 Step 350: 100%|██████████| 25/25 [00:00<00:00, 48.69it/s]
+Epoch 14 Step 350: 100%|██████████| 25/25 [00:00<00:00, 48.61it/s]
+(val) 0.858 (test) 0.856 (loss) 0.27499
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:09.256305
+System.Management.Automation.RemoteException
+Epoch 15 Step 375:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 15 Step 375:  20%|██        | 5/25 [00:00<00:00, 48.71it/s]
+Epoch 15 Step 375:  40%|████      | 10/25 [00:00<00:00, 48.74it/s]
+Epoch 15 Step 375:  60%|██████    | 15/25 [00:00<00:00, 48.58it/s]
+Epoch 15 Step 375:  80%|████████  | 20/25 [00:00<00:00, 48.60it/s]
+Epoch 15 Step 375: 100%|██████████| 25/25 [00:00<00:00, 48.26it/s]
+Epoch 15 Step 375: 100%|██████████| 25/25 [00:00<00:00, 48.43it/s]
+(val) 0.856 (test) 0.860 (loss) 0.27160
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:09.866899
+System.Management.Automation.RemoteException
+Epoch 16 Step 400:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 16 Step 400:  20%|██        | 5/25 [00:00<00:00, 48.49it/s]
+Epoch 16 Step 400:  40%|████      | 10/25 [00:00<00:00, 49.32it/s]
+Epoch 16 Step 400:  60%|██████    | 15/25 [00:00<00:00, 48.59it/s]
+Epoch 16 Step 400:  80%|████████  | 20/25 [00:00<00:00, 47.92it/s]
+Epoch 16 Step 400: 100%|██████████| 25/25 [00:00<00:00, 48.04it/s]
+Epoch 16 Step 400: 100%|██████████| 25/25 [00:00<00:00, 48.11it/s]
+(val) 0.853 (test) 0.854 (loss) 0.26005
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:10.482550
+System.Management.Automation.RemoteException
+Epoch 17 Step 425:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 17 Step 425:  20%|██        | 5/25 [00:00<00:00, 48.71it/s]
+Epoch 17 Step 425:  40%|████      | 10/25 [00:00<00:00, 48.62it/s]
+Epoch 17 Step 425:  60%|██████    | 15/25 [00:00<00:00, 49.19it/s]
+Epoch 17 Step 425:  80%|████████  | 20/25 [00:00<00:00, 49.08it/s]
+Epoch 17 Step 425: 100%|██████████| 25/25 [00:00<00:00, 48.34it/s]
+Epoch 17 Step 425: 100%|██████████| 25/25 [00:00<00:00, 48.61it/s]
+(val) 0.853 (test) 0.851 (loss) 0.25401
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:11.093266
+System.Management.Automation.RemoteException
+Epoch 18 Step 450:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 18 Step 450:  24%|██▍       | 6/25 [00:00<00:00, 49.22it/s]
+Epoch 18 Step 450:  44%|████▍     | 11/25 [00:00<00:00, 48.30it/s]
+Epoch 18 Step 450:  64%|██████▍   | 16/25 [00:00<00:00, 48.69it/s]
+Epoch 18 Step 450:  84%|████████▍ | 21/25 [00:00<00:00, 48.73it/s]
+Epoch 18 Step 450: 100%|██████████| 25/25 [00:00<00:00, 48.75it/s]
+(val) 0.854 (test) 0.847 (loss) 0.24208
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:11.698664
+System.Management.Automation.RemoteException
+Epoch 19 Step 475:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 19 Step 475:  20%|██        | 5/25 [00:00<00:00, 49.42it/s]
+Epoch 19 Step 475:  40%|████      | 10/25 [00:00<00:00, 48.94it/s]
+Epoch 19 Step 475:  60%|██████    | 15/25 [00:00<00:00, 49.30it/s]
+Epoch 19 Step 475:  84%|████████▍ | 21/25 [00:00<00:00, 50.01it/s]
+Epoch 19 Step 475: 100%|██████████| 25/25 [00:00<00:00, 49.31it/s]
+(val) 0.844 (test) 0.852 (loss) 0.23549
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:12.297735
+System.Management.Automation.RemoteException
+Epoch 20 Step 500:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 20 Step 500:  20%|██        | 5/25 [00:00<00:00, 47.76it/s]
+Epoch 20 Step 500:  40%|████      | 10/25 [00:00<00:00, 48.77it/s]
+Epoch 20 Step 500:  60%|██████    | 15/25 [00:00<00:00, 48.25it/s]
+Epoch 20 Step 500:  84%|████████▍ | 21/25 [00:00<00:00, 48.85it/s]
+Epoch 20 Step 500: 100%|██████████| 25/25 [00:00<00:00, 48.95it/s]
+(val) 0.834 (test) 0.827 (loss) 0.22802
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:12.903187
+System.Management.Automation.RemoteException
+Epoch 21 Step 525:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 21 Step 525:  20%|██        | 5/25 [00:00<00:00, 49.01it/s]
+Epoch 21 Step 525:  40%|████      | 10/25 [00:00<00:00, 48.88it/s]
+Epoch 21 Step 525:  60%|██████    | 15/25 [00:00<00:00, 48.74it/s]
+Epoch 21 Step 525:  84%|████████▍ | 21/25 [00:00<00:00, 49.02it/s]
+Epoch 21 Step 525: 100%|██████████| 25/25 [00:00<00:00, 48.97it/s]
+(val) 0.841 (test) 0.845 (loss) 0.21319
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:13.503959
+System.Management.Automation.RemoteException
+Epoch 22 Step 550:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 22 Step 550:  20%|██        | 5/25 [00:00<00:00, 47.93it/s]
+Epoch 22 Step 550:  44%|████▍     | 11/25 [00:00<00:00, 49.46it/s]
+Epoch 22 Step 550:  64%|██████▍   | 16/25 [00:00<00:00, 49.38it/s]
+Epoch 22 Step 550:  84%|████████▍ | 21/25 [00:00<00:00, 48.75it/s]
+Epoch 22 Step 550: 100%|██████████| 25/25 [00:00<00:00, 49.08it/s]
+(val) 0.842 (test) 0.847 (loss) 0.19839
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:14.108948
+System.Management.Automation.RemoteException
+Epoch 23 Step 575:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 23 Step 575:  20%|██        | 5/25 [00:00<00:00, 48.27it/s]
+Epoch 23 Step 575:  40%|████      | 10/25 [00:00<00:00, 48.41it/s]
+Epoch 23 Step 575:  60%|██████    | 15/25 [00:00<00:00, 48.18it/s]
+Epoch 23 Step 575:  80%|████████  | 20/25 [00:00<00:00, 48.23it/s]
+Epoch 23 Step 575: 100%|██████████| 25/25 [00:00<00:00, 47.47it/s]
+Epoch 23 Step 575: 100%|██████████| 25/25 [00:00<00:00, 47.82it/s]
+(val) 0.834 (test) 0.834 (loss) 0.19218
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:14.724343
+System.Management.Automation.RemoteException
+Epoch 24 Step 600:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 24 Step 600:  24%|██▍       | 6/25 [00:00<00:00, 50.23it/s]
+Epoch 24 Step 600:  48%|████▊     | 12/25 [00:00<00:00, 49.39it/s]
+Epoch 24 Step 600:  68%|██████▊   | 17/25 [00:00<00:00, 45.23it/s]
+Epoch 24 Step 600:  88%|████████▊ | 22/25 [00:00<00:00, 43.98it/s]
+Epoch 24 Step 600: 100%|██████████| 25/25 [00:00<00:00, 45.68it/s]
+(val) 0.835 (test) 0.842 (loss) 0.17774
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:15.367494
+System.Management.Automation.RemoteException
+Epoch 25 Step 625:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 25 Step 625:  20%|██        | 5/25 [00:00<00:00, 46.97it/s]
+Epoch 25 Step 625:  40%|████      | 10/25 [00:00<00:00, 45.90it/s]
+Epoch 25 Step 625:  60%|██████    | 15/25 [00:00<00:00, 44.61it/s]
+Epoch 25 Step 625:  80%|████████  | 20/25 [00:00<00:00, 44.94it/s]
+Epoch 25 Step 625: 100%|██████████| 25/25 [00:00<00:00, 45.14it/s]
+Epoch 25 Step 625: 100%|██████████| 25/25 [00:00<00:00, 45.14it/s]
+(val) 0.826 (test) 0.828 (loss) 0.16360
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:16.016768
+System.Management.Automation.RemoteException
+Epoch 26 Step 650:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 26 Step 650:  20%|██        | 5/25 [00:00<00:00, 44.48it/s]
+Epoch 26 Step 650:  40%|████      | 10/25 [00:00<00:00, 44.47it/s]
+Epoch 26 Step 650:  60%|██████    | 15/25 [00:00<00:00, 45.00it/s]
+Epoch 26 Step 650:  80%|████████  | 20/25 [00:00<00:00, 44.14it/s]
+Epoch 26 Step 650: 100%|██████████| 25/25 [00:00<00:00, 44.64it/s]
+Epoch 26 Step 650: 100%|██████████| 25/25 [00:00<00:00, 44.59it/s]
+(val) 0.826 (test) 0.828 (loss) 0.15978
+
+[...] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 0:00:16.672009
+System.Management.Automation.RemoteException
+Epoch 27 Step 675:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 27 Step 675:  20%|██        | 5/25 [00:00<00:00, 42.77it/s]
+Epoch 27 Step 675:  40%|████      | 10/25 [00:00<00:00, 42.44it/s]
+Epoch 27 Step 675:  60%|██████    | 15/25 [00:00<00:00, 42.18it/s]
+Epoch 27 Step 675:  80%|████████  | 20/25 [00:00<00:00, 42.26it/s]
+Epoch 27 Step 675: 100%|██████████| 25/25 [00:00<00:00, 42.37it/s]
+Epoch 27 Step 675: 100%|██████████| 25/25 [00:00<00:00, 42.29it/s]
+(val) 0.835 (test) 0.836 (loss) 0.13887
+
+{'function': 'bin\\model.main',
+ 'gpus': [],
+ 'n_parameters': 694402,
+ 'scores': {'train': 0.8834375,
+            'val': 0.86625,
+            'test': 0.8585},
+ 'time': '0:00:17.354681'}
+
+====================================================================================================
+[<<<] exp\reproduce\E2-baseline\mlp-piecewiselinear\churn\0 | 2026-11-10 09:47:31.500785
+====================================================================================================

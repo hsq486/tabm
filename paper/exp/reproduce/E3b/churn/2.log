@@ -1,0 +1,788 @@
+﻿[1mCreating the output[0m
+[1mUsing cached dataset: build_dataset__churn__be7dd7939b3d5d037a113f40d102e721.pickle[0m
+[1mBin counts: [37, 29, 10, 24, 3, 37, 37][0m
+[1mn_parameters = 141652[0m
+[1mAMP enabled: False[0m
+====================================================================================================
+[>>>] exp\reproduce\E3b\churn\2 | 2026-11-10 12:18:55.756643
+====================================================================================================
+
+{'seed': 2,
+ 'batch_size': 256,
+ 'patience': 16,
+ 'n_epochs': -1,
+ 'gradient_clipping_norm': 1.0,
+ 'amp': True,
+ 'data': {'cache': True,
+          'path': 'data/churn',
+          'num_policy': 'noisy-quantile',
+          'cat_policy': 'ordinal'},
+ 'optimizer': {'type': 'AdamW', 'lr': 0.0014215026863743632, 'weight_decay': 0.0},
+ 'model': {'arch_type': 'tabm',
+           'k': 8,
+           'share_training_batches': True,
+           'backbone': {'type': 'MLP',
+                        'n_blocks': 2,
+                        'd_block': 256,
+                        'dropout': 0.49476959904460954},
+           'num_embeddings': {'type': 'PiecewiseLinearEmbeddings', 'd_embedding': 28}},
+ 'bins': {'n_bins': 37}}
+
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:00.000975
+System.Management.Automation.RemoteException
+Epoch 0 Step 0:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 0 Step 0:  12%|█▏        | 3/25 [00:00<00:01, 20.84it/s]
+Epoch 0 Step 0:  24%|██▍       | 6/25 [00:00<00:00, 21.67it/s]
+Epoch 0 Step 0:  36%|███▌      | 9/25 [00:00<00:00, 21.75it/s]
+Epoch 0 Step 0:  48%|████▊     | 12/25 [00:00<00:00, 21.90it/s]
+Epoch 0 Step 0:  60%|██████    | 15/25 [00:00<00:00, 22.14it/s]
+Epoch 0 Step 0:  72%|███████▏  | 18/25 [00:00<00:00, 22.06it/s]
+Epoch 0 Step 0:  84%|████████▍ | 21/25 [00:00<00:00, 22.17it/s]
+Epoch 0 Step 0:  96%|█████████▌| 24/25 [00:01<00:00, 22.04it/s]
+Epoch 0 Step 0: 100%|██████████| 25/25 [00:01<00:00, 21.96it/s]
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+(val) 0.796 (test) 0.796 (loss) 0.52413
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:01.422297
+System.Management.Automation.RemoteException
+Epoch 1 Step 25:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 1 Step 25:  12%|█▏        | 3/25 [00:00<00:01, 21.93it/s]
+Epoch 1 Step 25:  24%|██▍       | 6/25 [00:00<00:00, 22.05it/s]
+Epoch 1 Step 25:  36%|███▌      | 9/25 [00:00<00:00, 22.31it/s]
+Epoch 1 Step 25:  48%|████▊     | 12/25 [00:00<00:00, 22.22it/s]
+Epoch 1 Step 25:  60%|██████    | 15/25 [00:00<00:00, 22.30it/s]
+Epoch 1 Step 25:  72%|███████▏  | 18/25 [00:00<00:00, 22.38it/s]
+Epoch 1 Step 25:  84%|████████▍ | 21/25 [00:00<00:00, 22.42it/s]
+Epoch 1 Step 25:  96%|█████████▌| 24/25 [00:01<00:00, 22.26it/s]
+Epoch 1 Step 25: 100%|██████████| 25/25 [00:01<00:00, 22.26it/s]
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+(val) 0.796 (test) 0.796 (loss) 0.44381
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:02.712374
+System.Management.Automation.RemoteException
+Epoch 2 Step 50:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 2 Step 50:  12%|█▏        | 3/25 [00:00<00:01, 21.79it/s]
+Epoch 2 Step 50:  24%|██▍       | 6/25 [00:00<00:00, 22.22it/s]
+Epoch 2 Step 50:  36%|███▌      | 9/25 [00:00<00:00, 22.33it/s]
+Epoch 2 Step 50:  48%|████▊     | 12/25 [00:00<00:00, 22.20it/s]
+Epoch 2 Step 50:  60%|██████    | 15/25 [00:00<00:00, 22.24it/s]
+Epoch 2 Step 50:  72%|███████▏  | 18/25 [00:00<00:00, 22.36it/s]
+Epoch 2 Step 50:  84%|████████▍ | 21/25 [00:00<00:00, 22.20it/s]
+Epoch 2 Step 50:  96%|█████████▌| 24/25 [00:01<00:00, 22.28it/s]
+Epoch 2 Step 50: 100%|██████████| 25/25 [00:01<00:00, 22.22it/s]
+(val) 0.844 (test) 0.839 (loss) 0.41913
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:04.013758
+System.Management.Automation.RemoteException
+Epoch 3 Step 75:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 3 Step 75:  12%|█▏        | 3/25 [00:00<00:00, 22.19it/s]
+Epoch 3 Step 75:  24%|██▍       | 6/25 [00:00<00:00, 22.28it/s]
+Epoch 3 Step 75:  36%|███▌      | 9/25 [00:00<00:00, 22.26it/s]
+Epoch 3 Step 75:  48%|████▊     | 12/25 [00:00<00:00, 22.29it/s]
+Epoch 3 Step 75:  60%|██████    | 15/25 [00:00<00:00, 22.20it/s]
+Epoch 3 Step 75:  72%|███████▏  | 18/25 [00:00<00:00, 22.19it/s]
+Epoch 3 Step 75:  84%|████████▍ | 21/25 [00:00<00:00, 22.25it/s]
+Epoch 3 Step 75:  96%|█████████▌| 24/25 [00:01<00:00, 22.30it/s]
+Epoch 3 Step 75: 100%|██████████| 25/25 [00:01<00:00, 22.30it/s]
+(val) 0.848 (test) 0.840 (loss) 0.40077
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:05.316462
+System.Management.Automation.RemoteException
+Epoch 4 Step 100:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 4 Step 100:  12%|█▏        | 3/25 [00:00<00:00, 22.12it/s]
+Epoch 4 Step 100:  24%|██▍       | 6/25 [00:00<00:00, 21.66it/s]
+Epoch 4 Step 100:  36%|███▌      | 9/25 [00:00<00:00, 22.10it/s]
+Epoch 4 Step 100:  48%|████▊     | 12/25 [00:00<00:00, 22.17it/s]
+Epoch 4 Step 100:  60%|██████    | 15/25 [00:00<00:00, 22.12it/s]
+Epoch 4 Step 100:  72%|███████▏  | 18/25 [00:00<00:00, 21.99it/s]
+Epoch 4 Step 100:  84%|████████▍ | 21/25 [00:00<00:00, 21.96it/s]
+Epoch 4 Step 100:  96%|█████████▌| 24/25 [00:01<00:00, 21.91it/s]
+Epoch 4 Step 100: 100%|██████████| 25/25 [00:01<00:00, 21.98it/s]
+(val) 0.862 (test) 0.851 (loss) 0.38666
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:06.632260
+System.Management.Automation.RemoteException
+Epoch 5 Step 125:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 5 Step 125:   8%|▊         | 2/25 [00:00<00:01, 12.09it/s]
+Epoch 5 Step 125:  20%|██        | 5/25 [00:00<00:01, 17.48it/s]
+Epoch 5 Step 125:  32%|███▏      | 8/25 [00:00<00:00, 19.60it/s]
+Epoch 5 Step 125:  44%|████▍     | 11/25 [00:00<00:00, 20.58it/s]
+Epoch 5 Step 125:  56%|█████▌    | 14/25 [00:00<00:00, 21.11it/s]
+Epoch 5 Step 125:  68%|██████▊   | 17/25 [00:00<00:00, 21.43it/s]
+Epoch 5 Step 125:  80%|████████  | 20/25 [00:00<00:00, 21.67it/s]
+Epoch 5 Step 125:  92%|█████████▏| 23/25 [00:01<00:00, 21.85it/s]
+Epoch 5 Step 125: 100%|██████████| 25/25 [00:01<00:00, 20.76it/s]
+(val) 0.862 (test) 0.856 (loss) 0.37495
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:08.004935
+System.Management.Automation.RemoteException
+Epoch 6 Step 150:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 6 Step 150:  12%|█▏        | 3/25 [00:00<00:01, 21.79it/s]
+Epoch 6 Step 150:  24%|██▍       | 6/25 [00:00<00:00, 22.10it/s]
+Epoch 6 Step 150:  36%|███▌      | 9/25 [00:00<00:00, 22.26it/s]
+Epoch 6 Step 150:  48%|████▊     | 12/25 [00:00<00:00, 22.19it/s]
+Epoch 6 Step 150:  60%|██████    | 15/25 [00:00<00:00, 22.23it/s]
+Epoch 6 Step 150:  72%|███████▏  | 18/25 [00:00<00:00, 22.21it/s]
+Epoch 6 Step 150:  84%|████████▍ | 21/25 [00:00<00:00, 22.21it/s]
+Epoch 6 Step 150:  96%|█████████▌| 24/25 [00:01<00:00, 22.15it/s]
+Epoch 6 Step 150: 100%|██████████| 25/25 [00:01<00:00, 22.16it/s]
+(val) 0.860 (test) 0.852 (loss) 0.36464
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:09.303432
+System.Management.Automation.RemoteException
+Epoch 7 Step 175:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 7 Step 175:  12%|█▏        | 3/25 [00:00<00:00, 22.33it/s]
+Epoch 7 Step 175:  24%|██▍       | 6/25 [00:00<00:00, 22.10it/s]
+Epoch 7 Step 175:  36%|███▌      | 9/25 [00:00<00:00, 22.10it/s]
+Epoch 7 Step 175:  48%|████▊     | 12/25 [00:00<00:00, 22.13it/s]
+Epoch 7 Step 175:  60%|██████    | 15/25 [00:00<00:00, 21.92it/s]
+Epoch 7 Step 175:  72%|███████▏  | 18/25 [00:00<00:00, 22.05it/s]
+Epoch 7 Step 175:  84%|████████▍ | 21/25 [00:00<00:00, 21.88it/s]
+Epoch 7 Step 175:  96%|█████████▌| 24/25 [00:01<00:00, 22.08it/s]
+Epoch 7 Step 175: 100%|██████████| 25/25 [00:01<00:00, 22.03it/s]
+(val) 0.862 (test) 0.859 (loss) 0.35914
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:10.610025
+System.Management.Automation.RemoteException
+Epoch 8 Step 200:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 8 Step 200:  12%|█▏        | 3/25 [00:00<00:01, 21.79it/s]
+Epoch 8 Step 200:  24%|██▍       | 6/25 [00:00<00:00, 22.13it/s]
+Epoch 8 Step 200:  36%|███▌      | 9/25 [00:00<00:00, 22.05it/s]
+Epoch 8 Step 200:  48%|████▊     | 12/25 [00:00<00:00, 22.07it/s]
+Epoch 8 Step 200:  60%|██████    | 15/25 [00:00<00:00, 21.97it/s]
+Epoch 8 Step 200:  72%|███████▏  | 18/25 [00:00<00:00, 21.92it/s]
+Epoch 8 Step 200:  84%|████████▍ | 21/25 [00:00<00:00, 22.15it/s]
+Epoch 8 Step 200:  96%|█████████▌| 24/25 [00:01<00:00, 22.18it/s]
+Epoch 8 Step 200: 100%|██████████| 25/25 [00:01<00:00, 22.09it/s]
+(val) 0.863 (test) 0.856 (loss) 0.35595
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:11.920363
+System.Management.Automation.RemoteException
+Epoch 9 Step 225:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 9 Step 225:  12%|█▏        | 3/25 [00:00<00:01, 19.28it/s]
+Epoch 9 Step 225:  20%|██        | 5/25 [00:00<00:01, 15.01it/s]
+Epoch 9 Step 225:  32%|███▏      | 8/25 [00:00<00:00, 18.26it/s]
+Epoch 9 Step 225:  44%|████▍     | 11/25 [00:00<00:00, 19.68it/s]
+Epoch 9 Step 225:  56%|█████▌    | 14/25 [00:00<00:00, 20.29it/s]
+Epoch 9 Step 225:  68%|██████▊   | 17/25 [00:00<00:00, 21.00it/s]
+Epoch 9 Step 225:  80%|████████  | 20/25 [00:00<00:00, 21.31it/s]
+Epoch 9 Step 225:  92%|█████████▏| 23/25 [00:01<00:00, 21.64it/s]
+Epoch 9 Step 225: 100%|██████████| 25/25 [00:01<00:00, 20.47it/s]
+(val) 0.857 (test) 0.849 (loss) 0.35117
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:13.312905
+System.Management.Automation.RemoteException
+Epoch 10 Step 250:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 10 Step 250:  12%|█▏        | 3/25 [00:00<00:00, 22.25it/s]
+Epoch 10 Step 250:  24%|██▍       | 6/25 [00:00<00:00, 22.15it/s]
+Epoch 10 Step 250:  36%|███▌      | 9/25 [00:00<00:00, 22.31it/s]
+Epoch 10 Step 250:  48%|████▊     | 12/25 [00:00<00:00, 22.35it/s]
+Epoch 10 Step 250:  60%|██████    | 15/25 [00:00<00:00, 22.20it/s]
+Epoch 10 Step 250:  72%|███████▏  | 18/25 [00:00<00:00, 22.20it/s]
+Epoch 10 Step 250:  84%|████████▍ | 21/25 [00:00<00:00, 22.26it/s]
+Epoch 10 Step 250:  96%|█████████▌| 24/25 [00:01<00:00, 22.24it/s]
+Epoch 10 Step 250: 100%|██████████| 25/25 [00:01<00:00, 22.26it/s]
+(val) 0.861 (test) 0.853 (loss) 0.35185
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:14.606254
+System.Management.Automation.RemoteException
+Epoch 11 Step 275:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 11 Step 275:  12%|█▏        | 3/25 [00:00<00:00, 22.27it/s]
+Epoch 11 Step 275:  24%|██▍       | 6/25 [00:00<00:00, 22.25it/s]
+Epoch 11 Step 275:  36%|███▌      | 9/25 [00:00<00:00, 22.20it/s]
+Epoch 11 Step 275:  48%|████▊     | 12/25 [00:00<00:00, 21.96it/s]
+Epoch 11 Step 275:  60%|██████    | 15/25 [00:00<00:00, 21.87it/s]
+Epoch 11 Step 275:  72%|███████▏  | 18/25 [00:00<00:00, 21.91it/s]
+Epoch 11 Step 275:  84%|████████▍ | 21/25 [00:00<00:00, 21.98it/s]
+Epoch 11 Step 275:  96%|█████████▌| 24/25 [00:01<00:00, 22.09it/s]
+Epoch 11 Step 275: 100%|██████████| 25/25 [00:01<00:00, 22.07it/s]
+(val) 0.861 (test) 0.851 (loss) 0.34702
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:15.907256
+System.Management.Automation.RemoteException
+Epoch 12 Step 300:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 12 Step 300:  12%|█▏        | 3/25 [00:00<00:01, 21.62it/s]
+Epoch 12 Step 300:  24%|██▍       | 6/25 [00:00<00:00, 22.05it/s]
+Epoch 12 Step 300:  36%|███▌      | 9/25 [00:00<00:00, 22.10it/s]
+Epoch 12 Step 300:  48%|████▊     | 12/25 [00:00<00:00, 22.04it/s]
+Epoch 12 Step 300:  60%|██████    | 15/25 [00:00<00:00, 22.15it/s]
+Epoch 12 Step 300:  72%|███████▏  | 18/25 [00:00<00:00, 22.22it/s]
+Epoch 12 Step 300:  84%|████████▍ | 21/25 [00:00<00:00, 22.39it/s]
+Epoch 12 Step 300:  96%|█████████▌| 24/25 [00:01<00:00, 22.26it/s]
+Epoch 12 Step 300: 100%|██████████| 25/25 [00:01<00:00, 22.19it/s]
+(val) 0.865 (test) 0.861 (loss) 0.34546
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:17.213583
+System.Management.Automation.RemoteException
+Epoch 13 Step 325:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 13 Step 325:  12%|█▏        | 3/25 [00:00<00:01, 21.50it/s]
+Epoch 13 Step 325:  24%|██▍       | 6/25 [00:00<00:01, 16.78it/s]
+Epoch 13 Step 325:  36%|███▌      | 9/25 [00:00<00:00, 18.72it/s]
+Epoch 13 Step 325:  48%|████▊     | 12/25 [00:00<00:00, 20.02it/s]
+Epoch 13 Step 325:  60%|██████    | 15/25 [00:00<00:00, 20.71it/s]
+Epoch 13 Step 325:  72%|███████▏  | 18/25 [00:00<00:00, 20.78it/s]
+Epoch 13 Step 325:  84%|████████▍ | 21/25 [00:01<00:00, 21.25it/s]
+Epoch 13 Step 325:  96%|█████████▌| 24/25 [00:01<00:00, 21.72it/s]
+Epoch 13 Step 325: 100%|██████████| 25/25 [00:01<00:00, 20.69it/s]
+(val) 0.867 (test) 0.861 (loss) 0.34755
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:18.598890
+System.Management.Automation.RemoteException
+Epoch 14 Step 350:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 14 Step 350:  12%|█▏        | 3/25 [00:00<00:01, 21.89it/s]
+Epoch 14 Step 350:  24%|██▍       | 6/25 [00:00<00:00, 21.84it/s]
+Epoch 14 Step 350:  36%|███▌      | 9/25 [00:00<00:00, 22.14it/s]
+Epoch 14 Step 350:  48%|████▊     | 12/25 [00:00<00:00, 22.01it/s]
+Epoch 14 Step 350:  60%|██████    | 15/25 [00:00<00:00, 22.25it/s]
+Epoch 14 Step 350:  72%|███████▏  | 18/25 [00:00<00:00, 22.28it/s]
+Epoch 14 Step 350:  84%|████████▍ | 21/25 [00:00<00:00, 22.04it/s]
+Epoch 14 Step 350:  96%|█████████▌| 24/25 [00:01<00:00, 22.11it/s]
+Epoch 14 Step 350: 100%|██████████| 25/25 [00:01<00:00, 22.13it/s]
+(val) 0.868 (test) 0.863 (loss) 0.33865
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:19.905153
+System.Management.Automation.RemoteException
+Epoch 15 Step 375:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 15 Step 375:  12%|█▏        | 3/25 [00:00<00:00, 22.21it/s]
+Epoch 15 Step 375:  24%|██▍       | 6/25 [00:00<00:00, 22.24it/s]
+Epoch 15 Step 375:  36%|███▌      | 9/25 [00:00<00:00, 22.30it/s]
+Epoch 15 Step 375:  48%|████▊     | 12/25 [00:00<00:00, 22.40it/s]
+Epoch 15 Step 375:  60%|██████    | 15/25 [00:00<00:00, 22.11it/s]
+Epoch 15 Step 375:  72%|███████▏  | 18/25 [00:00<00:00, 22.02it/s]
+Epoch 15 Step 375:  84%|████████▍ | 21/25 [00:00<00:00, 22.20it/s]
+Epoch 15 Step 375:  96%|█████████▌| 24/25 [00:01<00:00, 22.25it/s]
+Epoch 15 Step 375: 100%|██████████| 25/25 [00:01<00:00, 22.25it/s]
+(val) 0.870 (test) 0.865 (loss) 0.33763
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:21.209870
+System.Management.Automation.RemoteException
+Epoch 16 Step 400:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 16 Step 400:  12%|█▏        | 3/25 [00:00<00:00, 22.15it/s]
+Epoch 16 Step 400:  24%|██▍       | 6/25 [00:00<00:00, 21.72it/s]
+Epoch 16 Step 400:  36%|███▌      | 9/25 [00:00<00:00, 21.58it/s]
+Epoch 16 Step 400:  48%|████▊     | 12/25 [00:00<00:00, 21.95it/s]
+Epoch 16 Step 400:  60%|██████    | 15/25 [00:00<00:00, 21.97it/s]
+Epoch 16 Step 400:  72%|███████▏  | 18/25 [00:00<00:00, 22.02it/s]
+Epoch 16 Step 400:  84%|████████▍ | 21/25 [00:00<00:00, 22.02it/s]
+Epoch 16 Step 400:  96%|█████████▌| 24/25 [00:01<00:00, 22.13it/s]
+Epoch 16 Step 400: 100%|██████████| 25/25 [00:01<00:00, 22.02it/s]
+(val) 0.870 (test) 0.864 (loss) 0.33429
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:22.514152
+System.Management.Automation.RemoteException
+Epoch 17 Step 425:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 17 Step 425:  12%|█▏        | 3/25 [00:00<00:00, 22.33it/s]
+Epoch 17 Step 425:  24%|██▍       | 6/25 [00:00<00:00, 21.35it/s]
+Epoch 17 Step 425:  36%|███▌      | 9/25 [00:00<00:00, 17.54it/s]
+Epoch 17 Step 425:  48%|████▊     | 12/25 [00:00<00:00, 19.16it/s]
+Epoch 17 Step 425:  60%|██████    | 15/25 [00:00<00:00, 19.95it/s]
+Epoch 17 Step 425:  72%|███████▏  | 18/25 [00:00<00:00, 20.60it/s]
+Epoch 17 Step 425:  84%|████████▍ | 21/25 [00:01<00:00, 21.08it/s]
+Epoch 17 Step 425:  96%|█████████▌| 24/25 [00:01<00:00, 21.28it/s]
+Epoch 17 Step 425: 100%|██████████| 25/25 [00:01<00:00, 20.58it/s]
+(val) 0.866 (test) 0.861 (loss) 0.33649
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:23.900835
+System.Management.Automation.RemoteException
+Epoch 18 Step 450:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 18 Step 450:  12%|█▏        | 3/25 [00:00<00:00, 22.12it/s]
+Epoch 18 Step 450:  24%|██▍       | 6/25 [00:00<00:00, 19.29it/s]
+Epoch 18 Step 450:  36%|███▌      | 9/25 [00:00<00:00, 20.35it/s]
+Epoch 18 Step 450:  48%|████▊     | 12/25 [00:00<00:00, 21.02it/s]
+Epoch 18 Step 450:  60%|██████    | 15/25 [00:00<00:00, 21.58it/s]
+Epoch 18 Step 450:  72%|███████▏  | 18/25 [00:00<00:00, 21.78it/s]
+Epoch 18 Step 450:  84%|████████▍ | 21/25 [00:00<00:00, 21.76it/s]
+Epoch 18 Step 450:  96%|█████████▌| 24/25 [00:01<00:00, 21.99it/s]
+Epoch 18 Step 450: 100%|██████████| 25/25 [00:01<00:00, 21.50it/s]
+(val) 0.872 (test) 0.862 (loss) 0.33240
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:25.243001
+System.Management.Automation.RemoteException
+Epoch 19 Step 475:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 19 Step 475:  12%|█▏        | 3/25 [00:00<00:00, 22.07it/s]
+Epoch 19 Step 475:  24%|██▍       | 6/25 [00:00<00:00, 22.27it/s]
+Epoch 19 Step 475:  36%|███▌      | 9/25 [00:00<00:00, 22.15it/s]
+Epoch 19 Step 475:  48%|████▊     | 12/25 [00:00<00:00, 22.04it/s]
+Epoch 19 Step 475:  60%|██████    | 15/25 [00:00<00:00, 22.17it/s]
+Epoch 19 Step 475:  72%|███████▏  | 18/25 [00:00<00:00, 22.11it/s]
+Epoch 19 Step 475:  84%|████████▍ | 21/25 [00:00<00:00, 22.02it/s]
+Epoch 19 Step 475:  96%|█████████▌| 24/25 [00:01<00:00, 22.11it/s]
+Epoch 19 Step 475: 100%|██████████| 25/25 [00:01<00:00, 22.13it/s]
+(val) 0.873 (test) 0.861 (loss) 0.33116
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:26.549461
+System.Management.Automation.RemoteException
+Epoch 20 Step 500:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 20 Step 500:  12%|█▏        | 3/25 [00:00<00:00, 22.22it/s]
+Epoch 20 Step 500:  24%|██▍       | 6/25 [00:00<00:00, 21.94it/s]
+Epoch 20 Step 500:  36%|███▌      | 9/25 [00:00<00:00, 22.14it/s]
+Epoch 20 Step 500:  48%|████▊     | 12/25 [00:00<00:00, 21.97it/s]
+Epoch 20 Step 500:  60%|██████    | 15/25 [00:00<00:00, 22.13it/s]
+Epoch 20 Step 500:  72%|███████▏  | 18/25 [00:00<00:00, 22.20it/s]
+Epoch 20 Step 500:  84%|████████▍ | 21/25 [00:00<00:00, 22.18it/s]
+Epoch 20 Step 500:  96%|█████████▌| 24/25 [00:01<00:00, 22.24it/s]
+Epoch 20 Step 500: 100%|██████████| 25/25 [00:01<00:00, 22.15it/s]
+(val) 0.864 (test) 0.859 (loss) 0.32928
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:27.844458
+System.Management.Automation.RemoteException
+Epoch 21 Step 525:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 21 Step 525:  12%|█▏        | 3/25 [00:00<00:01, 21.45it/s]
+Epoch 21 Step 525:  24%|██▍       | 6/25 [00:00<00:00, 21.66it/s]
+Epoch 21 Step 525:  36%|███▌      | 9/25 [00:00<00:00, 17.20it/s]
+Epoch 21 Step 525:  48%|████▊     | 12/25 [00:00<00:00, 19.16it/s]
+Epoch 21 Step 525:  60%|██████    | 15/25 [00:00<00:00, 20.20it/s]
+Epoch 21 Step 525:  72%|███████▏  | 18/25 [00:00<00:00, 20.81it/s]
+Epoch 21 Step 525:  84%|████████▍ | 21/25 [00:01<00:00, 21.10it/s]
+Epoch 21 Step 525:  96%|█████████▌| 24/25 [00:01<00:00, 21.47it/s]
+Epoch 21 Step 525: 100%|██████████| 25/25 [00:01<00:00, 20.65it/s]
+(val) 0.871 (test) 0.863 (loss) 0.32770
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:29.224759
+System.Management.Automation.RemoteException
+Epoch 22 Step 550:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 22 Step 550:  12%|█▏        | 3/25 [00:00<00:01, 21.81it/s]
+Epoch 22 Step 550:  24%|██▍       | 6/25 [00:00<00:00, 21.64it/s]
+Epoch 22 Step 550:  36%|███▌      | 9/25 [00:00<00:00, 22.19it/s]
+Epoch 22 Step 550:  48%|████▊     | 12/25 [00:00<00:00, 22.00it/s]
+Epoch 22 Step 550:  60%|██████    | 15/25 [00:00<00:00, 22.01it/s]
+Epoch 22 Step 550:  72%|███████▏  | 18/25 [00:00<00:00, 22.07it/s]
+Epoch 22 Step 550:  84%|████████▍ | 21/25 [00:00<00:00, 21.98it/s]
+Epoch 22 Step 550:  96%|█████████▌| 24/25 [00:01<00:00, 22.08it/s]
+Epoch 22 Step 550: 100%|██████████| 25/25 [00:01<00:00, 22.04it/s]
+(val) 0.869 (test) 0.861 (loss) 0.32599
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:30.530291
+System.Management.Automation.RemoteException
+Epoch 23 Step 575:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 23 Step 575:  12%|█▏        | 3/25 [00:00<00:01, 21.99it/s]
+Epoch 23 Step 575:  24%|██▍       | 6/25 [00:00<00:00, 22.44it/s]
+Epoch 23 Step 575:  36%|███▌      | 9/25 [00:00<00:00, 22.47it/s]
+Epoch 23 Step 575:  48%|████▊     | 12/25 [00:00<00:00, 22.54it/s]
+Epoch 23 Step 575:  60%|██████    | 15/25 [00:00<00:00, 22.39it/s]
+Epoch 23 Step 575:  72%|███████▏  | 18/25 [00:00<00:00, 22.55it/s]
+Epoch 23 Step 575:  84%|████████▍ | 21/25 [00:00<00:00, 22.47it/s]
+Epoch 23 Step 575:  96%|█████████▌| 24/25 [00:01<00:00, 22.50it/s]
+Epoch 23 Step 575: 100%|██████████| 25/25 [00:01<00:00, 22.49it/s]
+(val) 0.868 (test) 0.862 (loss) 0.32253
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:31.811230
+System.Management.Automation.RemoteException
+Epoch 24 Step 600:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 24 Step 600:  12%|█▏        | 3/25 [00:00<00:00, 22.26it/s]
+Epoch 24 Step 600:  24%|██▍       | 6/25 [00:00<00:00, 22.31it/s]
+Epoch 24 Step 600:  36%|███▌      | 9/25 [00:00<00:00, 22.34it/s]
+Epoch 24 Step 600:  48%|████▊     | 12/25 [00:00<00:00, 22.43it/s]
+Epoch 24 Step 600:  60%|██████    | 15/25 [00:00<00:00, 22.44it/s]
+Epoch 24 Step 600:  72%|███████▏  | 18/25 [00:00<00:00, 22.39it/s]
+Epoch 24 Step 600:  84%|████████▍ | 21/25 [00:00<00:00, 22.43it/s]
+Epoch 24 Step 600:  96%|█████████▌| 24/25 [00:01<00:00, 22.27it/s]
+Epoch 24 Step 600: 100%|██████████| 25/25 [00:01<00:00, 22.35it/s]
+(val) 0.859 (test) 0.853 (loss) 0.32615
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:33.101274
+System.Management.Automation.RemoteException
+Epoch 25 Step 625:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 25 Step 625:  12%|█▏        | 3/25 [00:00<00:00, 22.29it/s]
+Epoch 25 Step 625:  24%|██▍       | 6/25 [00:00<00:00, 21.75it/s]
+Epoch 25 Step 625:  36%|███▌      | 9/25 [00:00<00:00, 21.43it/s]
+Epoch 25 Step 625:  48%|████▊     | 12/25 [00:00<00:00, 17.39it/s]
+Epoch 25 Step 625:  60%|██████    | 15/25 [00:00<00:00, 18.94it/s]
+Epoch 25 Step 625:  72%|███████▏  | 18/25 [00:00<00:00, 19.85it/s]
+Epoch 25 Step 625:  84%|████████▍ | 21/25 [00:01<00:00, 20.53it/s]
+Epoch 25 Step 625:  96%|█████████▌| 24/25 [00:01<00:00, 21.11it/s]
+Epoch 25 Step 625: 100%|██████████| 25/25 [00:01<00:00, 20.39it/s]
+(val) 0.869 (test) 0.865 (loss) 0.32240
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:34.497319
+System.Management.Automation.RemoteException
+Epoch 26 Step 650:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 26 Step 650:  12%|█▏        | 3/25 [00:00<00:00, 22.26it/s]
+Epoch 26 Step 650:  24%|██▍       | 6/25 [00:00<00:00, 22.15it/s]
+Epoch 26 Step 650:  36%|███▌      | 9/25 [00:00<00:00, 22.14it/s]
+Epoch 26 Step 650:  48%|████▊     | 12/25 [00:00<00:00, 22.16it/s]
+Epoch 26 Step 650:  60%|██████    | 15/25 [00:00<00:00, 22.12it/s]
+Epoch 26 Step 650:  72%|███████▏  | 18/25 [00:00<00:00, 22.10it/s]
+Epoch 26 Step 650:  84%|████████▍ | 21/25 [00:00<00:00, 22.05it/s]
+Epoch 26 Step 650:  96%|█████████▌| 24/25 [00:01<00:00, 21.97it/s]
+Epoch 26 Step 650: 100%|██████████| 25/25 [00:01<00:00, 22.11it/s]
+(val) 0.871 (test) 0.866 (loss) 0.32011
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:35.795786
+System.Management.Automation.RemoteException
+Epoch 27 Step 675:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 27 Step 675:  12%|█▏        | 3/25 [00:00<00:01, 21.83it/s]
+Epoch 27 Step 675:  24%|██▍       | 6/25 [00:00<00:00, 21.61it/s]
+Epoch 27 Step 675:  36%|███▌      | 9/25 [00:00<00:00, 22.00it/s]
+Epoch 27 Step 675:  48%|████▊     | 12/25 [00:00<00:00, 21.99it/s]
+Epoch 27 Step 675:  60%|██████    | 15/25 [00:00<00:00, 22.09it/s]
+Epoch 27 Step 675:  72%|███████▏  | 18/25 [00:00<00:00, 22.13it/s]
+Epoch 27 Step 675:  84%|████████▍ | 21/25 [00:00<00:00, 22.28it/s]
+Epoch 27 Step 675:  96%|█████████▌| 24/25 [00:01<00:00, 22.37it/s]
+Epoch 27 Step 675: 100%|██████████| 25/25 [00:01<00:00, 22.14it/s]
+(val) 0.871 (test) 0.864 (loss) 0.32115
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:37.096720
+System.Management.Automation.RemoteException
+Epoch 28 Step 700:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 28 Step 700:  12%|█▏        | 3/25 [00:00<00:00, 22.33it/s]
+Epoch 28 Step 700:  24%|██▍       | 6/25 [00:00<00:00, 22.33it/s]
+Epoch 28 Step 700:  36%|███▌      | 9/25 [00:00<00:00, 22.25it/s]
+Epoch 28 Step 700:  48%|████▊     | 12/25 [00:00<00:00, 22.43it/s]
+Epoch 28 Step 700:  60%|██████    | 15/25 [00:00<00:00, 22.42it/s]
+Epoch 28 Step 700:  72%|███████▏  | 18/25 [00:00<00:00, 22.25it/s]
+Epoch 28 Step 700:  84%|████████▍ | 21/25 [00:00<00:00, 22.25it/s]
+Epoch 28 Step 700:  96%|█████████▌| 24/25 [00:01<00:00, 22.28it/s]
+Epoch 28 Step 700: 100%|██████████| 25/25 [00:01<00:00, 22.28it/s]
+(val) 0.868 (test) 0.862 (loss) 0.31901
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:38.391010
+System.Management.Automation.RemoteException
+Epoch 29 Step 725:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 29 Step 725:  12%|█▏        | 3/25 [00:00<00:00, 22.20it/s]
+Epoch 29 Step 725:  24%|██▍       | 6/25 [00:00<00:00, 22.31it/s]
+Epoch 29 Step 725:  36%|███▌      | 9/25 [00:00<00:00, 22.32it/s]
+Epoch 29 Step 725:  48%|████▊     | 12/25 [00:00<00:00, 21.82it/s]
+Epoch 29 Step 725:  60%|██████    | 15/25 [00:00<00:00, 18.63it/s]
+Epoch 29 Step 725:  72%|███████▏  | 18/25 [00:00<00:00, 19.71it/s]
+Epoch 29 Step 725:  84%|████████▍ | 21/25 [00:01<00:00, 20.45it/s]
+Epoch 29 Step 725:  96%|█████████▌| 24/25 [00:01<00:00, 20.86it/s]
+Epoch 29 Step 725: 100%|██████████| 25/25 [00:01<00:00, 20.74it/s]
+(val) 0.872 (test) 0.864 (loss) 0.31649
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:39.764343
+System.Management.Automation.RemoteException
+Epoch 30 Step 750:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 30 Step 750:  12%|█▏        | 3/25 [00:00<00:00, 22.18it/s]
+Epoch 30 Step 750:  24%|██▍       | 6/25 [00:00<00:00, 22.46it/s]
+Epoch 30 Step 750:  36%|███▌      | 9/25 [00:00<00:00, 22.13it/s]
+Epoch 30 Step 750:  48%|████▊     | 12/25 [00:00<00:00, 22.40it/s]
+Epoch 30 Step 750:  60%|██████    | 15/25 [00:00<00:00, 22.35it/s]
+Epoch 30 Step 750:  72%|███████▏  | 18/25 [00:00<00:00, 22.40it/s]
+Epoch 30 Step 750:  84%|████████▍ | 21/25 [00:00<00:00, 22.40it/s]
+Epoch 30 Step 750:  96%|█████████▌| 24/25 [00:01<00:00, 22.57it/s]
+Epoch 30 Step 750: 100%|██████████| 25/25 [00:01<00:00, 22.42it/s]
+(val) 0.870 (test) 0.864 (loss) 0.31724
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:41.047568
+System.Management.Automation.RemoteException
+Epoch 31 Step 775:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 31 Step 775:  12%|█▏        | 3/25 [00:00<00:00, 22.03it/s]
+Epoch 31 Step 775:  24%|██▍       | 6/25 [00:00<00:00, 22.28it/s]
+Epoch 31 Step 775:  36%|███▌      | 9/25 [00:00<00:00, 22.43it/s]
+Epoch 31 Step 775:  48%|████▊     | 12/25 [00:00<00:00, 22.37it/s]
+Epoch 31 Step 775:  60%|██████    | 15/25 [00:00<00:00, 22.32it/s]
+Epoch 31 Step 775:  72%|███████▏  | 18/25 [00:00<00:00, 22.45it/s]
+Epoch 31 Step 775:  84%|████████▍ | 21/25 [00:00<00:00, 22.39it/s]
+Epoch 31 Step 775:  96%|█████████▌| 24/25 [00:01<00:00, 22.24it/s]
+Epoch 31 Step 775: 100%|██████████| 25/25 [00:01<00:00, 22.31it/s]
+(val) 0.870 (test) 0.860 (loss) 0.31585
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:42.336413
+System.Management.Automation.RemoteException
+Epoch 32 Step 800:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 32 Step 800:  12%|█▏        | 3/25 [00:00<00:01, 21.98it/s]
+Epoch 32 Step 800:  24%|██▍       | 6/25 [00:00<00:00, 22.32it/s]
+Epoch 32 Step 800:  36%|███▌      | 9/25 [00:00<00:00, 22.41it/s]
+Epoch 32 Step 800:  48%|████▊     | 12/25 [00:00<00:00, 22.58it/s]
+Epoch 32 Step 800:  60%|██████    | 15/25 [00:00<00:00, 22.33it/s]
+Epoch 32 Step 800:  72%|███████▏  | 18/25 [00:00<00:00, 22.42it/s]
+Epoch 32 Step 800:  84%|████████▍ | 21/25 [00:00<00:00, 22.46it/s]
+Epoch 32 Step 800:  96%|█████████▌| 24/25 [00:01<00:00, 22.51it/s]
+Epoch 32 Step 800: 100%|██████████| 25/25 [00:01<00:00, 22.45it/s]
+(val) 0.870 (test) 0.859 (loss) 0.31130
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:43.619827
+System.Management.Automation.RemoteException
+Epoch 33 Step 825:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 33 Step 825:  12%|█▏        | 3/25 [00:00<00:00, 22.13it/s]
+Epoch 33 Step 825:  24%|██▍       | 6/25 [00:00<00:00, 22.34it/s]
+Epoch 33 Step 825:  36%|███▌      | 9/25 [00:00<00:00, 22.74it/s]
+Epoch 33 Step 825:  48%|████▊     | 12/25 [00:00<00:00, 22.46it/s]
+Epoch 33 Step 825:  60%|██████    | 15/25 [00:00<00:00, 21.98it/s]
+Epoch 33 Step 825:  72%|███████▏  | 18/25 [00:00<00:00, 18.26it/s]
+Epoch 33 Step 825:  84%|████████▍ | 21/25 [00:01<00:00, 19.49it/s]
+Epoch 33 Step 825:  96%|█████████▌| 24/25 [00:01<00:00, 20.35it/s]
+Epoch 33 Step 825: 100%|██████████| 25/25 [00:01<00:00, 20.73it/s]
+(val) 0.876 (test) 0.863 (loss) 0.31164
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:45.002722
+System.Management.Automation.RemoteException
+Epoch 34 Step 850:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 34 Step 850:  12%|█▏        | 3/25 [00:00<00:00, 22.21it/s]
+Epoch 34 Step 850:  24%|██▍       | 6/25 [00:00<00:00, 22.56it/s]
+Epoch 34 Step 850:  36%|███▌      | 9/25 [00:00<00:00, 22.11it/s]
+Epoch 34 Step 850:  48%|████▊     | 12/25 [00:00<00:00, 22.16it/s]
+Epoch 34 Step 850:  60%|██████    | 15/25 [00:00<00:00, 22.07it/s]
+Epoch 34 Step 850:  72%|███████▏  | 18/25 [00:00<00:00, 22.20it/s]
+Epoch 34 Step 850:  84%|████████▍ | 21/25 [00:00<00:00, 22.26it/s]
+Epoch 34 Step 850:  96%|█████████▌| 24/25 [00:01<00:00, 22.23it/s]
+Epoch 34 Step 850: 100%|██████████| 25/25 [00:01<00:00, 22.20it/s]
+(val) 0.866 (test) 0.863 (loss) 0.31194
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:46.299834
+System.Management.Automation.RemoteException
+Epoch 35 Step 875:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 35 Step 875:  12%|█▏        | 3/25 [00:00<00:00, 22.87it/s]
+Epoch 35 Step 875:  24%|██▍       | 6/25 [00:00<00:00, 22.33it/s]
+Epoch 35 Step 875:  36%|███▌      | 9/25 [00:00<00:00, 22.20it/s]
+Epoch 35 Step 875:  48%|████▊     | 12/25 [00:00<00:00, 22.26it/s]
+Epoch 35 Step 875:  60%|██████    | 15/25 [00:00<00:00, 22.10it/s]
+Epoch 35 Step 875:  72%|███████▏  | 18/25 [00:00<00:00, 22.27it/s]
+Epoch 35 Step 875:  84%|████████▍ | 21/25 [00:00<00:00, 22.21it/s]
+Epoch 35 Step 875:  96%|█████████▌| 24/25 [00:01<00:00, 22.31it/s]
+Epoch 35 Step 875: 100%|██████████| 25/25 [00:01<00:00, 22.28it/s]
+(val) 0.864 (test) 0.867 (loss) 0.31063
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:47.593224
+System.Management.Automation.RemoteException
+Epoch 36 Step 900:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 36 Step 900:  12%|█▏        | 3/25 [00:00<00:01, 21.90it/s]
+Epoch 36 Step 900:  24%|██▍       | 6/25 [00:00<00:00, 22.11it/s]
+Epoch 36 Step 900:  36%|███▌      | 9/25 [00:00<00:00, 22.03it/s]
+Epoch 36 Step 900:  48%|████▊     | 12/25 [00:00<00:00, 22.20it/s]
+Epoch 36 Step 900:  60%|██████    | 15/25 [00:00<00:00, 22.38it/s]
+Epoch 36 Step 900:  72%|███████▏  | 18/25 [00:00<00:00, 22.34it/s]
+Epoch 36 Step 900:  84%|████████▍ | 21/25 [00:00<00:00, 22.38it/s]
+Epoch 36 Step 900:  96%|█████████▌| 24/25 [00:01<00:00, 22.40it/s]
+Epoch 36 Step 900: 100%|██████████| 25/25 [00:01<00:00, 22.25it/s]
+(val) 0.861 (test) 0.852 (loss) 0.30996
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:48.890623
+System.Management.Automation.RemoteException
+Epoch 37 Step 925:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 37 Step 925:  12%|█▏        | 3/25 [00:00<00:01, 21.67it/s]
+Epoch 37 Step 925:  24%|██▍       | 6/25 [00:00<00:00, 22.13it/s]
+Epoch 37 Step 925:  36%|███▌      | 9/25 [00:00<00:00, 22.47it/s]
+Epoch 37 Step 925:  48%|████▊     | 12/25 [00:00<00:00, 22.50it/s]
+Epoch 37 Step 925:  60%|██████    | 15/25 [00:00<00:00, 22.40it/s]
+Epoch 37 Step 925:  72%|███████▏  | 18/25 [00:00<00:00, 22.09it/s]
+Epoch 37 Step 925:  84%|████████▍ | 21/25 [00:01<00:00, 19.00it/s]
+Epoch 37 Step 925:  96%|█████████▌| 24/25 [00:01<00:00, 20.05it/s]
+Epoch 37 Step 925: 100%|██████████| 25/25 [00:01<00:00, 21.00it/s]
+(val) 0.870 (test) 0.862 (loss) 0.31161
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:50.249903
+System.Management.Automation.RemoteException
+Epoch 38 Step 950:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 38 Step 950:  12%|█▏        | 3/25 [00:00<00:00, 22.40it/s]
+Epoch 38 Step 950:  24%|██▍       | 6/25 [00:00<00:00, 22.40it/s]
+Epoch 38 Step 950:  36%|███▌      | 9/25 [00:00<00:00, 22.44it/s]
+Epoch 38 Step 950:  48%|████▊     | 12/25 [00:00<00:00, 22.43it/s]
+Epoch 38 Step 950:  60%|██████    | 15/25 [00:00<00:00, 22.47it/s]
+Epoch 38 Step 950:  72%|███████▏  | 18/25 [00:00<00:00, 22.40it/s]
+Epoch 38 Step 950:  84%|████████▍ | 21/25 [00:00<00:00, 22.32it/s]
+Epoch 38 Step 950:  96%|█████████▌| 24/25 [00:01<00:00, 22.43it/s]
+Epoch 38 Step 950: 100%|██████████| 25/25 [00:01<00:00, 22.41it/s]
+(val) 0.867 (test) 0.863 (loss) 0.30820
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:51.531967
+System.Management.Automation.RemoteException
+Epoch 39 Step 975:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 39 Step 975:  12%|█▏        | 3/25 [00:00<00:00, 22.05it/s]
+Epoch 39 Step 975:  24%|██▍       | 6/25 [00:00<00:00, 22.57it/s]
+Epoch 39 Step 975:  36%|███▌      | 9/25 [00:00<00:00, 22.47it/s]
+Epoch 39 Step 975:  48%|████▊     | 12/25 [00:00<00:00, 22.39it/s]
+Epoch 39 Step 975:  60%|██████    | 15/25 [00:00<00:00, 22.31it/s]
+Epoch 39 Step 975:  72%|███████▏  | 18/25 [00:00<00:00, 22.54it/s]
+Epoch 39 Step 975:  84%|████████▍ | 21/25 [00:00<00:00, 22.47it/s]
+Epoch 39 Step 975:  96%|█████████▌| 24/25 [00:01<00:00, 22.36it/s]
+Epoch 39 Step 975: 100%|██████████| 25/25 [00:01<00:00, 22.42it/s]
+(val) 0.870 (test) 0.862 (loss) 0.30867
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:52.816896
+System.Management.Automation.RemoteException
+Epoch 40 Step 1000:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 40 Step 1000:  12%|█▏        | 3/25 [00:00<00:00, 22.33it/s]
+Epoch 40 Step 1000:  24%|██▍       | 6/25 [00:00<00:00, 22.22it/s]
+Epoch 40 Step 1000:  36%|███▌      | 9/25 [00:00<00:00, 22.51it/s]
+Epoch 40 Step 1000:  48%|████▊     | 12/25 [00:00<00:00, 22.42it/s]
+Epoch 40 Step 1000:  60%|██████    | 15/25 [00:00<00:00, 22.41it/s]
+Epoch 40 Step 1000:  72%|███████▏  | 18/25 [00:00<00:00, 22.51it/s]
+Epoch 40 Step 1000:  84%|████████▍ | 21/25 [00:00<00:00, 22.51it/s]
+Epoch 40 Step 1000:  96%|█████████▌| 24/25 [00:01<00:00, 22.54it/s]
+Epoch 40 Step 1000: 100%|██████████| 25/25 [00:01<00:00, 22.49it/s]
+(val) 0.874 (test) 0.863 (loss) 0.30689
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:54.099899
+System.Management.Automation.RemoteException
+Epoch 41 Step 1025:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 41 Step 1025:  12%|█▏        | 3/25 [00:00<00:00, 22.56it/s]
+Epoch 41 Step 1025:  24%|██▍       | 6/25 [00:00<00:00, 22.20it/s]
+Epoch 41 Step 1025:  36%|███▌      | 9/25 [00:00<00:00, 22.38it/s]
+Epoch 41 Step 1025:  48%|████▊     | 12/25 [00:00<00:00, 22.22it/s]
+Epoch 41 Step 1025:  60%|██████    | 15/25 [00:00<00:00, 22.38it/s]
+Epoch 41 Step 1025:  72%|███████▏  | 18/25 [00:00<00:00, 22.39it/s]
+Epoch 41 Step 1025:  84%|████████▍ | 21/25 [00:00<00:00, 22.21it/s]
+Epoch 41 Step 1025:  96%|█████████▌| 24/25 [00:01<00:00, 18.72it/s]
+Epoch 41 Step 1025: 100%|██████████| 25/25 [00:01<00:00, 20.85it/s]
+(val) 0.864 (test) 0.854 (loss) 0.30204
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:55.472790
+System.Management.Automation.RemoteException
+Epoch 42 Step 1050:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 42 Step 1050:  12%|█▏        | 3/25 [00:00<00:00, 22.69it/s]
+Epoch 42 Step 1050:  24%|██▍       | 6/25 [00:00<00:00, 22.14it/s]
+Epoch 42 Step 1050:  36%|███▌      | 9/25 [00:00<00:00, 22.48it/s]
+Epoch 42 Step 1050:  48%|████▊     | 12/25 [00:00<00:00, 22.33it/s]
+Epoch 42 Step 1050:  60%|██████    | 15/25 [00:00<00:00, 22.40it/s]
+Epoch 42 Step 1050:  72%|███████▏  | 18/25 [00:00<00:00, 22.32it/s]
+Epoch 42 Step 1050:  84%|████████▍ | 21/25 [00:00<00:00, 22.41it/s]
+Epoch 42 Step 1050:  96%|█████████▌| 24/25 [00:01<00:00, 22.46it/s]
+Epoch 42 Step 1050: 100%|██████████| 25/25 [00:01<00:00, 22.39it/s]
+(val) 0.868 (test) 0.863 (loss) 0.30111
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:56.765982
+System.Management.Automation.RemoteException
+Epoch 43 Step 1075:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 43 Step 1075:  12%|█▏        | 3/25 [00:00<00:00, 22.28it/s]
+Epoch 43 Step 1075:  24%|██▍       | 6/25 [00:00<00:00, 23.02it/s]
+Epoch 43 Step 1075:  36%|███▌      | 9/25 [00:00<00:00, 22.85it/s]
+Epoch 43 Step 1075:  48%|████▊     | 12/25 [00:00<00:00, 22.90it/s]
+Epoch 43 Step 1075:  60%|██████    | 15/25 [00:00<00:00, 22.70it/s]
+Epoch 43 Step 1075:  72%|███████▏  | 18/25 [00:00<00:00, 22.63it/s]
+Epoch 43 Step 1075:  84%|████████▍ | 21/25 [00:00<00:00, 22.74it/s]
+Epoch 43 Step 1075:  96%|█████████▌| 24/25 [00:01<00:00, 22.67it/s]
+Epoch 43 Step 1075: 100%|██████████| 25/25 [00:01<00:00, 22.66it/s]
+(val) 0.863 (test) 0.864 (loss) 0.29963
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:58.048353
+System.Management.Automation.RemoteException
+Epoch 44 Step 1100:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 44 Step 1100:  12%|█▏        | 3/25 [00:00<00:00, 22.66it/s]
+Epoch 44 Step 1100:  24%|██▍       | 6/25 [00:00<00:00, 22.17it/s]
+Epoch 44 Step 1100:  36%|███▌      | 9/25 [00:00<00:00, 22.59it/s]
+Epoch 44 Step 1100:  48%|████▊     | 12/25 [00:00<00:00, 22.34it/s]
+Epoch 44 Step 1100:  60%|██████    | 15/25 [00:00<00:00, 22.57it/s]
+Epoch 44 Step 1100:  72%|███████▏  | 18/25 [00:00<00:00, 22.66it/s]
+Epoch 44 Step 1100:  84%|████████▍ | 21/25 [00:00<00:00, 22.59it/s]
+Epoch 44 Step 1100:  96%|█████████▌| 24/25 [00:01<00:00, 22.65it/s]
+Epoch 44 Step 1100: 100%|██████████| 25/25 [00:01<00:00, 22.56it/s]
+(val) 0.869 (test) 0.866 (loss) 0.29863
+
+[...] exp\reproduce\E3b\churn\2 | 0:00:59.326691
+System.Management.Automation.RemoteException
+Epoch 45 Step 1125:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 45 Step 1125:  12%|█▏        | 3/25 [00:00<00:01, 21.18it/s]
+Epoch 45 Step 1125:  24%|██▍       | 6/25 [00:00<00:00, 21.14it/s]
+Epoch 45 Step 1125:  36%|███▌      | 9/25 [00:00<00:00, 19.52it/s]
+Epoch 45 Step 1125:  48%|████▊     | 12/25 [00:00<00:00, 20.75it/s]
+Epoch 45 Step 1125:  60%|██████    | 15/25 [00:00<00:00, 21.35it/s]
+Epoch 45 Step 1125:  72%|███████▏  | 18/25 [00:00<00:00, 21.65it/s]
+Epoch 45 Step 1125:  84%|████████▍ | 21/25 [00:00<00:00, 21.91it/s]
+Epoch 45 Step 1125:  96%|█████████▌| 24/25 [00:01<00:00, 21.52it/s]
+Epoch 45 Step 1125: 100%|██████████| 25/25 [00:01<00:00, 21.20it/s]
+(val) 0.868 (test) 0.861 (loss) 0.30138
+
+[...] exp\reproduce\E3b\churn\2 | 0:01:00.749545
+System.Management.Automation.RemoteException
+Epoch 46 Step 1150:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 46 Step 1150:  12%|█▏        | 3/25 [00:00<00:00, 22.62it/s]
+Epoch 46 Step 1150:  24%|██▍       | 6/25 [00:00<00:00, 22.41it/s]
+Epoch 46 Step 1150:  36%|███▌      | 9/25 [00:00<00:00, 22.10it/s]
+Epoch 46 Step 1150:  48%|████▊     | 12/25 [00:00<00:00, 22.42it/s]
+Epoch 46 Step 1150:  60%|██████    | 15/25 [00:00<00:00, 22.54it/s]
+Epoch 46 Step 1150:  72%|███████▏  | 18/25 [00:00<00:00, 22.50it/s]
+Epoch 46 Step 1150:  84%|████████▍ | 21/25 [00:00<00:00, 22.38it/s]
+Epoch 46 Step 1150:  96%|█████████▌| 24/25 [00:01<00:00, 22.50it/s]
+Epoch 46 Step 1150: 100%|██████████| 25/25 [00:01<00:00, 22.40it/s]
+(val) 0.866 (test) 0.860 (loss) 0.29493
+
+[...] exp\reproduce\E3b\churn\2 | 0:01:02.036517
+System.Management.Automation.RemoteException
+Epoch 47 Step 1175:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 47 Step 1175:  12%|█▏        | 3/25 [00:00<00:01, 21.76it/s]
+Epoch 47 Step 1175:  24%|██▍       | 6/25 [00:00<00:00, 22.47it/s]
+Epoch 47 Step 1175:  36%|███▌      | 9/25 [00:00<00:00, 22.37it/s]
+Epoch 47 Step 1175:  48%|████▊     | 12/25 [00:00<00:00, 22.28it/s]
+Epoch 47 Step 1175:  60%|██████    | 15/25 [00:00<00:00, 22.49it/s]
+Epoch 47 Step 1175:  72%|███████▏  | 18/25 [00:00<00:00, 22.20it/s]
+Epoch 47 Step 1175:  84%|████████▍ | 21/25 [00:00<00:00, 22.37it/s]
+Epoch 47 Step 1175:  96%|█████████▌| 24/25 [00:01<00:00, 22.45it/s]
+Epoch 47 Step 1175: 100%|██████████| 25/25 [00:01<00:00, 22.38it/s]
+(val) 0.868 (test) 0.864 (loss) 0.29670
+
+[...] exp\reproduce\E3b\churn\2 | 0:01:03.321753
+System.Management.Automation.RemoteException
+Epoch 48 Step 1200:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 48 Step 1200:  12%|█▏        | 3/25 [00:00<00:01, 21.84it/s]
+Epoch 48 Step 1200:  24%|██▍       | 6/25 [00:00<00:00, 22.24it/s]
+Epoch 48 Step 1200:  36%|███▌      | 9/25 [00:00<00:00, 22.37it/s]
+Epoch 48 Step 1200:  48%|████▊     | 12/25 [00:00<00:00, 22.26it/s]
+Epoch 48 Step 1200:  60%|██████    | 15/25 [00:00<00:00, 22.27it/s]
+Epoch 48 Step 1200:  72%|███████▏  | 18/25 [00:00<00:00, 22.10it/s]
+Epoch 48 Step 1200:  84%|████████▍ | 21/25 [00:00<00:00, 22.03it/s]
+Epoch 48 Step 1200:  96%|█████████▌| 24/25 [00:01<00:00, 22.16it/s]
+Epoch 48 Step 1200: 100%|██████████| 25/25 [00:01<00:00, 22.06it/s]
+(val) 0.869 (test) 0.864 (loss) 0.29558
+
+[...] exp\reproduce\E3b\churn\2 | 0:01:04.622453
+System.Management.Automation.RemoteException
+Epoch 49 Step 1225:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 49 Step 1225:  12%|█▏        | 3/25 [00:00<00:00, 22.11it/s]
+Epoch 49 Step 1225:  24%|██▍       | 6/25 [00:00<00:00, 22.62it/s]
+Epoch 49 Step 1225:  36%|███▌      | 9/25 [00:00<00:00, 22.65it/s]
+Epoch 49 Step 1225:  48%|████▊     | 12/25 [00:00<00:00, 22.71it/s]
+Epoch 49 Step 1225:  60%|██████    | 15/25 [00:00<00:00, 22.82it/s]
+Epoch 49 Step 1225:  72%|███████▏  | 18/25 [00:00<00:00, 22.42it/s]
+Epoch 49 Step 1225:  84%|████████▍ | 21/25 [00:00<00:00, 22.40it/s]
+Epoch 49 Step 1225:  96%|█████████▌| 24/25 [00:01<00:00, 21.97it/s]
+Epoch 49 Step 1225: 100%|██████████| 25/25 [00:01<00:00, 22.36it/s]
+(val) 0.866 (test) 0.856 (loss) 0.29399
+
+
+====================================================================================================
+[<<<] exp\reproduce\E3b\churn\2-best-head | 2026-11-10 12:20:02.362635
+====================================================================================================
+
+
+====================================================================================================
+[<<<] exp\reproduce\E3b\churn\2-greedy-heads | 2026-11-10 12:20:02.531332
+====================================================================================================
+
+{'function': 'bin\\model.main',
+ 'gpus': [],
+ 'n_parameters': 141652,
+ 'scores': {'train': 0.8828125,
+            'val': 0.875625,
+            'test': 0.863},
+ 'time': '0:01:05.919078'}
+
+====================================================================================================
+[<<<] exp\reproduce\E3b\churn\2 | 2026-11-10 12:20:02.544976
+====================================================================================================

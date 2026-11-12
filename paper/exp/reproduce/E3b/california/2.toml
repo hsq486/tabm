@@ -1,0 +1,37 @@
+# E3b 对照：TabM + 分段线性数值嵌入（消除与 MLP† 的嵌入混淆）
+# 来源：exp/tabm-sharetrainingbatches-piecewiselinear/california/0-evaluation/0.toml
+# 缩减：k 32 -> 8，n_blocks 4 -> 2，d_block 176 -> 256（CPU 预算）
+seed = 2
+batch_size = 256
+patience = 16
+n_epochs = -1
+gradient_clipping_norm = 1.0
+amp = true
+
+[data]
+cache = true
+path = "data/california"
+num_policy = "noisy-quantile"
+
+[optimizer]
+type = "AdamW"
+lr = 0.0007017956168956187
+weight_decay = 0.0
+
+[model]
+arch_type = "tabm"
+k = 8
+share_training_batches = true
+
+[model.backbone]
+type = "MLP"
+n_blocks = 2
+d_block = 256
+dropout = 0.11151223652620883
+
+[model.num_embeddings]
+type = "PiecewiseLinearEmbeddings"
+d_embedding = 24
+
+[bins]
+n_bins = 98

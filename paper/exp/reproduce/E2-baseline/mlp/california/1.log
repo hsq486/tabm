@@ -1,0 +1,1994 @@
+﻿[33m[1mRemoving the existing output[0m
+[1mUsing cached dataset: build_dataset__california__ab1828c895a3404e62f53860d501bb2a.pickle[0m
+[1mn_parameters = 45553[0m
+[1mAMP enabled: False[0m
+====================================================================================================
+[>>>] exp\reproduce\E2-baseline\mlp\california\1 | 2026-11-10 09:17:21.155036
+====================================================================================================
+
+{'seed': 1,
+ 'batch_size': 256,
+ 'patience': 16,
+ 'n_epochs': -1,
+ 'gradient_clipping_norm': 1.0,
+ 'amp': True,
+ 'data': {'cache': True, 'path': 'data/california', 'num_policy': 'noisy-quantile'},
+ 'optimizer': {'type': 'AdamW', 'lr': 0.0005635553682721966, 'weight_decay': 0.028758690586743314},
+ 'model': {'arch_type': 'plain',
+           'backbone': {'type': 'MLP',
+                        'n_blocks': 2,
+                        'd_block': 208,
+                        'dropout': 0.17186995074626696}}}
+
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:00.002092
+System.Management.Automation.RemoteException
+Epoch 0 Step 0:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 0 Step 0:   4%|▍         | 2/52 [00:00<00:02, 18.94it/s]
+Epoch 0 Step 0:  17%|█▋        | 9/52 [00:00<00:00, 47.51it/s]
+Epoch 0 Step 0:  31%|███       | 16/52 [00:00<00:00, 53.74it/s]
+Epoch 0 Step 0:  44%|████▍     | 23/52 [00:00<00:00, 59.08it/s]
+Epoch 0 Step 0:  58%|█████▊    | 30/52 [00:00<00:00, 60.69it/s]
+Epoch 0 Step 0:  71%|███████   | 37/52 [00:00<00:00, 59.02it/s]
+Epoch 0 Step 0:  85%|████████▍ | 44/52 [00:00<00:00, 60.93it/s]
+Epoch 0 Step 0:  98%|█████████▊| 51/52 [00:00<00:00, 61.23it/s]
+Epoch 0 Step 0: 100%|██████████| 52/52 [00:00<00:00, 57.87it/s]
+(val) -0.612 (test) -0.627 (loss) 0.47970
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:00.966722
+System.Management.Automation.RemoteException
+Epoch 1 Step 52:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 1 Step 52:  21%|██        | 11/52 [00:00<00:00, 107.65it/s]
+Epoch 1 Step 52:  50%|█████     | 26/52 [00:00<00:00, 129.85it/s]
+Epoch 1 Step 52:  79%|███████▉  | 41/52 [00:00<00:00, 135.23it/s]
+Epoch 1 Step 52: 100%|██████████| 52/52 [00:00<00:00, 137.56it/s]
+(val) -0.587 (test) -0.603 (loss) 0.30862
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:01.387480
+System.Management.Automation.RemoteException
+Epoch 2 Step 104:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 2 Step 104:  23%|██▎       | 12/52 [00:00<00:00, 114.65it/s]
+Epoch 2 Step 104:  52%|█████▏    | 27/52 [00:00<00:00, 130.50it/s]
+Epoch 2 Step 104:  83%|████████▎ | 43/52 [00:00<00:00, 140.98it/s]
+Epoch 2 Step 104: 100%|██████████| 52/52 [00:00<00:00, 142.40it/s]
+(val) -0.582 (test) -0.599 (loss) 0.29323
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:01.787934
+System.Management.Automation.RemoteException
+Epoch 3 Step 156:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 3 Step 156:  23%|██▎       | 12/52 [00:00<00:00, 118.27it/s]
+Epoch 3 Step 156:  46%|████▌     | 24/52 [00:00<00:00, 116.93it/s]
+Epoch 3 Step 156:  73%|███████▎  | 38/52 [00:00<00:00, 125.58it/s]
+Epoch 3 Step 156:  98%|█████████▊| 51/52 [00:00<00:00, 125.13it/s]
+Epoch 3 Step 156: 100%|██████████| 52/52 [00:00<00:00, 124.27it/s]
+(val) -0.576 (test) -0.594 (loss) 0.28482
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:02.260548
+System.Management.Automation.RemoteException
+Epoch 4 Step 208:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 4 Step 208:  31%|███       | 16/52 [00:00<00:00, 151.28it/s]
+Epoch 4 Step 208:  63%|██████▎   | 33/52 [00:00<00:00, 156.74it/s]
+Epoch 4 Step 208:  98%|█████████▊| 51/52 [00:00<00:00, 166.63it/s]
+Epoch 4 Step 208: 100%|██████████| 52/52 [00:00<00:00, 164.31it/s]
+(val) -0.572 (test) -0.590 (loss) 0.27808
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:02.616928
+System.Management.Automation.RemoteException
+Epoch 5 Step 260:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 5 Step 260:  23%|██▎       | 12/52 [00:00<00:00, 119.09it/s]
+Epoch 5 Step 260:  50%|█████     | 26/52 [00:00<00:00, 130.01it/s]
+Epoch 5 Step 260:  88%|████████▊ | 46/52 [00:00<00:00, 159.72it/s]
+Epoch 5 Step 260: 100%|██████████| 52/52 [00:00<00:00, 156.38it/s]
+(val) -0.569 (test) -0.584 (loss) 0.27566
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:02.990480
+System.Management.Automation.RemoteException
+Epoch 6 Step 312:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 6 Step 312:  23%|██▎       | 12/52 [00:00<00:00, 117.29it/s]
+Epoch 6 Step 312:  48%|████▊     | 25/52 [00:00<00:00, 123.09it/s]
+Epoch 6 Step 312:  73%|███████▎  | 38/52 [00:00<00:00, 124.01it/s]
+Epoch 6 Step 312: 100%|██████████| 52/52 [00:00<00:00, 128.99it/s]
+Epoch 6 Step 312: 100%|██████████| 52/52 [00:00<00:00, 126.24it/s]
+(val) -0.567 (test) -0.582 (loss) 0.26731
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:03.453516
+System.Management.Automation.RemoteException
+Epoch 7 Step 364:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 7 Step 364:  25%|██▌       | 13/52 [00:00<00:00, 125.67it/s]
+Epoch 7 Step 364:  52%|█████▏    | 27/52 [00:00<00:00, 132.66it/s]
+Epoch 7 Step 364:  85%|████████▍ | 44/52 [00:00<00:00, 149.20it/s]
+Epoch 7 Step 364: 100%|██████████| 52/52 [00:00<00:00, 143.81it/s]
+(val) -0.560 (test) -0.576 (loss) 0.26128
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:03.856438
+System.Management.Automation.RemoteException
+Epoch 8 Step 416:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 8 Step 416:  23%|██▎       | 12/52 [00:00<00:00, 111.61it/s]
+Epoch 8 Step 416:  54%|█████▍    | 28/52 [00:00<00:00, 136.59it/s]
+Epoch 8 Step 416:  87%|████████▋ | 45/52 [00:00<00:00, 147.27it/s]
+Epoch 8 Step 416: 100%|██████████| 52/52 [00:00<00:00, 146.47it/s]
+(val) -0.561 (test) -0.575 (loss) 0.25953
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:04.243718
+System.Management.Automation.RemoteException
+Epoch 9 Step 468:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 9 Step 468:  25%|██▌       | 13/52 [00:00<00:00, 122.98it/s]
+Epoch 9 Step 468:  56%|█████▌    | 29/52 [00:00<00:00, 137.85it/s]
+Epoch 9 Step 468:  87%|████████▋ | 45/52 [00:00<00:00, 146.69it/s]
+Epoch 9 Step 468: 100%|██████████| 52/52 [00:00<00:00, 141.95it/s]
+(val) -0.561 (test) -0.575 (loss) 0.25666
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:04.645494
+System.Management.Automation.RemoteException
+Epoch 10 Step 520:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 10 Step 520:  23%|██▎       | 12/52 [00:00<00:00, 117.92it/s]
+Epoch 10 Step 520:  52%|█████▏    | 27/52 [00:00<00:00, 134.39it/s]
+Epoch 10 Step 520:  79%|███████▉  | 41/52 [00:00<00:00, 136.32it/s]
+Epoch 10 Step 520: 100%|██████████| 52/52 [00:00<00:00, 144.07it/s]
+(val) -0.558 (test) -0.571 (loss) 0.25680
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:05.054460
+System.Management.Automation.RemoteException
+Epoch 11 Step 572:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 11 Step 572:  25%|██▌       | 13/52 [00:00<00:00, 129.00it/s]
+Epoch 11 Step 572:  50%|█████     | 26/52 [00:00<00:00, 120.12it/s]
+Epoch 11 Step 572:  83%|████████▎ | 43/52 [00:00<00:00, 141.62it/s]
+Epoch 11 Step 572: 100%|██████████| 52/52 [00:00<00:00, 141.27it/s]
+(val) -0.554 (test) -0.570 (loss) 0.25080
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:05.470815
+System.Management.Automation.RemoteException
+Epoch 12 Step 624:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 12 Step 624:  21%|██        | 11/52 [00:00<00:00, 109.90it/s]
+Epoch 12 Step 624:  50%|█████     | 26/52 [00:00<00:00, 128.92it/s]
+Epoch 12 Step 624:  85%|████████▍ | 44/52 [00:00<00:00, 150.40it/s]
+Epoch 12 Step 624: 100%|██████████| 52/52 [00:00<00:00, 146.11it/s]
+(val) -0.554 (test) -0.566 (loss) 0.25094
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:05.857684
+System.Management.Automation.RemoteException
+Epoch 13 Step 676:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 13 Step 676:  21%|██        | 11/52 [00:00<00:00, 109.42it/s]
+Epoch 13 Step 676:  58%|█████▊    | 30/52 [00:00<00:00, 153.68it/s]
+Epoch 13 Step 676:  90%|█████████ | 47/52 [00:00<00:00, 159.11it/s]
+Epoch 13 Step 676: 100%|██████████| 52/52 [00:00<00:00, 154.60it/s]
+(val) -0.553 (test) -0.565 (loss) 0.24642
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:06.240029
+System.Management.Automation.RemoteException
+Epoch 14 Step 728:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 14 Step 728:  31%|███       | 16/52 [00:00<00:00, 153.79it/s]
+Epoch 14 Step 728:  67%|██████▋   | 35/52 [00:00<00:00, 171.78it/s]
+Epoch 14 Step 728: 100%|██████████| 52/52 [00:00<00:00, 164.40it/s]
+(val) -0.551 (test) -0.563 (loss) 0.24744
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:06.610048
+System.Management.Automation.RemoteException
+Epoch 15 Step 780:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 15 Step 780:  25%|██▌       | 13/52 [00:00<00:00, 120.35it/s]
+Epoch 15 Step 780:  52%|█████▏    | 27/52 [00:00<00:00, 130.28it/s]
+Epoch 15 Step 780:  79%|███████▉  | 41/52 [00:00<00:00, 133.22it/s]
+Epoch 15 Step 780: 100%|██████████| 52/52 [00:00<00:00, 139.95it/s]
+(val) -0.552 (test) -0.564 (loss) 0.24245
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:07.019377
+System.Management.Automation.RemoteException
+Epoch 16 Step 832:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 16 Step 832:  23%|██▎       | 12/52 [00:00<00:00, 114.30it/s]
+Epoch 16 Step 832:  52%|█████▏    | 27/52 [00:00<00:00, 129.36it/s]
+Epoch 16 Step 832:  88%|████████▊ | 46/52 [00:00<00:00, 153.95it/s]
+Epoch 16 Step 832: 100%|██████████| 52/52 [00:00<00:00, 151.50it/s]
+(val) -0.550 (test) -0.564 (loss) 0.24179
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:07.406968
+System.Management.Automation.RemoteException
+Epoch 17 Step 884:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 17 Step 884:  25%|██▌       | 13/52 [00:00<00:00, 119.35it/s]
+Epoch 17 Step 884:  48%|████▊     | 25/52 [00:00<00:00, 116.48it/s]
+Epoch 17 Step 884:  81%|████████  | 42/52 [00:00<00:00, 138.95it/s]
+Epoch 17 Step 884: 100%|██████████| 52/52 [00:00<00:00, 137.47it/s]
+(val) -0.545 (test) -0.559 (loss) 0.24328
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:07.832999
+System.Management.Automation.RemoteException
+Epoch 18 Step 936:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 18 Step 936:  23%|██▎       | 12/52 [00:00<00:00, 117.80it/s]
+Epoch 18 Step 936:  52%|█████▏    | 27/52 [00:00<00:00, 135.34it/s]
+Epoch 18 Step 936:  85%|████████▍ | 44/52 [00:00<00:00, 150.70it/s]
+Epoch 18 Step 936: 100%|██████████| 52/52 [00:00<00:00, 146.87it/s]
+(val) -0.546 (test) -0.560 (loss) 0.23981
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:08.232402
+System.Management.Automation.RemoteException
+Epoch 19 Step 988:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 19 Step 988:  23%|██▎       | 12/52 [00:00<00:00, 113.41it/s]
+Epoch 19 Step 988:  60%|█████▉    | 31/52 [00:00<00:00, 156.57it/s]
+Epoch 19 Step 988:  96%|█████████▌| 50/52 [00:00<00:00, 170.59it/s]
+Epoch 19 Step 988: 100%|██████████| 52/52 [00:00<00:00, 161.17it/s]
+(val) -0.545 (test) -0.558 (loss) 0.24098
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:08.596306
+System.Management.Automation.RemoteException
+Epoch 20 Step 1040:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 20 Step 1040:  23%|██▎       | 12/52 [00:00<00:00, 111.30it/s]
+Epoch 20 Step 1040:  56%|█████▌    | 29/52 [00:00<00:00, 139.09it/s]
+Epoch 20 Step 1040:  94%|█████████▍| 49/52 [00:00<00:00, 162.73it/s]
+Epoch 20 Step 1040: 100%|██████████| 52/52 [00:00<00:00, 157.18it/s]
+(val) -0.547 (test) -0.558 (loss) 0.23507
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:08.969713
+System.Management.Automation.RemoteException
+Epoch 21 Step 1092:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 21 Step 1092:  23%|██▎       | 12/52 [00:00<00:00, 115.46it/s]
+Epoch 21 Step 1092:  50%|█████     | 26/52 [00:00<00:00, 125.70it/s]
+Epoch 21 Step 1092:  75%|███████▌  | 39/52 [00:00<00:00, 126.57it/s]
+Epoch 21 Step 1092: 100%|██████████| 52/52 [00:00<00:00, 129.94it/s]
+(val) -0.548 (test) -0.559 (loss) 0.23515
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:09.396785
+System.Management.Automation.RemoteException
+Epoch 22 Step 1144:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 22 Step 1144:  25%|██▌       | 13/52 [00:00<00:00, 127.73it/s]
+Epoch 22 Step 1144:  62%|██████▏   | 32/52 [00:00<00:00, 163.17it/s]
+Epoch 22 Step 1144: 100%|██████████| 52/52 [00:00<00:00, 174.04it/s]
+(val) -0.541 (test) -0.555 (loss) 0.23400
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:09.731958
+System.Management.Automation.RemoteException
+Epoch 23 Step 1196:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 23 Step 1196:  23%|██▎       | 12/52 [00:00<00:00, 118.26it/s]
+Epoch 23 Step 1196:  58%|█████▊    | 30/52 [00:00<00:00, 153.67it/s]
+Epoch 23 Step 1196:  96%|█████████▌| 50/52 [00:00<00:00, 174.44it/s]
+Epoch 23 Step 1196: 100%|██████████| 52/52 [00:00<00:00, 168.52it/s]
+(val) -0.542 (test) -0.553 (loss) 0.23140
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:10.092255
+System.Management.Automation.RemoteException
+Epoch 24 Step 1248:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 24 Step 1248:  25%|██▌       | 13/52 [00:00<00:00, 128.42it/s]
+Epoch 24 Step 1248:  50%|█████     | 26/52 [00:00<00:00, 123.41it/s]
+Epoch 24 Step 1248:  79%|███████▉  | 41/52 [00:00<00:00, 133.58it/s]
+Epoch 24 Step 1248: 100%|██████████| 52/52 [00:00<00:00, 137.41it/s]
+(val) -0.542 (test) -0.556 (loss) 0.23449
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:10.512549
+System.Management.Automation.RemoteException
+Epoch 25 Step 1300:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 25 Step 1300:  25%|██▌       | 13/52 [00:00<00:00, 125.53it/s]
+Epoch 25 Step 1300:  54%|█████▍    | 28/52 [00:00<00:00, 137.36it/s]
+Epoch 25 Step 1300:  88%|████████▊ | 46/52 [00:00<00:00, 154.60it/s]
+Epoch 25 Step 1300: 100%|██████████| 52/52 [00:00<00:00, 146.34it/s]
+(val) -0.538 (test) -0.550 (loss) 0.23012
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:10.921258
+System.Management.Automation.RemoteException
+Epoch 26 Step 1352:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 26 Step 1352:  23%|██▎       | 12/52 [00:00<00:00, 115.71it/s]
+Epoch 26 Step 1352:  60%|█████▉    | 31/52 [00:00<00:00, 155.48it/s]
+Epoch 26 Step 1352:  90%|█████████ | 47/52 [00:00<00:00, 151.93it/s]
+Epoch 26 Step 1352: 100%|██████████| 52/52 [00:00<00:00, 149.16it/s]
+(val) -0.540 (test) -0.553 (loss) 0.22570
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:11.309622
+System.Management.Automation.RemoteException
+Epoch 27 Step 1404:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 27 Step 1404:  23%|██▎       | 12/52 [00:00<00:00, 111.98it/s]
+Epoch 27 Step 1404:  54%|█████▍    | 28/52 [00:00<00:00, 134.50it/s]
+Epoch 27 Step 1404:  81%|████████  | 42/52 [00:00<00:00, 136.46it/s]
+Epoch 27 Step 1404: 100%|██████████| 52/52 [00:00<00:00, 137.85it/s]
+(val) -0.540 (test) -0.549 (loss) 0.22932
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:11.715314
+System.Management.Automation.RemoteException
+Epoch 28 Step 1456:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 28 Step 1456:  27%|██▋       | 14/52 [00:00<00:00, 132.36it/s]
+Epoch 28 Step 1456:  56%|█████▌    | 29/52 [00:00<00:00, 138.60it/s]
+Epoch 28 Step 1456:  87%|████████▋ | 45/52 [00:00<00:00, 146.22it/s]
+Epoch 28 Step 1456: 100%|██████████| 52/52 [00:00<00:00, 147.30it/s]
+(val) -0.539 (test) -0.552 (loss) 0.22811
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:12.101182
+System.Management.Automation.RemoteException
+Epoch 29 Step 1508:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 29 Step 1508:  25%|██▌       | 13/52 [00:00<00:00, 122.99it/s]
+Epoch 29 Step 1508:  50%|█████     | 26/52 [00:00<00:00, 119.67it/s]
+Epoch 29 Step 1508:  81%|████████  | 42/52 [00:00<00:00, 134.32it/s]
+Epoch 29 Step 1508: 100%|██████████| 52/52 [00:00<00:00, 137.74it/s]
+(val) -0.538 (test) -0.548 (loss) 0.22503
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:12.515085
+System.Management.Automation.RemoteException
+Epoch 30 Step 1560:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 30 Step 1560:  25%|██▌       | 13/52 [00:00<00:00, 128.27it/s]
+Epoch 30 Step 1560:  50%|█████     | 26/52 [00:00<00:00, 127.91it/s]
+Epoch 30 Step 1560:  79%|███████▉  | 41/52 [00:00<00:00, 137.45it/s]
+Epoch 30 Step 1560: 100%|██████████| 52/52 [00:00<00:00, 134.04it/s]
+(val) -0.542 (test) -0.549 (loss) 0.22281
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:12.939711
+System.Management.Automation.RemoteException
+Epoch 31 Step 1612:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 31 Step 1612:  25%|██▌       | 13/52 [00:00<00:00, 123.54it/s]
+Epoch 31 Step 1612:  56%|█████▌    | 29/52 [00:00<00:00, 138.14it/s]
+Epoch 31 Step 1612:  90%|█████████ | 47/52 [00:00<00:00, 152.38it/s]
+Epoch 31 Step 1612: 100%|██████████| 52/52 [00:00<00:00, 149.10it/s]
+(val) -0.547 (test) -0.554 (loss) 0.22054
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:13.320520
+System.Management.Automation.RemoteException
+Epoch 32 Step 1664:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 32 Step 1664:  25%|██▌       | 13/52 [00:00<00:00, 127.41it/s]
+Epoch 32 Step 1664:  56%|█████▌    | 29/52 [00:00<00:00, 145.54it/s]
+Epoch 32 Step 1664:  90%|█████████ | 47/52 [00:00<00:00, 160.75it/s]
+Epoch 32 Step 1664: 100%|██████████| 52/52 [00:00<00:00, 158.23it/s]
+(val) -0.537 (test) -0.544 (loss) 0.22155
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:13.693184
+System.Management.Automation.RemoteException
+Epoch 33 Step 1716:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 33 Step 1716:  25%|██▌       | 13/52 [00:00<00:00, 127.40it/s]
+Epoch 33 Step 1716:  58%|█████▊    | 30/52 [00:00<00:00, 146.59it/s]
+Epoch 33 Step 1716:  92%|█████████▏| 48/52 [00:00<00:00, 159.17it/s]
+Epoch 33 Step 1716: 100%|██████████| 52/52 [00:00<00:00, 157.11it/s]
+(val) -0.534 (test) -0.544 (loss) 0.22159
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:14.072938
+System.Management.Automation.RemoteException
+Epoch 34 Step 1768:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 34 Step 1768:  21%|██        | 11/52 [00:00<00:00, 109.49it/s]
+Epoch 34 Step 1768:  52%|█████▏    | 27/52 [00:00<00:00, 139.14it/s]
+Epoch 34 Step 1768:  81%|████████  | 42/52 [00:00<00:00, 142.06it/s]
+Epoch 34 Step 1768: 100%|██████████| 52/52 [00:00<00:00, 141.59it/s]
+(val) -0.535 (test) -0.543 (loss) 0.22099
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:14.485533
+System.Management.Automation.RemoteException
+Epoch 35 Step 1820:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 35 Step 1820:  25%|██▌       | 13/52 [00:00<00:00, 127.47it/s]
+Epoch 35 Step 1820:  50%|█████     | 26/52 [00:00<00:00, 122.50it/s]
+Epoch 35 Step 1820:  87%|████████▋ | 45/52 [00:00<00:00, 149.04it/s]
+Epoch 35 Step 1820: 100%|██████████| 52/52 [00:00<00:00, 153.37it/s]
+(val) -0.538 (test) -0.544 (loss) 0.21940
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:14.854333
+System.Management.Automation.RemoteException
+Epoch 36 Step 1872:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 36 Step 1872:  23%|██▎       | 12/52 [00:00<00:00, 117.85it/s]
+Epoch 36 Step 1872:  52%|█████▏    | 27/52 [00:00<00:00, 134.93it/s]
+Epoch 36 Step 1872:  87%|████████▋ | 45/52 [00:00<00:00, 153.16it/s]
+Epoch 36 Step 1872: 100%|██████████| 52/52 [00:00<00:00, 150.00it/s]
+(val) -0.532 (test) -0.542 (loss) 0.21861
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:15.248578
+System.Management.Automation.RemoteException
+Epoch 37 Step 1924:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 37 Step 1924:  25%|██▌       | 13/52 [00:00<00:00, 121.28it/s]
+Epoch 37 Step 1924:  56%|█████▌    | 29/52 [00:00<00:00, 142.50it/s]
+Epoch 37 Step 1924:  90%|█████████ | 47/52 [00:00<00:00, 156.88it/s]
+Epoch 37 Step 1924: 100%|██████████| 52/52 [00:00<00:00, 148.87it/s]
+(val) -0.531 (test) -0.541 (loss) 0.21611
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:15.654120
+System.Management.Automation.RemoteException
+Epoch 38 Step 1976:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 38 Step 1976:  23%|██▎       | 12/52 [00:00<00:00, 113.44it/s]
+Epoch 38 Step 1976:  56%|█████▌    | 29/52 [00:00<00:00, 145.67it/s]
+Epoch 38 Step 1976:  96%|█████████▌| 50/52 [00:00<00:00, 173.77it/s]
+Epoch 38 Step 1976: 100%|██████████| 52/52 [00:00<00:00, 161.73it/s]
+(val) -0.532 (test) -0.541 (loss) 0.21643
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:16.008819
+System.Management.Automation.RemoteException
+Epoch 39 Step 2028:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 39 Step 2028:  25%|██▌       | 13/52 [00:00<00:00, 125.50it/s]
+Epoch 39 Step 2028:  58%|█████▊    | 30/52 [00:00<00:00, 147.83it/s]
+Epoch 39 Step 2028:  90%|█████████ | 47/52 [00:00<00:00, 155.27it/s]
+Epoch 39 Step 2028: 100%|██████████| 52/52 [00:00<00:00, 156.88it/s]
+(val) -0.536 (test) -0.543 (loss) 0.21724
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:16.377916
+System.Management.Automation.RemoteException
+Epoch 40 Step 2080:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 40 Step 2080:  23%|██▎       | 12/52 [00:00<00:00, 119.57it/s]
+Epoch 40 Step 2080:  52%|█████▏    | 27/52 [00:00<00:00, 136.78it/s]
+Epoch 40 Step 2080:  88%|████████▊ | 46/52 [00:00<00:00, 159.44it/s]
+Epoch 40 Step 2080: 100%|██████████| 52/52 [00:00<00:00, 154.01it/s]
+(val) -0.534 (test) -0.540 (loss) 0.21615
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:16.751078
+System.Management.Automation.RemoteException
+Epoch 41 Step 2132:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 41 Step 2132:  23%|██▎       | 12/52 [00:00<00:00, 115.83it/s]
+Epoch 41 Step 2132:  56%|█████▌    | 29/52 [00:00<00:00, 145.14it/s]
+Epoch 41 Step 2132:  85%|████████▍ | 44/52 [00:00<00:00, 138.71it/s]
+Epoch 41 Step 2132: 100%|██████████| 52/52 [00:00<00:00, 135.25it/s]
+(val) -0.530 (test) -0.539 (loss) 0.21350
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:17.183831
+System.Management.Automation.RemoteException
+Epoch 42 Step 2184:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 42 Step 2184:  31%|███       | 16/52 [00:00<00:00, 151.20it/s]
+Epoch 42 Step 2184:  62%|██████▏   | 32/52 [00:00<00:00, 137.11it/s]
+Epoch 42 Step 2184:  88%|████████▊ | 46/52 [00:00<00:00, 136.78it/s]
+Epoch 42 Step 2184: 100%|██████████| 52/52 [00:00<00:00, 135.28it/s]
+(val) -0.528 (test) -0.538 (loss) 0.21609
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:17.619501
+System.Management.Automation.RemoteException
+Epoch 43 Step 2236:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 43 Step 2236:  23%|██▎       | 12/52 [00:00<00:00, 114.24it/s]
+Epoch 43 Step 2236:  52%|█████▏    | 27/52 [00:00<00:00, 130.04it/s]
+Epoch 43 Step 2236:  77%|███████▋  | 40/52 [00:00<00:00, 125.80it/s]
+Epoch 43 Step 2236: 100%|██████████| 52/52 [00:00<00:00, 126.86it/s]
+(val) -0.527 (test) -0.536 (loss) 0.21014
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:18.082259
+System.Management.Automation.RemoteException
+Epoch 44 Step 2288:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 44 Step 2288:  27%|██▋       | 14/52 [00:00<00:00, 132.66it/s]
+Epoch 44 Step 2288:  58%|█████▊    | 30/52 [00:00<00:00, 144.87it/s]
+Epoch 44 Step 2288:  88%|████████▊ | 46/52 [00:00<00:00, 149.89it/s]
+Epoch 44 Step 2288: 100%|██████████| 52/52 [00:00<00:00, 149.87it/s]
+(val) -0.525 (test) -0.536 (loss) 0.20816
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:18.485272
+System.Management.Automation.RemoteException
+Epoch 45 Step 2340:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 45 Step 2340:  25%|██▌       | 13/52 [00:00<00:00, 120.00it/s]
+Epoch 45 Step 2340:  56%|█████▌    | 29/52 [00:00<00:00, 142.17it/s]
+Epoch 45 Step 2340:  88%|████████▊ | 46/52 [00:00<00:00, 153.38it/s]
+Epoch 45 Step 2340: 100%|██████████| 52/52 [00:00<00:00, 153.46it/s]
+(val) -0.526 (test) -0.538 (loss) 0.20722
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:18.858708
+System.Management.Automation.RemoteException
+Epoch 46 Step 2392:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 46 Step 2392:  29%|██▉       | 15/52 [00:00<00:00, 140.41it/s]
+Epoch 46 Step 2392:  58%|█████▊    | 30/52 [00:00<00:00, 137.07it/s]
+Epoch 46 Step 2392:  90%|█████████ | 47/52 [00:00<00:00, 150.56it/s]
+Epoch 46 Step 2392: 100%|██████████| 52/52 [00:00<00:00, 147.93it/s]
+(val) -0.525 (test) -0.535 (loss) 0.21066
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:19.253259
+System.Management.Automation.RemoteException
+Epoch 47 Step 2444:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 47 Step 2444:  25%|██▌       | 13/52 [00:00<00:00, 128.12it/s]
+Epoch 47 Step 2444:  52%|█████▏    | 27/52 [00:00<00:00, 131.93it/s]
+Epoch 47 Step 2444:  81%|████████  | 42/52 [00:00<00:00, 138.48it/s]
+Epoch 47 Step 2444: 100%|██████████| 52/52 [00:00<00:00, 136.95it/s]
+(val) -0.527 (test) -0.534 (loss) 0.20825
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:19.671866
+System.Management.Automation.RemoteException
+Epoch 48 Step 2496:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 48 Step 2496:  25%|██▌       | 13/52 [00:00<00:00, 125.95it/s]
+Epoch 48 Step 2496:  63%|██████▎   | 33/52 [00:00<00:00, 165.52it/s]
+Epoch 48 Step 2496: 100%|██████████| 52/52 [00:00<00:00, 172.54it/s]
+(val) -0.527 (test) -0.534 (loss) 0.20810
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:20.003775
+System.Management.Automation.RemoteException
+Epoch 49 Step 2548:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 49 Step 2548:  21%|██        | 11/52 [00:00<00:00, 107.29it/s]
+Epoch 49 Step 2548:  52%|█████▏    | 27/52 [00:00<00:00, 135.92it/s]
+Epoch 49 Step 2548:  81%|████████  | 42/52 [00:00<00:00, 139.64it/s]
+Epoch 49 Step 2548: 100%|██████████| 52/52 [00:00<00:00, 145.06it/s]
+(val) -0.525 (test) -0.534 (loss) 0.20644
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:20.400202
+System.Management.Automation.RemoteException
+Epoch 50 Step 2600:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 50 Step 2600:  27%|██▋       | 14/52 [00:00<00:00, 135.81it/s]
+Epoch 50 Step 2600:  54%|█████▍    | 28/52 [00:00<00:00, 128.79it/s]
+Epoch 50 Step 2600:  79%|███████▉  | 41/52 [00:00<00:00, 128.42it/s]
+Epoch 50 Step 2600: 100%|██████████| 52/52 [00:00<00:00, 130.80it/s]
+(val) -0.522 (test) -0.531 (loss) 0.20733
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:20.847159
+System.Management.Automation.RemoteException
+Epoch 51 Step 2652:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 51 Step 2652:  23%|██▎       | 12/52 [00:00<00:00, 117.45it/s]
+Epoch 51 Step 2652:  56%|█████▌    | 29/52 [00:00<00:00, 142.12it/s]
+Epoch 51 Step 2652:  88%|████████▊ | 46/52 [00:00<00:00, 150.88it/s]
+Epoch 51 Step 2652: 100%|██████████| 52/52 [00:00<00:00, 144.61it/s]
+(val) -0.526 (test) -0.535 (loss) 0.20433
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:21.243134
+System.Management.Automation.RemoteException
+Epoch 52 Step 2704:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 52 Step 2704:  23%|██▎       | 12/52 [00:00<00:00, 110.93it/s]
+Epoch 52 Step 2704:  52%|█████▏    | 27/52 [00:00<00:00, 128.04it/s]
+Epoch 52 Step 2704:  88%|████████▊ | 46/52 [00:00<00:00, 145.25it/s]
+Epoch 52 Step 2704: 100%|██████████| 52/52 [00:00<00:00, 139.16it/s]
+(val) -0.523 (test) -0.530 (loss) 0.20376
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:21.654135
+System.Management.Automation.RemoteException
+Epoch 53 Step 2756:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 53 Step 2756:  21%|██        | 11/52 [00:00<00:00, 107.75it/s]
+Epoch 53 Step 2756:  52%|█████▏    | 27/52 [00:00<00:00, 132.38it/s]
+Epoch 53 Step 2756:  87%|████████▋ | 45/52 [00:00<00:00, 149.89it/s]
+Epoch 53 Step 2756: 100%|██████████| 52/52 [00:00<00:00, 143.03it/s]
+(val) -0.522 (test) -0.533 (loss) 0.20568
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:22.057993
+System.Management.Automation.RemoteException
+Epoch 54 Step 2808:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 54 Step 2808:  23%|██▎       | 12/52 [00:00<00:00, 119.50it/s]
+Epoch 54 Step 2808:  54%|█████▍    | 28/52 [00:00<00:00, 142.06it/s]
+Epoch 54 Step 2808:  83%|████████▎ | 43/52 [00:00<00:00, 135.51it/s]
+Epoch 54 Step 2808: 100%|██████████| 52/52 [00:00<00:00, 134.29it/s]
+(val) -0.521 (test) -0.529 (loss) 0.20233
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:22.495856
+System.Management.Automation.RemoteException
+Epoch 55 Step 2860:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 55 Step 2860:  27%|██▋       | 14/52 [00:00<00:00, 132.83it/s]
+Epoch 55 Step 2860:  54%|█████▍    | 28/52 [00:00<00:00, 127.74it/s]
+Epoch 55 Step 2860:  81%|████████  | 42/52 [00:00<00:00, 130.83it/s]
+Epoch 55 Step 2860: 100%|██████████| 52/52 [00:00<00:00, 138.42it/s]
+(val) -0.521 (test) -0.529 (loss) 0.20211
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:22.912778
+System.Management.Automation.RemoteException
+Epoch 56 Step 2912:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 56 Step 2912:  21%|██        | 11/52 [00:00<00:00, 104.29it/s]
+Epoch 56 Step 2912:  50%|█████     | 26/52 [00:00<00:00, 126.82it/s]
+Epoch 56 Step 2912:  77%|███████▋  | 40/52 [00:00<00:00, 132.10it/s]
+Epoch 56 Step 2912: 100%|██████████| 52/52 [00:00<00:00, 134.81it/s]
+(val) -0.519 (test) -0.528 (loss) 0.20172
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:23.342965
+System.Management.Automation.RemoteException
+Epoch 57 Step 2964:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 57 Step 2964:  21%|██        | 11/52 [00:00<00:00, 103.93it/s]
+Epoch 57 Step 2964:  54%|█████▍    | 28/52 [00:00<00:00, 139.70it/s]
+Epoch 57 Step 2964:  92%|█████████▏| 48/52 [00:00<00:00, 166.23it/s]
+Epoch 57 Step 2964: 100%|██████████| 52/52 [00:00<00:00, 155.36it/s]
+(val) -0.519 (test) -0.530 (loss) 0.20032
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:23.722497
+System.Management.Automation.RemoteException
+Epoch 58 Step 3016:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 58 Step 3016:  23%|██▎       | 12/52 [00:00<00:00, 116.19it/s]
+Epoch 58 Step 3016:  58%|█████▊    | 30/52 [00:00<00:00, 151.77it/s]
+Epoch 58 Step 3016:  88%|████████▊ | 46/52 [00:00<00:00, 142.32it/s]
+Epoch 58 Step 3016: 100%|██████████| 52/52 [00:00<00:00, 140.93it/s]
+(val) -0.518 (test) -0.527 (loss) 0.19824
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:24.133684
+System.Management.Automation.RemoteException
+Epoch 59 Step 3068:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 59 Step 3068:  23%|██▎       | 12/52 [00:00<00:00, 115.80it/s]
+Epoch 59 Step 3068:  60%|█████▉    | 31/52 [00:00<00:00, 155.13it/s]
+Epoch 59 Step 3068:  92%|█████████▏| 48/52 [00:00<00:00, 160.15it/s]
+Epoch 59 Step 3068: 100%|██████████| 52/52 [00:00<00:00, 154.12it/s]
+(val) -0.518 (test) -0.529 (loss) 0.19906
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:24.531324
+System.Management.Automation.RemoteException
+Epoch 60 Step 3120:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 60 Step 3120:  23%|██▎       | 12/52 [00:00<00:00, 113.08it/s]
+Epoch 60 Step 3120:  52%|█████▏    | 27/52 [00:00<00:00, 129.67it/s]
+Epoch 60 Step 3120:  81%|████████  | 42/52 [00:00<00:00, 136.23it/s]
+Epoch 60 Step 3120: 100%|██████████| 52/52 [00:00<00:00, 135.05it/s]
+(val) -0.517 (test) -0.527 (loss) 0.19741
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:24.971718
+System.Management.Automation.RemoteException
+Epoch 61 Step 3172:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 61 Step 3172:  23%|██▎       | 12/52 [00:00<00:00, 113.65it/s]
+Epoch 61 Step 3172:  56%|█████▌    | 29/52 [00:00<00:00, 143.60it/s]
+Epoch 61 Step 3172:  90%|█████████ | 47/52 [00:00<00:00, 159.44it/s]
+Epoch 61 Step 3172: 100%|██████████| 52/52 [00:00<00:00, 158.35it/s]
+(val) -0.519 (test) -0.532 (loss) 0.19709
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:25.329970
+System.Management.Automation.RemoteException
+Epoch 62 Step 3224:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 62 Step 3224:  21%|██        | 11/52 [00:00<00:00, 102.23it/s]
+Epoch 62 Step 3224:  42%|████▏     | 22/52 [00:00<00:00, 102.42it/s]
+Epoch 62 Step 3224:  67%|██████▋   | 35/52 [00:00<00:00, 112.16it/s]
+Epoch 62 Step 3224:  96%|█████████▌| 50/52 [00:00<00:00, 125.92it/s]
+Epoch 62 Step 3224: 100%|██████████| 52/52 [00:00<00:00, 120.38it/s]
+(val) -0.522 (test) -0.527 (loss) 0.20004
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:25.808471
+System.Management.Automation.RemoteException
+Epoch 63 Step 3276:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 63 Step 3276:  23%|██▎       | 12/52 [00:00<00:00, 117.49it/s]
+Epoch 63 Step 3276:  48%|████▊     | 25/52 [00:00<00:00, 123.99it/s]
+Epoch 63 Step 3276:  73%|███████▎  | 38/52 [00:00<00:00, 123.29it/s]
+Epoch 63 Step 3276: 100%|██████████| 52/52 [00:00<00:00, 128.17it/s]
+(val) -0.519 (test) -0.526 (loss) 0.19581
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:26.252829
+System.Management.Automation.RemoteException
+Epoch 64 Step 3328:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 64 Step 3328:  25%|██▌       | 13/52 [00:00<00:00, 125.95it/s]
+Epoch 64 Step 3328:  56%|█████▌    | 29/52 [00:00<00:00, 142.12it/s]
+Epoch 64 Step 3328:  85%|████████▍ | 44/52 [00:00<00:00, 135.96it/s]
+Epoch 64 Step 3328: 100%|██████████| 52/52 [00:00<00:00, 133.49it/s]
+(val) -0.519 (test) -0.527 (loss) 0.19644
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:26.687770
+System.Management.Automation.RemoteException
+Epoch 65 Step 3380:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 65 Step 3380:  27%|██▋       | 14/52 [00:00<00:00, 137.05it/s]
+Epoch 65 Step 3380:  56%|█████▌    | 29/52 [00:00<00:00, 143.21it/s]
+Epoch 65 Step 3380:  88%|████████▊ | 46/52 [00:00<00:00, 152.15it/s]
+Epoch 65 Step 3380: 100%|██████████| 52/52 [00:00<00:00, 153.22it/s]
+(val) -0.519 (test) -0.527 (loss) 0.19442
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:27.066580
+System.Management.Automation.RemoteException
+Epoch 66 Step 3432:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 66 Step 3432:  23%|██▎       | 12/52 [00:00<00:00, 113.35it/s]
+Epoch 66 Step 3432:  54%|█████▍    | 28/52 [00:00<00:00, 139.11it/s]
+Epoch 66 Step 3432:  81%|████████  | 42/52 [00:00<00:00, 138.19it/s]
+Epoch 66 Step 3432: 100%|██████████| 52/52 [00:00<00:00, 141.78it/s]
+(val) -0.517 (test) -0.525 (loss) 0.19391
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:27.493366
+System.Management.Automation.RemoteException
+Epoch 67 Step 3484:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 67 Step 3484:  23%|██▎       | 12/52 [00:00<00:00, 113.05it/s]
+Epoch 67 Step 3484:  52%|█████▏    | 27/52 [00:00<00:00, 134.16it/s]
+Epoch 67 Step 3484:  85%|████████▍ | 44/52 [00:00<00:00, 149.09it/s]
+Epoch 67 Step 3484: 100%|██████████| 52/52 [00:00<00:00, 142.99it/s]
+(val) -0.513 (test) -0.524 (loss) 0.19403
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:27.907367
+System.Management.Automation.RemoteException
+Epoch 68 Step 3536:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 68 Step 3536:  31%|███       | 16/52 [00:00<00:00, 156.74it/s]
+Epoch 68 Step 3536:  62%|██████▏   | 32/52 [00:00<00:00, 133.53it/s]
+Epoch 68 Step 3536:  92%|█████████▏| 48/52 [00:00<00:00, 141.43it/s]
+Epoch 68 Step 3536: 100%|██████████| 52/52 [00:00<00:00, 143.91it/s]
+(val) -0.516 (test) -0.523 (loss) 0.19152
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:28.316661
+System.Management.Automation.RemoteException
+Epoch 69 Step 3588:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 69 Step 3588:  23%|██▎       | 12/52 [00:00<00:00, 111.84it/s]
+Epoch 69 Step 3588:  52%|█████▏    | 27/52 [00:00<00:00, 133.51it/s]
+Epoch 69 Step 3588:  81%|████████  | 42/52 [00:00<00:00, 140.78it/s]
+Epoch 69 Step 3588: 100%|██████████| 52/52 [00:00<00:00, 134.72it/s]
+(val) -0.513 (test) -0.522 (loss) 0.19240
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:28.756456
+System.Management.Automation.RemoteException
+Epoch 70 Step 3640:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 70 Step 3640:  31%|███       | 16/52 [00:00<00:00, 150.04it/s]
+Epoch 70 Step 3640:  62%|██████▏   | 32/52 [00:00<00:00, 152.19it/s]
+Epoch 70 Step 3640:  92%|█████████▏| 48/52 [00:00<00:00, 154.74it/s]
+Epoch 70 Step 3640: 100%|██████████| 52/52 [00:00<00:00, 157.28it/s]
+(val) -0.521 (test) -0.525 (loss) 0.19103
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:29.125871
+System.Management.Automation.RemoteException
+Epoch 71 Step 3692:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 71 Step 3692:  27%|██▋       | 14/52 [00:00<00:00, 129.35it/s]
+Epoch 71 Step 3692:  63%|██████▎   | 33/52 [00:00<00:00, 155.97it/s]
+Epoch 71 Step 3692:  94%|█████████▍| 49/52 [00:00<00:00, 157.04it/s]
+Epoch 71 Step 3692: 100%|██████████| 52/52 [00:00<00:00, 155.41it/s]
+(val) -0.513 (test) -0.520 (loss) 0.19036
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:29.500396
+System.Management.Automation.RemoteException
+Epoch 72 Step 3744:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 72 Step 3744:  23%|██▎       | 12/52 [00:00<00:00, 114.49it/s]
+Epoch 72 Step 3744:  52%|█████▏    | 27/52 [00:00<00:00, 132.91it/s]
+Epoch 72 Step 3744:  87%|████████▋ | 45/52 [00:00<00:00, 153.63it/s]
+Epoch 72 Step 3744: 100%|██████████| 52/52 [00:00<00:00, 148.88it/s]
+(val) -0.514 (test) -0.523 (loss) 0.18856
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:29.891762
+System.Management.Automation.RemoteException
+Epoch 73 Step 3796:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 73 Step 3796:  23%|██▎       | 12/52 [00:00<00:00, 115.65it/s]
+Epoch 73 Step 3796:  50%|█████     | 26/52 [00:00<00:00, 125.22it/s]
+Epoch 73 Step 3796:  79%|███████▉  | 41/52 [00:00<00:00, 134.73it/s]
+Epoch 73 Step 3796: 100%|██████████| 52/52 [00:00<00:00, 131.50it/s]
+(val) -0.513 (test) -0.519 (loss) 0.19191
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:30.325852
+System.Management.Automation.RemoteException
+Epoch 74 Step 3848:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 74 Step 3848:  23%|██▎       | 12/52 [00:00<00:00, 111.25it/s]
+Epoch 74 Step 3848:  50%|█████     | 26/52 [00:00<00:00, 125.57it/s]
+Epoch 74 Step 3848:  90%|█████████ | 47/52 [00:00<00:00, 162.03it/s]
+Epoch 74 Step 3848: 100%|██████████| 52/52 [00:00<00:00, 155.28it/s]
+(val) -0.509 (test) -0.517 (loss) 0.18876
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:30.699468
+System.Management.Automation.RemoteException
+Epoch 75 Step 3900:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 75 Step 3900:  23%|██▎       | 12/52 [00:00<00:00, 113.10it/s]
+Epoch 75 Step 3900:  54%|█████▍    | 28/52 [00:00<00:00, 137.92it/s]
+Epoch 75 Step 3900: 100%|██████████| 52/52 [00:00<00:00, 172.28it/s]
+(val) -0.511 (test) -0.519 (loss) 0.18814
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:31.024722
+System.Management.Automation.RemoteException
+Epoch 76 Step 3952:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 76 Step 3952:  23%|██▎       | 12/52 [00:00<00:00, 114.88it/s]
+Epoch 76 Step 3952:  50%|█████     | 26/52 [00:00<00:00, 127.15it/s]
+Epoch 76 Step 3952:  77%|███████▋  | 40/52 [00:00<00:00, 130.73it/s]
+Epoch 76 Step 3952: 100%|██████████| 52/52 [00:00<00:00, 136.50it/s]
+(val) -0.510 (test) -0.518 (loss) 0.18619
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:31.440697
+System.Management.Automation.RemoteException
+Epoch 77 Step 4004:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 77 Step 4004:  25%|██▌       | 13/52 [00:00<00:00, 122.28it/s]
+Epoch 77 Step 4004:  50%|█████     | 26/52 [00:00<00:00, 125.99it/s]
+Epoch 77 Step 4004:  87%|████████▋ | 45/52 [00:00<00:00, 152.91it/s]
+Epoch 77 Step 4004: 100%|██████████| 52/52 [00:00<00:00, 141.99it/s]
+(val) -0.514 (test) -0.519 (loss) 0.18658
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:31.848567
+System.Management.Automation.RemoteException
+Epoch 78 Step 4056:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 78 Step 4056:  33%|███▎      | 17/52 [00:00<00:00, 168.49it/s]
+Epoch 78 Step 4056:  65%|██████▌   | 34/52 [00:00<00:00, 153.25it/s]
+Epoch 78 Step 4056:  96%|█████████▌| 50/52 [00:00<00:00, 152.23it/s]
+Epoch 78 Step 4056: 100%|██████████| 52/52 [00:00<00:00, 152.24it/s]
+(val) -0.507 (test) -0.516 (loss) 0.18698
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:32.252246
+System.Management.Automation.RemoteException
+Epoch 79 Step 4108:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 79 Step 4108:  25%|██▌       | 13/52 [00:00<00:00, 119.08it/s]
+Epoch 79 Step 4108:  56%|█████▌    | 29/52 [00:00<00:00, 142.08it/s]
+Epoch 79 Step 4108:  88%|████████▊ | 46/52 [00:00<00:00, 153.66it/s]
+Epoch 79 Step 4108: 100%|██████████| 52/52 [00:00<00:00, 153.47it/s]
+(val) -0.510 (test) -0.518 (loss) 0.18665
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:32.629152
+System.Management.Automation.RemoteException
+Epoch 80 Step 4160:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 80 Step 4160:  27%|██▋       | 14/52 [00:00<00:00, 134.72it/s]
+Epoch 80 Step 4160:  54%|█████▍    | 28/52 [00:00<00:00, 130.13it/s]
+Epoch 80 Step 4160:  85%|████████▍ | 44/52 [00:00<00:00, 141.85it/s]
+Epoch 80 Step 4160: 100%|██████████| 52/52 [00:00<00:00, 144.10it/s]
+(val) -0.512 (test) -0.518 (loss) 0.18788
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:33.036943
+System.Management.Automation.RemoteException
+Epoch 81 Step 4212:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 81 Step 4212:  25%|██▌       | 13/52 [00:00<00:00, 125.13it/s]
+Epoch 81 Step 4212:  54%|█████▍    | 28/52 [00:00<00:00, 139.28it/s]
+Epoch 81 Step 4212:  92%|█████████▏| 48/52 [00:00<00:00, 164.22it/s]
+Epoch 81 Step 4212: 100%|██████████| 52/52 [00:00<00:00, 159.53it/s]
+(val) -0.509 (test) -0.515 (loss) 0.18529
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:33.389922
+System.Management.Automation.RemoteException
+Epoch 82 Step 4264:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 82 Step 4264:  25%|██▌       | 13/52 [00:00<00:00, 122.99it/s]
+Epoch 82 Step 4264:  56%|█████▌    | 29/52 [00:00<00:00, 143.24it/s]
+Epoch 82 Step 4264:  88%|████████▊ | 46/52 [00:00<00:00, 153.18it/s]
+Epoch 82 Step 4264: 100%|██████████| 52/52 [00:00<00:00, 150.61it/s]
+(val) -0.510 (test) -0.517 (loss) 0.18676
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:33.783457
+System.Management.Automation.RemoteException
+Epoch 83 Step 4316:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 83 Step 4316:  25%|██▌       | 13/52 [00:00<00:00, 122.14it/s]
+Epoch 83 Step 4316:  62%|██████▏   | 32/52 [00:00<00:00, 160.18it/s]
+Epoch 83 Step 4316:  98%|█████████▊| 51/52 [00:00<00:00, 172.18it/s]
+Epoch 83 Step 4316: 100%|██████████| 52/52 [00:00<00:00, 165.43it/s]
+(val) -0.509 (test) -0.517 (loss) 0.18501
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:34.126713
+System.Management.Automation.RemoteException
+Epoch 84 Step 4368:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 84 Step 4368:  23%|██▎       | 12/52 [00:00<00:00, 119.99it/s]
+Epoch 84 Step 4368:  56%|█████▌    | 29/52 [00:00<00:00, 146.55it/s]
+Epoch 84 Step 4368:  90%|█████████ | 47/52 [00:00<00:00, 160.53it/s]
+Epoch 84 Step 4368: 100%|██████████| 52/52 [00:00<00:00, 158.55it/s]
+(val) -0.514 (test) -0.518 (loss) 0.18269
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:34.479722
+System.Management.Automation.RemoteException
+Epoch 85 Step 4420:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 85 Step 4420:  25%|██▌       | 13/52 [00:00<00:00, 124.41it/s]
+Epoch 85 Step 4420:  60%|█████▉    | 31/52 [00:00<00:00, 154.73it/s]
+Epoch 85 Step 4420:  90%|█████████ | 47/52 [00:00<00:00, 134.47it/s]
+Epoch 85 Step 4420: 100%|██████████| 52/52 [00:00<00:00, 137.43it/s]
+(val) -0.510 (test) -0.515 (loss) 0.18541
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:34.893435
+System.Management.Automation.RemoteException
+Epoch 86 Step 4472:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 86 Step 4472:  27%|██▋       | 14/52 [00:00<00:00, 137.82it/s]
+Epoch 86 Step 4472:  58%|█████▊    | 30/52 [00:00<00:00, 147.58it/s]
+Epoch 86 Step 4472:  94%|█████████▍| 49/52 [00:00<00:00, 162.66it/s]
+Epoch 86 Step 4472: 100%|██████████| 52/52 [00:00<00:00, 158.55it/s]
+(val) -0.506 (test) -0.513 (loss) 0.18331
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:35.268809
+System.Management.Automation.RemoteException
+Epoch 87 Step 4524:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 87 Step 4524:  27%|██▋       | 14/52 [00:00<00:00, 132.96it/s]
+Epoch 87 Step 4524:  54%|█████▍    | 28/52 [00:00<00:00, 136.60it/s]
+Epoch 87 Step 4524:  87%|████████▋ | 45/52 [00:00<00:00, 149.05it/s]
+Epoch 87 Step 4524: 100%|██████████| 52/52 [00:00<00:00, 148.74it/s]
+(val) -0.510 (test) -0.514 (loss) 0.18365
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:35.653212
+System.Management.Automation.RemoteException
+Epoch 88 Step 4576:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 88 Step 4576:  23%|██▎       | 12/52 [00:00<00:00, 114.80it/s]
+Epoch 88 Step 4576:  54%|█████▍    | 28/52 [00:00<00:00, 140.69it/s]
+Epoch 88 Step 4576:  83%|████████▎ | 43/52 [00:00<00:00, 144.56it/s]
+Epoch 88 Step 4576: 100%|██████████| 52/52 [00:00<00:00, 146.98it/s]
+(val) -0.506 (test) -0.515 (loss) 0.17915
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:36.039265
+System.Management.Automation.RemoteException
+Epoch 89 Step 4628:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 89 Step 4628:  25%|██▌       | 13/52 [00:00<00:00, 128.06it/s]
+Epoch 89 Step 4628:  50%|█████     | 26/52 [00:00<00:00, 121.67it/s]
+Epoch 89 Step 4628:  79%|███████▉  | 41/52 [00:00<00:00, 132.14it/s]
+Epoch 89 Step 4628: 100%|██████████| 52/52 [00:00<00:00, 134.71it/s]
+(val) -0.511 (test) -0.515 (loss) 0.18144
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:36.471092
+System.Management.Automation.RemoteException
+Epoch 90 Step 4680:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 90 Step 4680:  23%|██▎       | 12/52 [00:00<00:00, 112.21it/s]
+Epoch 90 Step 4680:  48%|████▊     | 25/52 [00:00<00:00, 121.00it/s]
+Epoch 90 Step 4680:  75%|███████▌  | 39/52 [00:00<00:00, 127.59it/s]
+Epoch 90 Step 4680: 100%|██████████| 52/52 [00:00<00:00, 122.74it/s]
+Epoch 90 Step 4680: 100%|██████████| 52/52 [00:00<00:00, 122.29it/s]
+(val) -0.511 (test) -0.515 (loss) 0.18355
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:36.939473
+System.Management.Automation.RemoteException
+Epoch 91 Step 4732:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 91 Step 4732:  25%|██▌       | 13/52 [00:00<00:00, 126.07it/s]
+Epoch 91 Step 4732:  52%|█████▏    | 27/52 [00:00<00:00, 132.03it/s]
+Epoch 91 Step 4732:  79%|███████▉  | 41/52 [00:00<00:00, 129.18it/s]
+Epoch 91 Step 4732: 100%|██████████| 52/52 [00:00<00:00, 128.31it/s]
+(val) -0.507 (test) -0.515 (loss) 0.18206
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:37.389320
+System.Management.Automation.RemoteException
+Epoch 92 Step 4784:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 92 Step 4784:  25%|██▌       | 13/52 [00:00<00:00, 127.09it/s]
+Epoch 92 Step 4784:  50%|█████     | 26/52 [00:00<00:00, 127.81it/s]
+Epoch 92 Step 4784:  75%|███████▌  | 39/52 [00:00<00:00, 128.43it/s]
+Epoch 92 Step 4784: 100%|██████████| 52/52 [00:00<00:00, 131.27it/s]
+(val) -0.508 (test) -0.513 (loss) 0.18264
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:37.824779
+System.Management.Automation.RemoteException
+Epoch 93 Step 4836:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 93 Step 4836:  23%|██▎       | 12/52 [00:00<00:00, 114.57it/s]
+Epoch 93 Step 4836:  50%|█████     | 26/52 [00:00<00:00, 125.51it/s]
+Epoch 93 Step 4836:  81%|████████  | 42/52 [00:00<00:00, 139.41it/s]
+Epoch 93 Step 4836: 100%|██████████| 52/52 [00:00<00:00, 131.65it/s]
+(val) -0.510 (test) -0.515 (loss) 0.18035
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:38.263788
+System.Management.Automation.RemoteException
+Epoch 94 Step 4888:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 94 Step 4888:  27%|██▋       | 14/52 [00:00<00:00, 135.73it/s]
+Epoch 94 Step 4888:  56%|█████▌    | 29/52 [00:00<00:00, 138.97it/s]
+Epoch 94 Step 4888:  85%|████████▍ | 44/52 [00:00<00:00, 141.77it/s]
+Epoch 94 Step 4888: 100%|██████████| 52/52 [00:00<00:00, 138.41it/s]
+(val) -0.507 (test) -0.513 (loss) 0.17841
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:38.682485
+System.Management.Automation.RemoteException
+Epoch 95 Step 4940:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 95 Step 4940:  21%|██        | 11/52 [00:00<00:00, 107.51it/s]
+Epoch 95 Step 4940:  44%|████▍     | 23/52 [00:00<00:00, 111.46it/s]
+Epoch 95 Step 4940:  69%|██████▉   | 36/52 [00:00<00:00, 118.35it/s]
+Epoch 95 Step 4940: 100%|██████████| 52/52 [00:00<00:00, 128.12it/s]
+(val) -0.505 (test) -0.509 (loss) 0.17927
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:39.146783
+System.Management.Automation.RemoteException
+Epoch 96 Step 4992:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 96 Step 4992:  23%|██▎       | 12/52 [00:00<00:00, 113.97it/s]
+Epoch 96 Step 4992:  48%|████▊     | 25/52 [00:00<00:00, 121.09it/s]
+Epoch 96 Step 4992:  73%|███████▎  | 38/52 [00:00<00:00, 124.02it/s]
+Epoch 96 Step 4992: 100%|██████████| 52/52 [00:00<00:00, 131.07it/s]
+(val) -0.504 (test) -0.510 (loss) 0.17493
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:39.590902
+System.Management.Automation.RemoteException
+Epoch 97 Step 5044:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 97 Step 5044:  25%|██▌       | 13/52 [00:00<00:00, 124.09it/s]
+Epoch 97 Step 5044:  50%|█████     | 26/52 [00:00<00:00, 127.38it/s]
+Epoch 97 Step 5044:  77%|███████▋  | 40/52 [00:00<00:00, 131.54it/s]
+Epoch 97 Step 5044: 100%|██████████| 52/52 [00:00<00:00, 131.14it/s]
+(val) -0.503 (test) -0.508 (loss) 0.17773
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:40.041068
+System.Management.Automation.RemoteException
+Epoch 98 Step 5096:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 98 Step 5096:  25%|██▌       | 13/52 [00:00<00:00, 125.28it/s]
+Epoch 98 Step 5096:  50%|█████     | 26/52 [00:00<00:00, 127.75it/s]
+Epoch 98 Step 5096:  75%|███████▌  | 39/52 [00:00<00:00, 123.06it/s]
+Epoch 98 Step 5096: 100%|██████████| 52/52 [00:00<00:00, 121.05it/s]
+Epoch 98 Step 5096: 100%|██████████| 52/52 [00:00<00:00, 122.51it/s]
+(val) -0.507 (test) -0.513 (loss) 0.17736
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:40.510384
+System.Management.Automation.RemoteException
+Epoch 99 Step 5148:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 99 Step 5148:  21%|██        | 11/52 [00:00<00:00, 108.02it/s]
+Epoch 99 Step 5148:  46%|████▌     | 24/52 [00:00<00:00, 120.10it/s]
+Epoch 99 Step 5148:  73%|███████▎  | 38/52 [00:00<00:00, 126.46it/s]
+Epoch 99 Step 5148:  98%|█████████▊| 51/52 [00:00<00:00, 125.97it/s]
+Epoch 99 Step 5148: 100%|██████████| 52/52 [00:00<00:00, 124.65it/s]
+(val) -0.503 (test) -0.508 (loss) 0.17477
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:40.971194
+System.Management.Automation.RemoteException
+Epoch 100 Step 5200:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 100 Step 5200:  25%|██▌       | 13/52 [00:00<00:00, 125.68it/s]
+Epoch 100 Step 5200:  52%|█████▏    | 27/52 [00:00<00:00, 132.50it/s]
+Epoch 100 Step 5200:  79%|███████▉  | 41/52 [00:00<00:00, 124.31it/s]
+Epoch 100 Step 5200: 100%|██████████| 52/52 [00:00<00:00, 128.78it/s]
+(val) -0.507 (test) -0.510 (loss) 0.17839
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:41.409088
+System.Management.Automation.RemoteException
+Epoch 101 Step 5252:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 101 Step 5252:  23%|██▎       | 12/52 [00:00<00:00, 119.80it/s]
+Epoch 101 Step 5252:  52%|█████▏    | 27/52 [00:00<00:00, 133.87it/s]
+Epoch 101 Step 5252:  79%|███████▉  | 41/52 [00:00<00:00, 134.23it/s]
+Epoch 101 Step 5252: 100%|██████████| 52/52 [00:00<00:00, 130.90it/s]
+(val) -0.501 (test) -0.507 (loss) 0.17457
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:41.866235
+System.Management.Automation.RemoteException
+Epoch 102 Step 5304:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 102 Step 5304:  25%|██▌       | 13/52 [00:00<00:00, 123.46it/s]
+Epoch 102 Step 5304:  56%|█████▌    | 29/52 [00:00<00:00, 139.48it/s]
+Epoch 102 Step 5304:  87%|████████▋ | 45/52 [00:00<00:00, 147.72it/s]
+Epoch 102 Step 5304: 100%|██████████| 52/52 [00:00<00:00, 140.94it/s]
+(val) -0.505 (test) -0.513 (loss) 0.17529
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:42.280374
+System.Management.Automation.RemoteException
+Epoch 103 Step 5356:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 103 Step 5356:  25%|██▌       | 13/52 [00:00<00:00, 124.21it/s]
+Epoch 103 Step 5356:  63%|██████▎   | 33/52 [00:00<00:00, 162.67it/s]
+Epoch 103 Step 5356:  96%|█████████▌| 50/52 [00:00<00:00, 162.86it/s]
+Epoch 103 Step 5356: 100%|██████████| 52/52 [00:00<00:00, 158.33it/s]
+(val) -0.502 (test) -0.508 (loss) 0.17370
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:42.640216
+System.Management.Automation.RemoteException
+Epoch 104 Step 5408:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 104 Step 5408:  23%|██▎       | 12/52 [00:00<00:00, 114.52it/s]
+Epoch 104 Step 5408:  50%|█████     | 26/52 [00:00<00:00, 125.31it/s]
+Epoch 104 Step 5408:  77%|███████▋  | 40/52 [00:00<00:00, 130.26it/s]
+Epoch 104 Step 5408: 100%|██████████| 52/52 [00:00<00:00, 130.19it/s]
+(val) -0.504 (test) -0.510 (loss) 0.17298
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:43.085922
+System.Management.Automation.RemoteException
+Epoch 105 Step 5460:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 105 Step 5460:  21%|██        | 11/52 [00:00<00:00, 103.07it/s]
+Epoch 105 Step 5460:  46%|████▌     | 24/52 [00:00<00:00, 112.98it/s]
+Epoch 105 Step 5460:  75%|███████▌  | 39/52 [00:00<00:00, 125.70it/s]
+Epoch 105 Step 5460: 100%|██████████| 52/52 [00:00<00:00, 136.33it/s]
+(val) -0.500 (test) -0.508 (loss) 0.17537
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:43.519031
+System.Management.Automation.RemoteException
+Epoch 106 Step 5512:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 106 Step 5512:  23%|██▎       | 12/52 [00:00<00:00, 117.49it/s]
+Epoch 106 Step 5512:  54%|█████▍    | 28/52 [00:00<00:00, 140.45it/s]
+Epoch 106 Step 5512:  85%|████████▍ | 44/52 [00:00<00:00, 146.82it/s]
+Epoch 106 Step 5512: 100%|██████████| 52/52 [00:00<00:00, 143.77it/s]
+(val) -0.503 (test) -0.510 (loss) 0.17588
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:43.921544
+System.Management.Automation.RemoteException
+Epoch 107 Step 5564:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 107 Step 5564:  23%|██▎       | 12/52 [00:00<00:00, 118.47it/s]
+Epoch 107 Step 5564:  50%|█████     | 26/52 [00:00<00:00, 129.10it/s]
+Epoch 107 Step 5564:  77%|███████▋  | 40/52 [00:00<00:00, 128.98it/s]
+Epoch 107 Step 5564: 100%|██████████| 52/52 [00:00<00:00, 124.68it/s]
+(val) -0.509 (test) -0.511 (loss) 0.17541
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:44.379759
+System.Management.Automation.RemoteException
+Epoch 108 Step 5616:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 108 Step 5616:  27%|██▋       | 14/52 [00:00<00:00, 137.59it/s]
+Epoch 108 Step 5616:  60%|█████▉    | 31/52 [00:00<00:00, 150.33it/s]
+Epoch 108 Step 5616: 100%|██████████| 52/52 [00:00<00:00, 175.50it/s]
+Epoch 108 Step 5616: 100%|██████████| 52/52 [00:00<00:00, 167.44it/s]
+(val) -0.498 (test) -0.507 (loss) 0.17328
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:44.734831
+System.Management.Automation.RemoteException
+Epoch 109 Step 5668:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 109 Step 5668:  23%|██▎       | 12/52 [00:00<00:00, 117.14it/s]
+Epoch 109 Step 5668:  54%|█████▍    | 28/52 [00:00<00:00, 137.80it/s]
+Epoch 109 Step 5668:  85%|████████▍ | 44/52 [00:00<00:00, 145.47it/s]
+Epoch 109 Step 5668: 100%|██████████| 52/52 [00:00<00:00, 144.83it/s]
+(val) -0.499 (test) -0.505 (loss) 0.17130
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:45.139584
+System.Management.Automation.RemoteException
+Epoch 110 Step 5720:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 110 Step 5720:  23%|██▎       | 12/52 [00:00<00:00, 111.91it/s]
+Epoch 110 Step 5720:  50%|█████     | 26/52 [00:00<00:00, 126.98it/s]
+Epoch 110 Step 5720:  87%|████████▋ | 45/52 [00:00<00:00, 153.25it/s]
+Epoch 110 Step 5720: 100%|██████████| 52/52 [00:00<00:00, 148.25it/s]
+(val) -0.501 (test) -0.505 (loss) 0.17062
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:45.538100
+System.Management.Automation.RemoteException
+Epoch 111 Step 5772:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 111 Step 5772:  25%|██▌       | 13/52 [00:00<00:00, 125.24it/s]
+Epoch 111 Step 5772:  56%|█████▌    | 29/52 [00:00<00:00, 142.93it/s]
+Epoch 111 Step 5772:  88%|████████▊ | 46/52 [00:00<00:00, 155.07it/s]
+Epoch 111 Step 5772: 100%|██████████| 52/52 [00:00<00:00, 152.17it/s]
+(val) -0.503 (test) -0.506 (loss) 0.17018
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:45.919111
+System.Management.Automation.RemoteException
+Epoch 112 Step 5824:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 112 Step 5824:  29%|██▉       | 15/52 [00:00<00:00, 149.06it/s]
+Epoch 112 Step 5824:  62%|██████▏   | 32/52 [00:00<00:00, 156.83it/s]
+Epoch 112 Step 5824:  92%|█████████▏| 48/52 [00:00<00:00, 148.55it/s]
+Epoch 112 Step 5824: 100%|██████████| 52/52 [00:00<00:00, 149.74it/s]
+(val) -0.497 (test) -0.504 (loss) 0.17218
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:46.317568
+System.Management.Automation.RemoteException
+Epoch 113 Step 5876:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 113 Step 5876:  29%|██▉       | 15/52 [00:00<00:00, 148.11it/s]
+Epoch 113 Step 5876:  67%|██████▋   | 35/52 [00:00<00:00, 171.71it/s]
+Epoch 113 Step 5876: 100%|██████████| 52/52 [00:00<00:00, 180.75it/s]
+(val) -0.501 (test) -0.507 (loss) 0.16950
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:46.632076
+System.Management.Automation.RemoteException
+Epoch 114 Step 5928:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 114 Step 5928:  27%|██▋       | 14/52 [00:00<00:00, 133.01it/s]
+Epoch 114 Step 5928:  56%|█████▌    | 29/52 [00:00<00:00, 137.30it/s]
+Epoch 114 Step 5928:  94%|█████████▍| 49/52 [00:00<00:00, 163.99it/s]
+Epoch 114 Step 5928: 100%|██████████| 52/52 [00:00<00:00, 157.34it/s]
+(val) -0.503 (test) -0.509 (loss) 0.16973
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:47.003212
+System.Management.Automation.RemoteException
+Epoch 115 Step 5980:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 115 Step 5980:  27%|██▋       | 14/52 [00:00<00:00, 136.72it/s]
+Epoch 115 Step 5980:  58%|█████▊    | 30/52 [00:00<00:00, 147.08it/s]
+Epoch 115 Step 5980:  88%|████████▊ | 46/52 [00:00<00:00, 149.95it/s]
+Epoch 115 Step 5980: 100%|██████████| 52/52 [00:00<00:00, 147.87it/s]
+(val) -0.496 (test) -0.501 (loss) 0.16984
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:47.403493
+System.Management.Automation.RemoteException
+Epoch 116 Step 6032:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 116 Step 6032:  23%|██▎       | 12/52 [00:00<00:00, 110.32it/s]
+Epoch 116 Step 6032:  56%|█████▌    | 29/52 [00:00<00:00, 143.49it/s]
+Epoch 116 Step 6032:  87%|████████▋ | 45/52 [00:00<00:00, 148.76it/s]
+Epoch 116 Step 6032: 100%|██████████| 52/52 [00:00<00:00, 143.73it/s]
+(val) -0.500 (test) -0.504 (loss) 0.16963
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:47.808071
+System.Management.Automation.RemoteException
+Epoch 117 Step 6084:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 117 Step 6084:  23%|██▎       | 12/52 [00:00<00:00, 115.45it/s]
+Epoch 117 Step 6084:  56%|█████▌    | 29/52 [00:00<00:00, 145.72it/s]
+Epoch 117 Step 6084:  92%|█████████▏| 48/52 [00:00<00:00, 165.33it/s]
+Epoch 117 Step 6084: 100%|██████████| 52/52 [00:00<00:00, 157.09it/s]
+(val) -0.498 (test) -0.505 (loss) 0.16991
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:48.166987
+System.Management.Automation.RemoteException
+Epoch 118 Step 6136:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 118 Step 6136:  27%|██▋       | 14/52 [00:00<00:00, 137.85it/s]
+Epoch 118 Step 6136:  60%|█████▉    | 31/52 [00:00<00:00, 155.80it/s]
+Epoch 118 Step 6136:  94%|█████████▍| 49/52 [00:00<00:00, 162.64it/s]
+Epoch 118 Step 6136: 100%|██████████| 52/52 [00:00<00:00, 162.18it/s]
+(val) -0.498 (test) -0.505 (loss) 0.16749
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:48.515113
+System.Management.Automation.RemoteException
+Epoch 119 Step 6188:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 119 Step 6188:  27%|██▋       | 14/52 [00:00<00:00, 137.54it/s]
+Epoch 119 Step 6188:  58%|█████▊    | 30/52 [00:00<00:00, 145.63it/s]
+Epoch 119 Step 6188:  90%|█████████ | 47/52 [00:00<00:00, 154.75it/s]
+Epoch 119 Step 6188: 100%|██████████| 52/52 [00:00<00:00, 151.72it/s]
+(val) -0.497 (test) -0.502 (loss) 0.16571
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:48.888754
+System.Management.Automation.RemoteException
+Epoch 120 Step 6240:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 120 Step 6240:  33%|███▎      | 17/52 [00:00<00:00, 166.74it/s]
+Epoch 120 Step 6240:  73%|███████▎  | 38/52 [00:00<00:00, 191.29it/s]
+Epoch 120 Step 6240: 100%|██████████| 52/52 [00:00<00:00, 193.97it/s]
+(val) -0.496 (test) -0.503 (loss) 0.16704
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:49.184485
+System.Management.Automation.RemoteException
+Epoch 121 Step 6292:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 121 Step 6292:  23%|██▎       | 12/52 [00:00<00:00, 113.41it/s]
+Epoch 121 Step 6292:  62%|██████▏   | 32/52 [00:00<00:00, 163.09it/s]
+Epoch 121 Step 6292: 100%|██████████| 52/52 [00:00<00:00, 186.23it/s]
+(val) -0.496 (test) -0.501 (loss) 0.16880
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:49.500487
+System.Management.Automation.RemoteException
+Epoch 122 Step 6344:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 122 Step 6344:  33%|███▎      | 17/52 [00:00<00:00, 163.48it/s]
+Epoch 122 Step 6344:  73%|███████▎  | 38/52 [00:00<00:00, 187.69it/s]
+Epoch 122 Step 6344: 100%|██████████| 52/52 [00:00<00:00, 189.27it/s]
+(val) -0.498 (test) -0.503 (loss) 0.16750
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:49.804793
+System.Management.Automation.RemoteException
+Epoch 123 Step 6396:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 123 Step 6396:  21%|██        | 11/52 [00:00<00:00, 103.23it/s]
+Epoch 123 Step 6396:  44%|████▍     | 23/52 [00:00<00:00, 111.11it/s]
+Epoch 123 Step 6396:  69%|██████▉   | 36/52 [00:00<00:00, 116.52it/s]
+Epoch 123 Step 6396:  96%|█████████▌| 50/52 [00:00<00:00, 124.86it/s]
+Epoch 123 Step 6396: 100%|██████████| 52/52 [00:00<00:00, 121.77it/s]
+(val) -0.501 (test) -0.505 (loss) 0.16526
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:50.261252
+System.Management.Automation.RemoteException
+Epoch 124 Step 6448:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 124 Step 6448:  29%|██▉       | 15/52 [00:00<00:00, 142.29it/s]
+Epoch 124 Step 6448:  71%|███████   | 37/52 [00:00<00:00, 183.84it/s]
+Epoch 124 Step 6448: 100%|██████████| 52/52 [00:00<00:00, 179.66it/s]
+(val) -0.494 (test) -0.500 (loss) 0.16521
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:50.601928
+System.Management.Automation.RemoteException
+Epoch 125 Step 6500:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 125 Step 6500:  29%|██▉       | 15/52 [00:00<00:00, 148.76it/s]
+Epoch 125 Step 6500:  67%|██████▋   | 35/52 [00:00<00:00, 175.52it/s]
+Epoch 125 Step 6500: 100%|██████████| 52/52 [00:00<00:00, 190.25it/s]
+(val) -0.497 (test) -0.501 (loss) 0.16454
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:50.898878
+System.Management.Automation.RemoteException
+Epoch 126 Step 6552:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 126 Step 6552:  25%|██▌       | 13/52 [00:00<00:00, 125.01it/s]
+Epoch 126 Step 6552:  60%|█████▉    | 31/52 [00:00<00:00, 151.81it/s]
+Epoch 126 Step 6552:  90%|█████████ | 47/52 [00:00<00:00, 150.50it/s]
+Epoch 126 Step 6552: 100%|██████████| 52/52 [00:00<00:00, 151.19it/s]
+(val) -0.496 (test) -0.502 (loss) 0.16652
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:51.279388
+System.Management.Automation.RemoteException
+Epoch 127 Step 6604:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 127 Step 6604:  27%|██▋       | 14/52 [00:00<00:00, 135.32it/s]
+Epoch 127 Step 6604:  58%|█████▊    | 30/52 [00:00<00:00, 148.98it/s]
+Epoch 127 Step 6604: 100%|██████████| 52/52 [00:00<00:00, 177.21it/s]
+(val) -0.495 (test) -0.503 (loss) 0.16414
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:51.596723
+System.Management.Automation.RemoteException
+Epoch 128 Step 6656:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 128 Step 6656:  23%|██▎       | 12/52 [00:00<00:00, 114.97it/s]
+Epoch 128 Step 6656:  54%|█████▍    | 28/52 [00:00<00:00, 137.38it/s]
+Epoch 128 Step 6656:  96%|█████████▌| 50/52 [00:00<00:00, 171.68it/s]
+Epoch 128 Step 6656: 100%|██████████| 52/52 [00:00<00:00, 162.10it/s]
+(val) -0.493 (test) -0.499 (loss) 0.16408
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:51.964067
+System.Management.Automation.RemoteException
+Epoch 129 Step 6708:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 129 Step 6708:  27%|██▋       | 14/52 [00:00<00:00, 136.52it/s]
+Epoch 129 Step 6708:  60%|█████▉    | 31/52 [00:00<00:00, 153.74it/s]
+Epoch 129 Step 6708: 100%|██████████| 52/52 [00:00<00:00, 179.35it/s]
+(val) -0.497 (test) -0.502 (loss) 0.16507
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:52.283330
+System.Management.Automation.RemoteException
+Epoch 130 Step 6760:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 130 Step 6760:  25%|██▌       | 13/52 [00:00<00:00, 125.01it/s]
+Epoch 130 Step 6760:  54%|█████▍    | 28/52 [00:00<00:00, 136.19it/s]
+Epoch 130 Step 6760:  88%|████████▊ | 46/52 [00:00<00:00, 151.18it/s]
+Epoch 130 Step 6760: 100%|██████████| 52/52 [00:00<00:00, 147.19it/s]
+(val) -0.494 (test) -0.498 (loss) 0.16355
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:52.671701
+System.Management.Automation.RemoteException
+Epoch 131 Step 6812:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 131 Step 6812:  27%|██▋       | 14/52 [00:00<00:00, 129.66it/s]
+Epoch 131 Step 6812:  52%|█████▏    | 27/52 [00:00<00:00, 124.65it/s]
+Epoch 131 Step 6812:  81%|████████  | 42/52 [00:00<00:00, 133.94it/s]
+Epoch 131 Step 6812: 100%|██████████| 52/52 [00:00<00:00, 137.34it/s]
+(val) -0.497 (test) -0.502 (loss) 0.16272
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:53.086711
+System.Management.Automation.RemoteException
+Epoch 132 Step 6864:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 132 Step 6864:  25%|██▌       | 13/52 [00:00<00:00, 129.23it/s]
+Epoch 132 Step 6864:  58%|█████▊    | 30/52 [00:00<00:00, 149.60it/s]
+Epoch 132 Step 6864:  90%|█████████ | 47/52 [00:00<00:00, 156.95it/s]
+Epoch 132 Step 6864: 100%|██████████| 52/52 [00:00<00:00, 158.89it/s]
+(val) -0.496 (test) -0.501 (loss) 0.16199
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:53.453066
+System.Management.Automation.RemoteException
+Epoch 133 Step 6916:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 133 Step 6916:  21%|██        | 11/52 [00:00<00:00, 104.52it/s]
+Epoch 133 Step 6916:  48%|████▊     | 25/52 [00:00<00:00, 122.43it/s]
+Epoch 133 Step 6916:  92%|█████████▏| 48/52 [00:00<00:00, 170.15it/s]
+Epoch 133 Step 6916: 100%|██████████| 52/52 [00:00<00:00, 159.35it/s]
+(val) -0.496 (test) -0.500 (loss) 0.16172
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:53.821945
+System.Management.Automation.RemoteException
+Epoch 134 Step 6968:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 134 Step 6968:  27%|██▋       | 14/52 [00:00<00:00, 130.04it/s]
+Epoch 134 Step 6968:  60%|█████▉    | 31/52 [00:00<00:00, 152.38it/s]
+Epoch 134 Step 6968:  90%|█████████ | 47/52 [00:00<00:00, 144.19it/s]
+Epoch 134 Step 6968: 100%|██████████| 52/52 [00:00<00:00, 143.00it/s]
+(val) -0.496 (test) -0.499 (loss) 0.16170
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:54.227398
+System.Management.Automation.RemoteException
+Epoch 135 Step 7020:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 135 Step 7020:  27%|██▋       | 14/52 [00:00<00:00, 133.99it/s]
+Epoch 135 Step 7020:  60%|█████▉    | 31/52 [00:00<00:00, 154.02it/s]
+Epoch 135 Step 7020:  96%|█████████▌| 50/52 [00:00<00:00, 169.83it/s]
+Epoch 135 Step 7020: 100%|██████████| 52/52 [00:00<00:00, 164.50it/s]
+(val) -0.496 (test) -0.501 (loss) 0.16128
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:54.575326
+System.Management.Automation.RemoteException
+Epoch 136 Step 7072:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 136 Step 7072:  25%|██▌       | 13/52 [00:00<00:00, 126.88it/s]
+Epoch 136 Step 7072:  62%|██████▏   | 32/52 [00:00<00:00, 160.39it/s]
+Epoch 136 Step 7072:  94%|█████████▍| 49/52 [00:00<00:00, 164.02it/s]
+Epoch 136 Step 7072: 100%|██████████| 52/52 [00:00<00:00, 162.03it/s]
+(val) -0.495 (test) -0.499 (loss) 0.16135
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:54.932352
+System.Management.Automation.RemoteException
+Epoch 137 Step 7124:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 137 Step 7124:  23%|██▎       | 12/52 [00:00<00:00, 115.93it/s]
+Epoch 137 Step 7124:  52%|█████▏    | 27/52 [00:00<00:00, 133.89it/s]
+Epoch 137 Step 7124:  79%|███████▉  | 41/52 [00:00<00:00, 133.49it/s]
+Epoch 137 Step 7124: 100%|██████████| 52/52 [00:00<00:00, 137.18it/s]
+(val) -0.492 (test) -0.496 (loss) 0.16095
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:55.361417
+System.Management.Automation.RemoteException
+Epoch 138 Step 7176:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 138 Step 7176:  25%|██▌       | 13/52 [00:00<00:00, 119.63it/s]
+Epoch 138 Step 7176:  60%|█████▉    | 31/52 [00:00<00:00, 150.26it/s]
+Epoch 138 Step 7176:  92%|█████████▏| 48/52 [00:00<00:00, 158.88it/s]
+Epoch 138 Step 7176: 100%|██████████| 52/52 [00:00<00:00, 155.42it/s]
+(val) -0.497 (test) -0.502 (loss) 0.15804
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:55.732295
+System.Management.Automation.RemoteException
+Epoch 139 Step 7228:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 139 Step 7228:  29%|██▉       | 15/52 [00:00<00:00, 145.79it/s]
+Epoch 139 Step 7228:  60%|█████▉    | 31/52 [00:00<00:00, 149.02it/s]
+Epoch 139 Step 7228:  88%|████████▊ | 46/52 [00:00<00:00, 145.96it/s]
+Epoch 139 Step 7228: 100%|██████████| 52/52 [00:00<00:00, 147.48it/s]
+System.Management.Automation.RemoteException
+(val) -0.493 (test) -0.500 (loss) 0.16103
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:56.124998
+Epoch 140 Step 7280:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 140 Step 7280:  27%|██▋       | 14/52 [00:00<00:00, 135.86it/s]
+Epoch 140 Step 7280:  63%|██████▎   | 33/52 [00:00<00:00, 164.00it/s]
+Epoch 140 Step 7280:  96%|█████████▌| 50/52 [00:00<00:00, 160.99it/s]
+Epoch 140 Step 7280: 100%|██████████| 52/52 [00:00<00:00, 160.51it/s]
+(val) -0.493 (test) -0.497 (loss) 0.16018
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:56.486267
+System.Management.Automation.RemoteException
+Epoch 141 Step 7332:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 141 Step 7332:  23%|██▎       | 12/52 [00:00<00:00, 116.33it/s]
+Epoch 141 Step 7332:  63%|██████▎   | 33/52 [00:00<00:00, 166.47it/s]
+Epoch 141 Step 7332: 100%|██████████| 52/52 [00:00<00:00, 175.28it/s]
+(val) -0.492 (test) -0.498 (loss) 0.15658
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:56.811635
+System.Management.Automation.RemoteException
+Epoch 142 Step 7384:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 142 Step 7384:  27%|██▋       | 14/52 [00:00<00:00, 138.49it/s]
+Epoch 142 Step 7384:  56%|█████▌    | 29/52 [00:00<00:00, 144.42it/s]
+Epoch 142 Step 7384:  87%|████████▋ | 45/52 [00:00<00:00, 150.30it/s]
+Epoch 142 Step 7384: 100%|██████████| 52/52 [00:00<00:00, 152.58it/s]
+(val) -0.491 (test) -0.497 (loss) 0.16013
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:57.199211
+System.Management.Automation.RemoteException
+Epoch 143 Step 7436:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 143 Step 7436:  27%|██▋       | 14/52 [00:00<00:00, 137.87it/s]
+Epoch 143 Step 7436:  67%|██████▋   | 35/52 [00:00<00:00, 178.16it/s]
+Epoch 143 Step 7436: 100%|██████████| 52/52 [00:00<00:00, 200.86it/s]
+(val) -0.492 (test) -0.496 (loss) 0.16012
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:57.491361
+System.Management.Automation.RemoteException
+Epoch 144 Step 7488:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 144 Step 7488:  27%|██▋       | 14/52 [00:00<00:00, 132.24it/s]
+Epoch 144 Step 7488:  56%|█████▌    | 29/52 [00:00<00:00, 139.52it/s]
+Epoch 144 Step 7488:  90%|█████████ | 47/52 [00:00<00:00, 155.11it/s]
+Epoch 144 Step 7488: 100%|██████████| 52/52 [00:00<00:00, 154.28it/s]
+(val) -0.493 (test) -0.499 (loss) 0.15887
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:57.862763
+System.Management.Automation.RemoteException
+Epoch 145 Step 7540:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 145 Step 7540:  25%|██▌       | 13/52 [00:00<00:00, 129.19it/s]
+Epoch 145 Step 7540:  54%|█████▍    | 28/52 [00:00<00:00, 139.23it/s]
+Epoch 145 Step 7540:  81%|████████  | 42/52 [00:00<00:00, 139.27it/s]
+Epoch 145 Step 7540: 100%|██████████| 52/52 [00:00<00:00, 144.78it/s]
+(val) -0.492 (test) -0.498 (loss) 0.15912
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:58.265098
+System.Management.Automation.RemoteException
+Epoch 146 Step 7592:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 146 Step 7592:  25%|██▌       | 13/52 [00:00<00:00, 122.63it/s]
+Epoch 146 Step 7592:  67%|██████▋   | 35/52 [00:00<00:00, 174.46it/s]
+Epoch 146 Step 7592: 100%|██████████| 52/52 [00:00<00:00, 161.68it/s]
+(val) -0.494 (test) -0.498 (loss) 0.16153
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:58.632728
+System.Management.Automation.RemoteException
+Epoch 147 Step 7644:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 147 Step 7644:  23%|██▎       | 12/52 [00:00<00:00, 115.39it/s]
+Epoch 147 Step 7644:  54%|█████▍    | 28/52 [00:00<00:00, 141.09it/s]
+Epoch 147 Step 7644:  87%|████████▋ | 45/52 [00:00<00:00, 150.51it/s]
+Epoch 147 Step 7644: 100%|██████████| 52/52 [00:00<00:00, 147.28it/s]
+(val) -0.494 (test) -0.502 (loss) 0.15854
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:59.019870
+System.Management.Automation.RemoteException
+Epoch 148 Step 7696:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 148 Step 7696:  23%|██▎       | 12/52 [00:00<00:00, 113.04it/s]
+Epoch 148 Step 7696:  52%|█████▏    | 27/52 [00:00<00:00, 131.70it/s]
+Epoch 148 Step 7696:  87%|████████▋ | 45/52 [00:00<00:00, 153.11it/s]
+Epoch 148 Step 7696: 100%|██████████| 52/52 [00:00<00:00, 150.92it/s]
+(val) -0.491 (test) -0.497 (loss) 0.15830
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:59.407838
+System.Management.Automation.RemoteException
+Epoch 149 Step 7748:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 149 Step 7748:  27%|██▋       | 14/52 [00:00<00:00, 139.87it/s]
+Epoch 149 Step 7748:  62%|██████▏   | 32/52 [00:00<00:00, 162.35it/s]
+Epoch 149 Step 7748:  94%|█████████▍| 49/52 [00:00<00:00, 147.93it/s]
+Epoch 149 Step 7748: 100%|██████████| 52/52 [00:00<00:00, 146.19it/s]
+(val) -0.495 (test) -0.498 (loss) 0.15812
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:00:59.800880
+System.Management.Automation.RemoteException
+Epoch 150 Step 7800:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 150 Step 7800:  29%|██▉       | 15/52 [00:00<00:00, 143.14it/s]
+Epoch 150 Step 7800:  60%|█████▉    | 31/52 [00:00<00:00, 148.66it/s]
+Epoch 150 Step 7800:  88%|████████▊ | 46/52 [00:00<00:00, 147.08it/s]
+Epoch 150 Step 7800: 100%|██████████| 52/52 [00:00<00:00, 151.17it/s]
+(val) -0.493 (test) -0.497 (loss) 0.15726
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:00.184338
+System.Management.Automation.RemoteException
+Epoch 151 Step 7852:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 151 Step 7852:  27%|██▋       | 14/52 [00:00<00:00, 137.97it/s]
+Epoch 151 Step 7852:  60%|█████▉    | 31/52 [00:00<00:00, 156.05it/s]
+Epoch 151 Step 7852: 100%|██████████| 52/52 [00:00<00:00, 180.42it/s]
+Epoch 151 Step 7852: 100%|██████████| 52/52 [00:00<00:00, 171.42it/s]
+(val) -0.491 (test) -0.498 (loss) 0.15748
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:00.528510
+System.Management.Automation.RemoteException
+Epoch 152 Step 7904:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 152 Step 7904:  21%|██        | 11/52 [00:00<00:00, 108.77it/s]
+Epoch 152 Step 7904:  50%|█████     | 26/52 [00:00<00:00, 130.75it/s]
+Epoch 152 Step 7904:  81%|████████  | 42/52 [00:00<00:00, 143.23it/s]
+Epoch 152 Step 7904: 100%|██████████| 52/52 [00:00<00:00, 139.23it/s]
+(val) -0.489 (test) -0.495 (loss) 0.15635
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:00.959798
+System.Management.Automation.RemoteException
+Epoch 153 Step 7956:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 153 Step 7956:  29%|██▉       | 15/52 [00:00<00:00, 148.54it/s]
+Epoch 153 Step 7956:  63%|██████▎   | 33/52 [00:00<00:00, 163.59it/s]
+Epoch 153 Step 7956: 100%|██████████| 52/52 [00:00<00:00, 173.39it/s]
+Epoch 153 Step 7956: 100%|██████████| 52/52 [00:00<00:00, 168.72it/s]
+(val) -0.492 (test) -0.498 (loss) 0.15499
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:01.298448
+System.Management.Automation.RemoteException
+Epoch 154 Step 8008:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 154 Step 8008:  21%|██        | 11/52 [00:00<00:00, 107.11it/s]
+Epoch 154 Step 8008:  46%|████▌     | 24/52 [00:00<00:00, 119.59it/s]
+Epoch 154 Step 8008:  75%|███████▌  | 39/52 [00:00<00:00, 132.17it/s]
+Epoch 154 Step 8008: 100%|██████████| 52/52 [00:00<00:00, 133.67it/s]
+(val) -0.491 (test) -0.495 (loss) 0.15637
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:01.721672
+System.Management.Automation.RemoteException
+Epoch 155 Step 8060:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 155 Step 8060:  25%|██▌       | 13/52 [00:00<00:00, 122.31it/s]
+Epoch 155 Step 8060:  58%|█████▊    | 30/52 [00:00<00:00, 149.36it/s]
+Epoch 155 Step 8060:  96%|█████████▌| 50/52 [00:00<00:00, 169.51it/s]
+Epoch 155 Step 8060: 100%|██████████| 52/52 [00:00<00:00, 162.95it/s]
+(val) -0.493 (test) -0.498 (loss) 0.15533
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:02.073376
+System.Management.Automation.RemoteException
+Epoch 156 Step 8112:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 156 Step 8112:  27%|██▋       | 14/52 [00:00<00:00, 134.92it/s]
+Epoch 156 Step 8112:  60%|█████▉    | 31/52 [00:00<00:00, 154.01it/s]
+Epoch 156 Step 8112:  96%|█████████▌| 50/52 [00:00<00:00, 167.67it/s]
+Epoch 156 Step 8112: 100%|██████████| 52/52 [00:00<00:00, 163.49it/s]
+(val) -0.490 (test) -0.496 (loss) 0.15647
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:02.430557
+System.Management.Automation.RemoteException
+Epoch 157 Step 8164:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 157 Step 8164:  23%|██▎       | 12/52 [00:00<00:00, 117.83it/s]
+Epoch 157 Step 8164:  60%|█████▉    | 31/52 [00:00<00:00, 159.35it/s]
+Epoch 157 Step 8164:  92%|█████████▏| 48/52 [00:00<00:00, 161.68it/s]
+Epoch 157 Step 8164: 100%|██████████| 52/52 [00:00<00:00, 159.64it/s]
+(val) -0.491 (test) -0.496 (loss) 0.15471
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:02.793421
+System.Management.Automation.RemoteException
+Epoch 158 Step 8216:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 158 Step 8216:  29%|██▉       | 15/52 [00:00<00:00, 137.83it/s]
+Epoch 158 Step 8216:  62%|██████▏   | 32/52 [00:00<00:00, 150.25it/s]
+Epoch 158 Step 8216:  96%|█████████▌| 50/52 [00:00<00:00, 159.41it/s]
+Epoch 158 Step 8216: 100%|██████████| 52/52 [00:00<00:00, 157.46it/s]
+(val) -0.490 (test) -0.493 (loss) 0.15745
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:03.160252
+System.Management.Automation.RemoteException
+Epoch 159 Step 8268:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 159 Step 8268:  25%|██▌       | 13/52 [00:00<00:00, 120.59it/s]
+Epoch 159 Step 8268:  60%|█████▉    | 31/52 [00:00<00:00, 153.30it/s]
+Epoch 159 Step 8268:  96%|█████████▌| 50/52 [00:00<00:00, 167.97it/s]
+Epoch 159 Step 8268: 100%|██████████| 52/52 [00:00<00:00, 162.41it/s]
+(val) -0.492 (test) -0.495 (loss) 0.15624
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:03.512561
+System.Management.Automation.RemoteException
+Epoch 160 Step 8320:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 160 Step 8320:  25%|██▌       | 13/52 [00:00<00:00, 128.41it/s]
+Epoch 160 Step 8320:  58%|█████▊    | 30/52 [00:00<00:00, 152.08it/s]
+Epoch 160 Step 8320:  90%|█████████ | 47/52 [00:00<00:00, 157.23it/s]
+Epoch 160 Step 8320: 100%|██████████| 52/52 [00:00<00:00, 156.14it/s]
+(val) -0.490 (test) -0.495 (loss) 0.15608
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:03.881812
+System.Management.Automation.RemoteException
+Epoch 161 Step 8372:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 161 Step 8372:  27%|██▋       | 14/52 [00:00<00:00, 139.87it/s]
+Epoch 161 Step 8372:  60%|█████▉    | 31/52 [00:00<00:00, 156.07it/s]
+Epoch 161 Step 8372:  94%|█████████▍| 49/52 [00:00<00:00, 165.86it/s]
+Epoch 161 Step 8372: 100%|██████████| 52/52 [00:00<00:00, 164.18it/s]
+(val) -0.489 (test) -0.492 (loss) 0.15360
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:04.235727
+System.Management.Automation.RemoteException
+Epoch 162 Step 8424:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 162 Step 8424:  27%|██▋       | 14/52 [00:00<00:00, 137.68it/s]
+Epoch 162 Step 8424:  65%|██████▌   | 34/52 [00:00<00:00, 170.16it/s]
+Epoch 162 Step 8424:  98%|█████████▊| 51/52 [00:00<00:00, 163.02it/s]
+Epoch 162 Step 8424: 100%|██████████| 52/52 [00:00<00:00, 162.58it/s]
+(val) -0.490 (test) -0.497 (loss) 0.15238
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:04.587169
+System.Management.Automation.RemoteException
+Epoch 163 Step 8476:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 163 Step 8476:  35%|███▍      | 18/52 [00:00<00:00, 175.16it/s]
+Epoch 163 Step 8476:  71%|███████   | 37/52 [00:00<00:00, 181.57it/s]
+Epoch 163 Step 8476: 100%|██████████| 52/52 [00:00<00:00, 192.17it/s]
+(val) -0.489 (test) -0.493 (loss) 0.15183
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:04.901883
+System.Management.Automation.RemoteException
+Epoch 164 Step 8528:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 164 Step 8528:  25%|██▌       | 13/52 [00:00<00:00, 126.82it/s]
+Epoch 164 Step 8528:  62%|██████▏   | 32/52 [00:00<00:00, 157.81it/s]
+Epoch 164 Step 8528:  94%|█████████▍| 49/52 [00:00<00:00, 162.82it/s]
+Epoch 164 Step 8528: 100%|██████████| 52/52 [00:00<00:00, 161.23it/s]
+System.Management.Automation.RemoteException
+(val) -0.489 (test) -0.493 (loss) 0.15407
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:05.260128
+Epoch 165 Step 8580:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 165 Step 8580:  25%|██▌       | 13/52 [00:00<00:00, 126.61it/s]
+Epoch 165 Step 8580:  60%|█████▉    | 31/52 [00:00<00:00, 151.60it/s]
+Epoch 165 Step 8580:  94%|█████████▍| 49/52 [00:00<00:00, 162.22it/s]
+Epoch 165 Step 8580: 100%|██████████| 52/52 [00:00<00:00, 158.34it/s]
+(val) -0.491 (test) -0.497 (loss) 0.15371
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:05.622088
+System.Management.Automation.RemoteException
+Epoch 166 Step 8632:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 166 Step 8632:  21%|██        | 11/52 [00:00<00:00, 108.59it/s]
+Epoch 166 Step 8632:  50%|█████     | 26/52 [00:00<00:00, 131.63it/s]
+Epoch 166 Step 8632:  79%|███████▉  | 41/52 [00:00<00:00, 136.64it/s]
+Epoch 166 Step 8632: 100%|██████████| 52/52 [00:00<00:00, 134.97it/s]
+(val) -0.489 (test) -0.490 (loss) 0.15345
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:06.051312
+System.Management.Automation.RemoteException
+Epoch 167 Step 8684:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 167 Step 8684:  25%|██▌       | 13/52 [00:00<00:00, 119.77it/s]
+Epoch 167 Step 8684:  60%|█████▉    | 31/52 [00:00<00:00, 151.31it/s]
+Epoch 167 Step 8684:  96%|█████████▌| 50/52 [00:00<00:00, 166.72it/s]
+Epoch 167 Step 8684: 100%|██████████| 52/52 [00:00<00:00, 161.42it/s]
+(val) -0.489 (test) -0.490 (loss) 0.15347
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:06.400593
+System.Management.Automation.RemoteException
+Epoch 168 Step 8736:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 168 Step 8736:  23%|██▎       | 12/52 [00:00<00:00, 111.42it/s]
+Epoch 168 Step 8736:  52%|█████▏    | 27/52 [00:00<00:00, 132.27it/s]
+Epoch 168 Step 8736:  85%|████████▍ | 44/52 [00:00<00:00, 144.58it/s]
+Epoch 168 Step 8736: 100%|██████████| 52/52 [00:00<00:00, 139.12it/s]
+(val) -0.489 (test) -0.495 (loss) 0.15178
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:06.806513
+System.Management.Automation.RemoteException
+Epoch 169 Step 8788:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 169 Step 8788:  23%|██▎       | 12/52 [00:00<00:00, 112.82it/s]
+Epoch 169 Step 8788:  48%|████▊     | 25/52 [00:00<00:00, 117.55it/s]
+Epoch 169 Step 8788:  83%|████████▎ | 43/52 [00:00<00:00, 138.36it/s]
+Epoch 169 Step 8788: 100%|██████████| 52/52 [00:00<00:00, 136.61it/s]
+(val) -0.489 (test) -0.494 (loss) 0.15173
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:07.217748
+System.Management.Automation.RemoteException
+Epoch 170 Step 8840:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 170 Step 8840:  23%|██▎       | 12/52 [00:00<00:00, 116.40it/s]
+Epoch 170 Step 8840:  56%|█████▌    | 29/52 [00:00<00:00, 143.49it/s]
+Epoch 170 Step 8840:  88%|████████▊ | 46/52 [00:00<00:00, 154.50it/s]
+Epoch 170 Step 8840: 100%|██████████| 52/52 [00:00<00:00, 153.28it/s]
+(val) -0.486 (test) -0.493 (loss) 0.15126
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:07.606284
+System.Management.Automation.RemoteException
+Epoch 171 Step 8892:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 171 Step 8892:  31%|███       | 16/52 [00:00<00:00, 158.63it/s]
+Epoch 171 Step 8892:  67%|██████▋   | 35/52 [00:00<00:00, 176.28it/s]
+Epoch 171 Step 8892: 100%|██████████| 52/52 [00:00<00:00, 173.65it/s]
+(val) -0.488 (test) -0.492 (loss) 0.15326
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:07.939752
+System.Management.Automation.RemoteException
+Epoch 172 Step 8944:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 172 Step 8944:  27%|██▋       | 14/52 [00:00<00:00, 139.62it/s]
+Epoch 172 Step 8944:  60%|█████▉    | 31/52 [00:00<00:00, 150.80it/s]
+Epoch 172 Step 8944:  90%|█████████ | 47/52 [00:00<00:00, 148.37it/s]
+Epoch 172 Step 8944: 100%|██████████| 52/52 [00:00<00:00, 151.72it/s]
+(val) -0.486 (test) -0.491 (loss) 0.15401
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:08.338183
+System.Management.Automation.RemoteException
+Epoch 173 Step 8996:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 173 Step 8996:  27%|██▋       | 14/52 [00:00<00:00, 135.39it/s]
+Epoch 173 Step 8996:  63%|██████▎   | 33/52 [00:00<00:00, 165.99it/s]
+Epoch 173 Step 8996: 100%|██████████| 52/52 [00:00<00:00, 177.05it/s]
+(val) -0.486 (test) -0.492 (loss) 0.15057
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:08.660247
+System.Management.Automation.RemoteException
+Epoch 174 Step 9048:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 174 Step 9048:  23%|██▎       | 12/52 [00:00<00:00, 117.12it/s]
+Epoch 174 Step 9048:  60%|█████▉    | 31/52 [00:00<00:00, 156.85it/s]
+Epoch 174 Step 9048:  90%|█████████ | 47/52 [00:00<00:00, 140.54it/s]
+Epoch 174 Step 9048: 100%|██████████| 52/52 [00:00<00:00, 141.05it/s]
+(val) -0.489 (test) -0.494 (loss) 0.15196
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:09.068797
+System.Management.Automation.RemoteException
+Epoch 175 Step 9100:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 175 Step 9100:  23%|██▎       | 12/52 [00:00<00:00, 117.36it/s]
+Epoch 175 Step 9100:  58%|█████▊    | 30/52 [00:00<00:00, 150.16it/s]
+Epoch 175 Step 9100:  88%|████████▊ | 46/52 [00:00<00:00, 153.72it/s]
+Epoch 175 Step 9100: 100%|██████████| 52/52 [00:00<00:00, 151.15it/s]
+(val) -0.490 (test) -0.493 (loss) 0.15223
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:09.450964
+System.Management.Automation.RemoteException
+Epoch 176 Step 9152:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 176 Step 9152:  23%|██▎       | 12/52 [00:00<00:00, 111.67it/s]
+Epoch 176 Step 9152:  52%|█████▏    | 27/52 [00:00<00:00, 132.96it/s]
+Epoch 176 Step 9152:  81%|████████  | 42/52 [00:00<00:00, 136.93it/s]
+Epoch 176 Step 9152: 100%|██████████| 52/52 [00:00<00:00, 136.26it/s]
+(val) -0.488 (test) -0.494 (loss) 0.15128
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:09.875165
+System.Management.Automation.RemoteException
+Epoch 177 Step 9204:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 177 Step 9204:  21%|██        | 11/52 [00:00<00:00, 105.12it/s]
+Epoch 177 Step 9204:  48%|████▊     | 25/52 [00:00<00:00, 120.37it/s]
+Epoch 177 Step 9204:  81%|████████  | 42/52 [00:00<00:00, 142.23it/s]
+Epoch 177 Step 9204: 100%|██████████| 52/52 [00:00<00:00, 143.54it/s]
+(val) -0.488 (test) -0.490 (loss) 0.15100
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:10.274252
+System.Management.Automation.RemoteException
+Epoch 178 Step 9256:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 178 Step 9256:  25%|██▌       | 13/52 [00:00<00:00, 128.66it/s]
+Epoch 178 Step 9256:  56%|█████▌    | 29/52 [00:00<00:00, 143.94it/s]
+Epoch 178 Step 9256:  87%|████████▋ | 45/52 [00:00<00:00, 148.00it/s]
+Epoch 178 Step 9256: 100%|██████████| 52/52 [00:00<00:00, 141.85it/s]
+(val) -0.489 (test) -0.491 (loss) 0.15073
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:10.681835
+System.Management.Automation.RemoteException
+Epoch 179 Step 9308:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 179 Step 9308:  23%|██▎       | 12/52 [00:00<00:00, 114.91it/s]
+Epoch 179 Step 9308:  58%|█████▊    | 30/52 [00:00<00:00, 151.50it/s]
+Epoch 179 Step 9308: 100%|██████████| 52/52 [00:00<00:00, 183.18it/s]
+(val) -0.493 (test) -0.497 (loss) 0.15003
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:10.999929
+System.Management.Automation.RemoteException
+Epoch 180 Step 9360:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 180 Step 9360:  31%|███       | 16/52 [00:00<00:00, 154.24it/s]
+Epoch 180 Step 9360:  62%|██████▏   | 32/52 [00:00<00:00, 146.51it/s]
+Epoch 180 Step 9360: 100%|██████████| 52/52 [00:00<00:00, 164.75it/s]
+(val) -0.486 (test) -0.494 (loss) 0.14927
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:11.347148
+System.Management.Automation.RemoteException
+Epoch 181 Step 9412:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 181 Step 9412:  27%|██▋       | 14/52 [00:00<00:00, 139.54it/s]
+Epoch 181 Step 9412:  54%|█████▍    | 28/52 [00:00<00:00, 129.55it/s]
+Epoch 181 Step 9412:  90%|█████████ | 47/52 [00:00<00:00, 150.11it/s]
+Epoch 181 Step 9412: 100%|██████████| 52/52 [00:00<00:00, 144.24it/s]
+(val) -0.489 (test) -0.492 (loss) 0.15052
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:11.752047
+System.Management.Automation.RemoteException
+Epoch 182 Step 9464:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 182 Step 9464:  29%|██▉       | 15/52 [00:00<00:00, 142.55it/s]
+Epoch 182 Step 9464:  65%|██████▌   | 34/52 [00:00<00:00, 167.50it/s]
+Epoch 182 Step 9464:  98%|█████████▊| 51/52 [00:00<00:00, 167.37it/s]
+Epoch 182 Step 9464: 100%|██████████| 52/52 [00:00<00:00, 164.78it/s]
+(val) -0.487 (test) -0.492 (loss) 0.14854
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:12.098359
+System.Management.Automation.RemoteException
+Epoch 183 Step 9516:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 183 Step 9516:  27%|██▋       | 14/52 [00:00<00:00, 136.41it/s]
+Epoch 183 Step 9516:  58%|█████▊    | 30/52 [00:00<00:00, 147.70it/s]
+Epoch 183 Step 9516:  90%|█████████ | 47/52 [00:00<00:00, 156.76it/s]
+Epoch 183 Step 9516: 100%|██████████| 52/52 [00:00<00:00, 154.24it/s]
+(val) -0.492 (test) -0.496 (loss) 0.15204
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:12.464742
+System.Management.Automation.RemoteException
+Epoch 184 Step 9568:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 184 Step 9568:  25%|██▌       | 13/52 [00:00<00:00, 124.55it/s]
+Epoch 184 Step 9568:  58%|█████▊    | 30/52 [00:00<00:00, 145.89it/s]
+Epoch 184 Step 9568:  88%|████████▊ | 46/52 [00:00<00:00, 149.32it/s]
+Epoch 184 Step 9568: 100%|██████████| 52/52 [00:00<00:00, 152.41it/s]
+(val) -0.486 (test) -0.492 (loss) 0.15203
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:12.854263
+System.Management.Automation.RemoteException
+Epoch 185 Step 9620:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 185 Step 9620:  25%|██▌       | 13/52 [00:00<00:00, 121.79it/s]
+Epoch 185 Step 9620:  54%|█████▍    | 28/52 [00:00<00:00, 136.82it/s]
+Epoch 185 Step 9620:  87%|████████▋ | 45/52 [00:00<00:00, 147.34it/s]
+Epoch 185 Step 9620: 100%|██████████| 52/52 [00:00<00:00, 143.29it/s]
+(val) -0.486 (test) -0.491 (loss) 0.14834
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:13.270192
+System.Management.Automation.RemoteException
+Epoch 186 Step 9672:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 186 Step 9672:  23%|██▎       | 12/52 [00:00<00:00, 116.26it/s]
+Epoch 186 Step 9672:  52%|█████▏    | 27/52 [00:00<00:00, 134.56it/s]
+Epoch 186 Step 9672:  87%|████████▋ | 45/52 [00:00<00:00, 152.82it/s]
+Epoch 186 Step 9672: 100%|██████████| 52/52 [00:00<00:00, 147.05it/s]
+(val) -0.484 (test) -0.490 (loss) 0.14726
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:13.679540
+System.Management.Automation.RemoteException
+Epoch 187 Step 9724:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 187 Step 9724:  25%|██▌       | 13/52 [00:00<00:00, 122.73it/s]
+Epoch 187 Step 9724:  58%|█████▊    | 30/52 [00:00<00:00, 148.04it/s]
+Epoch 187 Step 9724:  87%|████████▋ | 45/52 [00:00<00:00, 146.90it/s]
+Epoch 187 Step 9724: 100%|██████████| 52/52 [00:00<00:00, 142.56it/s]
+(val) -0.489 (test) -0.492 (loss) 0.14842
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:14.085666
+System.Management.Automation.RemoteException
+Epoch 188 Step 9776:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 188 Step 9776:  25%|██▌       | 13/52 [00:00<00:00, 127.81it/s]
+Epoch 188 Step 9776:  56%|█████▌    | 29/52 [00:00<00:00, 143.20it/s]
+Epoch 188 Step 9776:  96%|█████████▌| 50/52 [00:00<00:00, 171.11it/s]
+Epoch 188 Step 9776: 100%|██████████| 52/52 [00:00<00:00, 164.28it/s]
+(val) -0.485 (test) -0.492 (loss) 0.14818
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:14.432643
+System.Management.Automation.RemoteException
+Epoch 189 Step 9828:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 189 Step 9828:  25%|██▌       | 13/52 [00:00<00:00, 124.98it/s]
+Epoch 189 Step 9828:  52%|█████▏    | 27/52 [00:00<00:00, 128.08it/s]
+Epoch 189 Step 9828:  85%|████████▍ | 44/52 [00:00<00:00, 145.59it/s]
+Epoch 189 Step 9828: 100%|██████████| 52/52 [00:00<00:00, 144.22it/s]
+(val) -0.488 (test) -0.493 (loss) 0.14879
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:14.827283
+System.Management.Automation.RemoteException
+Epoch 190 Step 9880:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 190 Step 9880:  27%|██▋       | 14/52 [00:00<00:00, 131.09it/s]
+Epoch 190 Step 9880:  56%|█████▌    | 29/52 [00:00<00:00, 140.57it/s]
+Epoch 190 Step 9880:  88%|████████▊ | 46/52 [00:00<00:00, 150.43it/s]
+Epoch 190 Step 9880: 100%|██████████| 52/52 [00:00<00:00, 149.25it/s]
+(val) -0.488 (test) -0.492 (loss) 0.14791
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:15.207600
+System.Management.Automation.RemoteException
+Epoch 191 Step 9932:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 191 Step 9932:  25%|██▌       | 13/52 [00:00<00:00, 122.83it/s]
+Epoch 191 Step 9932:  58%|█████▊    | 30/52 [00:00<00:00, 146.71it/s]
+Epoch 191 Step 9932:  88%|████████▊ | 46/52 [00:00<00:00, 151.89it/s]
+Epoch 191 Step 9932: 100%|██████████| 52/52 [00:00<00:00, 148.60it/s]
+(val) -0.485 (test) -0.491 (loss) 0.14767
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:15.591584
+System.Management.Automation.RemoteException
+Epoch 192 Step 9984:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 192 Step 9984:  25%|██▌       | 13/52 [00:00<00:00, 121.82it/s]
+Epoch 192 Step 9984:  56%|█████▌    | 29/52 [00:00<00:00, 141.00it/s]
+Epoch 192 Step 9984:  85%|████████▍ | 44/52 [00:00<00:00, 142.87it/s]
+Epoch 192 Step 9984: 100%|██████████| 52/52 [00:00<00:00, 150.06it/s]
+(val) -0.488 (test) -0.495 (loss) 0.14835
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:15.963971
+System.Management.Automation.RemoteException
+Epoch 193 Step 10036:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 193 Step 10036:  25%|██▌       | 13/52 [00:00<00:00, 126.71it/s]
+Epoch 193 Step 10036:  52%|█████▏    | 27/52 [00:00<00:00, 129.52it/s]
+Epoch 193 Step 10036:  88%|████████▊ | 46/52 [00:00<00:00, 150.89it/s]
+Epoch 193 Step 10036: 100%|██████████| 52/52 [00:00<00:00, 153.18it/s]
+(val) -0.488 (test) -0.492 (loss) 0.14739
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:16.341282
+System.Management.Automation.RemoteException
+Epoch 194 Step 10088:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 194 Step 10088:  25%|██▌       | 13/52 [00:00<00:00, 123.92it/s]
+Epoch 194 Step 10088:  54%|█████▍    | 28/52 [00:00<00:00, 137.32it/s]
+Epoch 194 Step 10088:  87%|████████▋ | 45/52 [00:00<00:00, 150.50it/s]
+Epoch 194 Step 10088: 100%|██████████| 52/52 [00:00<00:00, 151.97it/s]
+(val) -0.493 (test) -0.499 (loss) 0.14634
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:16.719661
+System.Management.Automation.RemoteException
+Epoch 195 Step 10140:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 195 Step 10140:  23%|██▎       | 12/52 [00:00<00:00, 112.31it/s]
+Epoch 195 Step 10140:  58%|█████▊    | 30/52 [00:00<00:00, 149.33it/s]
+Epoch 195 Step 10140:  90%|█████████ | 47/52 [00:00<00:00, 157.20it/s]
+Epoch 195 Step 10140: 100%|██████████| 52/52 [00:00<00:00, 149.55it/s]
+(val) -0.489 (test) -0.493 (loss) 0.14740
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:17.102946
+System.Management.Automation.RemoteException
+Epoch 196 Step 10192:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 196 Step 10192:  25%|██▌       | 13/52 [00:00<00:00, 121.33it/s]
+Epoch 196 Step 10192:  58%|█████▊    | 30/52 [00:00<00:00, 148.87it/s]
+Epoch 196 Step 10192: 100%|██████████| 52/52 [00:00<00:00, 175.97it/s]
+Epoch 196 Step 10192: 100%|██████████| 52/52 [00:00<00:00, 165.29it/s]
+(val) -0.483 (test) -0.488 (loss) 0.14798
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:17.460060
+System.Management.Automation.RemoteException
+Epoch 197 Step 10244:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 197 Step 10244:  29%|██▉       | 15/52 [00:00<00:00, 144.45it/s]
+Epoch 197 Step 10244:  60%|█████▉    | 31/52 [00:00<00:00, 152.25it/s]
+Epoch 197 Step 10244:  94%|█████████▍| 49/52 [00:00<00:00, 161.59it/s]
+Epoch 197 Step 10244: 100%|██████████| 52/52 [00:00<00:00, 160.18it/s]
+(val) -0.485 (test) -0.489 (loss) 0.14641
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:17.821544
+System.Management.Automation.RemoteException
+Epoch 198 Step 10296:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 198 Step 10296:  25%|██▌       | 13/52 [00:00<00:00, 129.96it/s]
+Epoch 198 Step 10296:  54%|█████▍    | 28/52 [00:00<00:00, 134.54it/s]
+Epoch 198 Step 10296:  81%|████████  | 42/52 [00:00<00:00, 135.26it/s]
+Epoch 198 Step 10296: 100%|██████████| 52/52 [00:00<00:00, 135.65it/s]
+(val) -0.488 (test) -0.494 (loss) 0.14765
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:18.247388
+System.Management.Automation.RemoteException
+Epoch 199 Step 10348:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 199 Step 10348:  23%|██▎       | 12/52 [00:00<00:00, 113.91it/s]
+Epoch 199 Step 10348:  56%|█████▌    | 29/52 [00:00<00:00, 142.07it/s]
+Epoch 199 Step 10348:  87%|████████▋ | 45/52 [00:00<00:00, 148.92it/s]
+Epoch 199 Step 10348: 100%|██████████| 52/52 [00:00<00:00, 150.29it/s]
+(val) -0.485 (test) -0.490 (loss) 0.14763
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:18.635338
+System.Management.Automation.RemoteException
+Epoch 200 Step 10400:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 200 Step 10400:  23%|██▎       | 12/52 [00:00<00:00, 113.04it/s]
+Epoch 200 Step 10400:  54%|█████▍    | 28/52 [00:00<00:00, 135.48it/s]
+Epoch 200 Step 10400: 100%|██████████| 52/52 [00:00<00:00, 167.74it/s]
+(val) -0.490 (test) -0.494 (loss) 0.14708
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:18.979817
+System.Management.Automation.RemoteException
+Epoch 201 Step 10452:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 201 Step 10452:  25%|██▌       | 13/52 [00:00<00:00, 128.93it/s]
+Epoch 201 Step 10452:  60%|█████▉    | 31/52 [00:00<00:00, 157.64it/s]
+Epoch 201 Step 10452: 100%|██████████| 52/52 [00:00<00:00, 177.19it/s]
+(val) -0.483 (test) -0.488 (loss) 0.14641
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:19.309444
+System.Management.Automation.RemoteException
+Epoch 202 Step 10504:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 202 Step 10504:  25%|██▌       | 13/52 [00:00<00:00, 126.70it/s]
+Epoch 202 Step 10504:  52%|█████▏    | 27/52 [00:00<00:00, 132.49it/s]
+Epoch 202 Step 10504:  83%|████████▎ | 43/52 [00:00<00:00, 143.67it/s]
+Epoch 202 Step 10504: 100%|██████████| 52/52 [00:00<00:00, 150.69it/s]
+(val) -0.487 (test) -0.493 (loss) 0.14483
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:19.684397
+System.Management.Automation.RemoteException
+Epoch 203 Step 10556:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 203 Step 10556:  23%|██▎       | 12/52 [00:00<00:00, 115.76it/s]
+Epoch 203 Step 10556:  62%|██████▏   | 32/52 [00:00<00:00, 160.68it/s]
+Epoch 203 Step 10556: 100%|██████████| 52/52 [00:00<00:00, 171.94it/s]
+(val) -0.486 (test) -0.490 (loss) 0.14606
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:20.019656
+System.Management.Automation.RemoteException
+Epoch 204 Step 10608:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 204 Step 10608:  25%|██▌       | 13/52 [00:00<00:00, 122.69it/s]
+Epoch 204 Step 10608:  50%|█████     | 26/52 [00:00<00:00, 120.98it/s]
+Epoch 204 Step 10608:  75%|███████▌  | 39/52 [00:00<00:00, 124.28it/s]
+Epoch 204 Step 10608: 100%|██████████| 52/52 [00:00<00:00, 126.23it/s]
+(val) -0.486 (test) -0.492 (loss) 0.14507
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:20.476250
+System.Management.Automation.RemoteException
+Epoch 205 Step 10660:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 205 Step 10660:  25%|██▌       | 13/52 [00:00<00:00, 124.89it/s]
+Epoch 205 Step 10660:  54%|█████▍    | 28/52 [00:00<00:00, 137.07it/s]
+Epoch 205 Step 10660:  87%|████████▋ | 45/52 [00:00<00:00, 150.42it/s]
+Epoch 205 Step 10660: 100%|██████████| 52/52 [00:00<00:00, 145.32it/s]
+(val) -0.491 (test) -0.493 (loss) 0.14541
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:20.876646
+System.Management.Automation.RemoteException
+Epoch 206 Step 10712:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 206 Step 10712:  25%|██▌       | 13/52 [00:00<00:00, 121.66it/s]
+Epoch 206 Step 10712:  56%|█████▌    | 29/52 [00:00<00:00, 137.64it/s]
+Epoch 206 Step 10712:  83%|████████▎ | 43/52 [00:00<00:00, 135.21it/s]
+Epoch 206 Step 10712: 100%|██████████| 52/52 [00:00<00:00, 137.01it/s]
+(val) -0.486 (test) -0.490 (loss) 0.14492
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:21.286448
+System.Management.Automation.RemoteException
+Epoch 207 Step 10764:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 207 Step 10764:  25%|██▌       | 13/52 [00:00<00:00, 123.43it/s]
+Epoch 207 Step 10764:  50%|█████     | 26/52 [00:00<00:00, 122.65it/s]
+Epoch 207 Step 10764:  79%|███████▉  | 41/52 [00:00<00:00, 131.59it/s]
+Epoch 207 Step 10764: 100%|██████████| 52/52 [00:00<00:00, 146.97it/s]
+(val) -0.486 (test) -0.490 (loss) 0.14477
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:21.663127
+System.Management.Automation.RemoteException
+Epoch 208 Step 10816:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 208 Step 10816:  40%|████      | 21/52 [00:00<00:00, 205.83it/s]
+Epoch 208 Step 10816:  87%|████████▋ | 45/52 [00:00<00:00, 222.79it/s]
+Epoch 208 Step 10816: 100%|██████████| 52/52 [00:00<00:00, 159.25it/s]
+(val) -0.483 (test) -0.489 (loss) 0.14771
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:22.021581
+System.Management.Automation.RemoteException
+Epoch 209 Step 10868:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 209 Step 10868:  46%|████▌     | 24/52 [00:00<00:00, 239.99it/s]
+Epoch 209 Step 10868: 100%|██████████| 52/52 [00:00<00:00, 264.74it/s]
+(val) -0.488 (test) -0.492 (loss) 0.14527
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:22.247405
+System.Management.Automation.RemoteException
+Epoch 210 Step 10920:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 210 Step 10920:  54%|█████▍    | 28/52 [00:00<00:00, 274.63it/s]
+Epoch 210 Step 10920: 100%|██████████| 52/52 [00:00<00:00, 287.36it/s]
+(val) -0.485 (test) -0.488 (loss) 0.14482
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:22.451659
+System.Management.Automation.RemoteException
+Epoch 211 Step 10972:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 211 Step 10972:  52%|█████▏    | 27/52 [00:00<00:00, 264.08it/s]
+Epoch 211 Step 10972: 100%|██████████| 52/52 [00:00<00:00, 283.31it/s]
+(val) -0.484 (test) -0.488 (loss) 0.14645
+
+[...] exp\reproduce\E2-baseline\mlp\california\1 | 0:01:22.656595
+System.Management.Automation.RemoteException
+Epoch 212 Step 11024:   0%|          | 0/52 [00:00<?, ?it/s]
+Epoch 212 Step 11024:  42%|████▏     | 22/52 [00:00<00:00, 214.91it/s]
+Epoch 212 Step 11024:  90%|█████████ | 47/52 [00:00<00:00, 232.49it/s]
+Epoch 212 Step 11024: 100%|██████████| 52/52 [00:00<00:00, 237.31it/s]
+(val) -0.487 (test) -0.491 (loss) 0.14401
+
+{'function': 'bin\\model.main',
+ 'gpus': [],
+ 'n_parameters': 45553,
+ 'scores': {'train': -0.40063110201111884,
+            'val': -0.48317381909499924,
+            'test': -0.4882959134761111},
+ 'time': '0:01:22.894340'}
+
+====================================================================================================
+[<<<] exp\reproduce\E2-baseline\mlp\california\1 | 2026-11-10 09:18:46.185483
+====================================================================================================
