@@ -1,0 +1,1088 @@
+[33m[1mRemoving the existing output[0m
+[1mUsing cached dataset: build_dataset__california__ab1828c895a3404e62f53860d501bb2a.pickle[0m
+[1mn_parameters = 45553[0m
+[1mAMP enabled: False[0m
+====================================================================================================
+[>>>] exp\reproduce\E2-baseline\mlp\california\4 | 2026-11-12 16:10:16.884179
+====================================================================================================
+
+{'seed': 4,
+ 'batch_size': 256,
+ 'patience': 16,
+ 'n_epochs': -1,
+ 'gradient_clipping_norm': 1.0,
+ 'amp': True,
+ 'data': {'cache': True, 'path': 'data/california', 'num_policy': 'noisy-quantile'},
+ 'optimizer': {'type': 'AdamW', 'lr': 0.0005635553682721966, 'weight_decay': 0.028758690586743314},
+ 'model': {'arch_type': 'plain',
+           'backbone': {'type': 'MLP',
+                        'n_blocks': 2,
+                        'd_block': 208,
+                        'dropout': 0.17186995074626696}}}
+
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:00.000389
+Epoch 0 Step 0:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 0 Step 0:  58%|█████▊    | 30/52 [00:00<00:00, 287.24it/s]Epoch 0 Step 0: 100%|██████████| 52/52 [00:00<00:00, 302.27it/s]
+(val) -0.608 (test) -0.626 (loss) 0.45520
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:00.200441
+Epoch 1 Step 52:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 1 Step 52:  62%|██████▏   | 32/52 [00:00<00:00, 319.76it/s]Epoch 1 Step 52: 100%|██████████| 52/52 [00:00<00:00, 318.14it/s]
+(val) -0.594 (test) -0.607 (loss) 0.30362
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:00.385802
+Epoch 2 Step 104:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 2 Step 104:  63%|██████▎   | 33/52 [00:00<00:00, 320.13it/s]Epoch 2 Step 104: 100%|██████████| 52/52 [00:00<00:00, 342.26it/s]
+(val) -0.580 (test) -0.599 (loss) 0.29292
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:00.571846
+Epoch 3 Step 156:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 3 Step 156:  63%|██████▎   | 33/52 [00:00<00:00, 315.00it/s]Epoch 3 Step 156: 100%|██████████| 52/52 [00:00<00:00, 345.68it/s]
+(val) -0.576 (test) -0.593 (loss) 0.28155
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:00.759651
+Epoch 4 Step 208:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 4 Step 208:  63%|██████▎   | 33/52 [00:00<00:00, 324.82it/s]Epoch 4 Step 208: 100%|██████████| 52/52 [00:00<00:00, 323.04it/s]
+(val) -0.572 (test) -0.591 (loss) 0.27891
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:00.944933
+Epoch 5 Step 260:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 5 Step 260:  67%|██████▋   | 35/52 [00:00<00:00, 320.30it/s]Epoch 5 Step 260: 100%|██████████| 52/52 [00:00<00:00, 321.85it/s]
+(val) -0.566 (test) -0.583 (loss) 0.26902
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:01.130756
+Epoch 6 Step 312:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 6 Step 312:  65%|██████▌   | 34/52 [00:00<00:00, 309.45it/s]Epoch 6 Step 312: 100%|██████████| 52/52 [00:00<00:00, 325.20it/s]
+(val) -0.568 (test) -0.586 (loss) 0.26968
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:01.317719
+Epoch 7 Step 364:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 7 Step 364:  63%|██████▎   | 33/52 [00:00<00:00, 286.10it/s]Epoch 7 Step 364: 100%|██████████| 52/52 [00:00<00:00, 290.95it/s]
+(val) -0.567 (test) -0.581 (loss) 0.26147
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:01.503685
+Epoch 8 Step 416:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 8 Step 416:  63%|██████▎   | 33/52 [00:00<00:00, 323.77it/s]Epoch 8 Step 416: 100%|██████████| 52/52 [00:00<00:00, 340.05it/s]
+(val) -0.561 (test) -0.580 (loss) 0.25987
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:01.693977
+Epoch 9 Step 468:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 9 Step 468:  65%|██████▌   | 34/52 [00:00<00:00, 318.97it/s]Epoch 9 Step 468: 100%|██████████| 52/52 [00:00<00:00, 314.99it/s]
+(val) -0.560 (test) -0.571 (loss) 0.25508
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:01.879125
+Epoch 10 Step 520:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 10 Step 520:  60%|█████▉    | 31/52 [00:00<00:00, 303.48it/s]Epoch 10 Step 520: 100%|██████████| 52/52 [00:00<00:00, 314.34it/s]
+(val) -0.556 (test) -0.573 (loss) 0.25387
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:02.071354
+Epoch 11 Step 572:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 11 Step 572:  65%|██████▌   | 34/52 [00:00<00:00, 329.46it/s]Epoch 11 Step 572: 100%|██████████| 52/52 [00:00<00:00, 341.65it/s]
+(val) -0.555 (test) -0.568 (loss) 0.25430
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:02.258509
+Epoch 12 Step 624:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 12 Step 624:  63%|██████▎   | 33/52 [00:00<00:00, 328.31it/s]Epoch 12 Step 624: 100%|██████████| 52/52 [00:00<00:00, 330.31it/s]
+(val) -0.554 (test) -0.566 (loss) 0.24695
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:02.441464
+Epoch 13 Step 676:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 13 Step 676:  71%|███████   | 37/52 [00:00<00:00, 324.86it/s]Epoch 13 Step 676: 100%|██████████| 52/52 [00:00<00:00, 346.26it/s]
+(val) -0.556 (test) -0.571 (loss) 0.24733
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:02.621725
+Epoch 14 Step 728:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 14 Step 728:  62%|██████▏   | 32/52 [00:00<00:00, 318.13it/s]Epoch 14 Step 728: 100%|██████████| 52/52 [00:00<00:00, 309.72it/s]
+(val) -0.556 (test) -0.569 (loss) 0.25036
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:02.810098
+Epoch 15 Step 780:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 15 Step 780:  69%|██████▉   | 36/52 [00:00<00:00, 310.49it/s]Epoch 15 Step 780: 100%|██████████| 52/52 [00:00<00:00, 311.57it/s]
+(val) -0.553 (test) -0.565 (loss) 0.24362
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:02.998232
+Epoch 16 Step 832:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 16 Step 832:  65%|██████▌   | 34/52 [00:00<00:00, 319.78it/s]Epoch 16 Step 832: 100%|██████████| 52/52 [00:00<00:00, 327.21it/s]
+(val) -0.550 (test) -0.561 (loss) 0.24017
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:03.182369
+Epoch 17 Step 884:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 17 Step 884:  65%|██████▌   | 34/52 [00:00<00:00, 316.17it/s]Epoch 17 Step 884: 100%|██████████| 52/52 [00:00<00:00, 329.25it/s]
+(val) -0.547 (test) -0.558 (loss) 0.24150
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:03.371656
+Epoch 18 Step 936:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 18 Step 936:  67%|██████▋   | 35/52 [00:00<00:00, 343.64it/s]Epoch 18 Step 936: 100%|██████████| 52/52 [00:00<00:00, 339.35it/s]
+(val) -0.551 (test) -0.564 (loss) 0.23771
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:03.545035
+Epoch 19 Step 988:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 19 Step 988:  67%|██████▋   | 35/52 [00:00<00:00, 314.01it/s]Epoch 19 Step 988: 100%|██████████| 52/52 [00:00<00:00, 315.99it/s]
+(val) -0.546 (test) -0.559 (loss) 0.23825
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:03.732346
+Epoch 20 Step 1040:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 20 Step 1040:  62%|██████▏   | 32/52 [00:00<00:00, 277.81it/s]Epoch 20 Step 1040: 100%|██████████| 52/52 [00:00<00:00, 311.31it/s]
+(val) -0.548 (test) -0.559 (loss) 0.23752
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:03.919857
+Epoch 21 Step 1092:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 21 Step 1092:  63%|██████▎   | 33/52 [00:00<00:00, 327.09it/s]Epoch 21 Step 1092: 100%|██████████| 52/52 [00:00<00:00, 337.07it/s]
+(val) -0.549 (test) -0.565 (loss) 0.23821
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:04.097828
+Epoch 22 Step 1144:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 22 Step 1144:  62%|██████▏   | 32/52 [00:00<00:00, 314.43it/s]Epoch 22 Step 1144: 100%|██████████| 52/52 [00:00<00:00, 325.62it/s]
+(val) -0.545 (test) -0.557 (loss) 0.23318
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:04.284927
+Epoch 23 Step 1196:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 23 Step 1196:  65%|██████▌   | 34/52 [00:00<00:00, 306.78it/s]Epoch 23 Step 1196: 100%|██████████| 52/52 [00:00<00:00, 325.63it/s]
+(val) -0.545 (test) -0.556 (loss) 0.23308
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:04.464567
+Epoch 24 Step 1248:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 24 Step 1248:  56%|█████▌    | 29/52 [00:00<00:00, 288.78it/s]Epoch 24 Step 1248: 100%|██████████| 52/52 [00:00<00:00, 301.45it/s]
+(val) -0.545 (test) -0.555 (loss) 0.22885
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:04.649519
+Epoch 25 Step 1300:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 25 Step 1300:  56%|█████▌    | 29/52 [00:00<00:00, 288.35it/s]Epoch 25 Step 1300: 100%|██████████| 52/52 [00:00<00:00, 311.73it/s]
+(val) -0.542 (test) -0.553 (loss) 0.23073
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:04.834441
+Epoch 26 Step 1352:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 26 Step 1352:  65%|██████▌   | 34/52 [00:00<00:00, 317.40it/s]Epoch 26 Step 1352: 100%|██████████| 52/52 [00:00<00:00, 330.07it/s]
+(val) -0.540 (test) -0.550 (loss) 0.23177
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:05.017403
+Epoch 27 Step 1404:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 27 Step 1404:  62%|██████▏   | 32/52 [00:00<00:00, 292.62it/s]Epoch 27 Step 1404: 100%|██████████| 52/52 [00:00<00:00, 311.82it/s]
+(val) -0.547 (test) -0.557 (loss) 0.22782
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:05.198194
+Epoch 28 Step 1456:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 28 Step 1456:  65%|██████▌   | 34/52 [00:00<00:00, 298.05it/s]Epoch 28 Step 1456: 100%|██████████| 52/52 [00:00<00:00, 310.81it/s]
+(val) -0.546 (test) -0.556 (loss) 0.22821
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:05.378510
+Epoch 29 Step 1508:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 29 Step 1508:  71%|███████   | 37/52 [00:00<00:00, 333.39it/s]Epoch 29 Step 1508: 100%|██████████| 52/52 [00:00<00:00, 360.54it/s]
+(val) -0.538 (test) -0.550 (loss) 0.22667
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:05.559933
+Epoch 30 Step 1560:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 30 Step 1560:  71%|███████   | 37/52 [00:00<00:00, 322.12it/s]Epoch 30 Step 1560: 100%|██████████| 52/52 [00:00<00:00, 327.37it/s]
+(val) -0.542 (test) -0.553 (loss) 0.22520
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:05.735750
+Epoch 31 Step 1612:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 31 Step 1612:  63%|██████▎   | 33/52 [00:00<00:00, 326.33it/s]Epoch 31 Step 1612: 100%|██████████| 52/52 [00:00<00:00, 340.32it/s]
+(val) -0.540 (test) -0.548 (loss) 0.22347
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:05.915677
+Epoch 32 Step 1664:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 32 Step 1664:  67%|██████▋   | 35/52 [00:00<00:00, 334.26it/s]Epoch 32 Step 1664: 100%|██████████| 52/52 [00:00<00:00, 329.26it/s]
+(val) -0.537 (test) -0.546 (loss) 0.22487
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:06.098707
+Epoch 33 Step 1716:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 33 Step 1716:  58%|█████▊    | 30/52 [00:00<00:00, 299.09it/s]Epoch 33 Step 1716: 100%|██████████| 52/52 [00:00<00:00, 306.09it/s]
+(val) -0.538 (test) -0.546 (loss) 0.22059
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:06.280992
+Epoch 34 Step 1768:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 34 Step 1768:  67%|██████▋   | 35/52 [00:00<00:00, 310.78it/s]Epoch 34 Step 1768: 100%|██████████| 52/52 [00:00<00:00, 313.46it/s]
+(val) -0.534 (test) -0.546 (loss) 0.22353
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:06.467348
+Epoch 35 Step 1820:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 35 Step 1820:  56%|█████▌    | 29/52 [00:00<00:00, 283.23it/s]Epoch 35 Step 1820: 100%|██████████| 52/52 [00:00<00:00, 309.46it/s]
+(val) -0.537 (test) -0.549 (loss) 0.21923
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:06.645441
+Epoch 36 Step 1872:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 36 Step 1872:  58%|█████▊    | 30/52 [00:00<00:00, 299.84it/s]Epoch 36 Step 1872: 100%|██████████| 52/52 [00:00<00:00, 313.57it/s]
+(val) -0.535 (test) -0.544 (loss) 0.21865
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:06.828000
+Epoch 37 Step 1924:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 37 Step 1924:  67%|██████▋   | 35/52 [00:00<00:00, 306.31it/s]Epoch 37 Step 1924: 100%|██████████| 52/52 [00:00<00:00, 315.69it/s]
+(val) -0.536 (test) -0.545 (loss) 0.21970
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:07.010255
+Epoch 38 Step 1976:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 38 Step 1976:  69%|██████▉   | 36/52 [00:00<00:00, 324.41it/s]Epoch 38 Step 1976: 100%|██████████| 52/52 [00:00<00:00, 321.38it/s]
+(val) -0.541 (test) -0.549 (loss) 0.21473
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:07.191682
+Epoch 39 Step 2028:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 39 Step 2028:  62%|██████▏   | 32/52 [00:00<00:00, 319.70it/s]Epoch 39 Step 2028: 100%|██████████| 52/52 [00:00<00:00, 344.82it/s]
+(val) -0.534 (test) -0.543 (loss) 0.21729
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:07.376468
+Epoch 40 Step 2080:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 40 Step 2080:  71%|███████   | 37/52 [00:00<00:00, 320.16it/s]Epoch 40 Step 2080: 100%|██████████| 52/52 [00:00<00:00, 340.04it/s]
+(val) -0.531 (test) -0.543 (loss) 0.21537
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:07.560449
+Epoch 41 Step 2132:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 41 Step 2132:  65%|██████▌   | 34/52 [00:00<00:00, 310.63it/s]Epoch 41 Step 2132: 100%|██████████| 52/52 [00:00<00:00, 314.79it/s]
+(val) -0.531 (test) -0.542 (loss) 0.21251
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:07.747576
+Epoch 42 Step 2184:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 42 Step 2184:  56%|█████▌    | 29/52 [00:00<00:00, 289.98it/s]Epoch 42 Step 2184: 100%|██████████| 52/52 [00:00<00:00, 312.85it/s]
+(val) -0.531 (test) -0.539 (loss) 0.21261
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:07.931567
+Epoch 43 Step 2236:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 43 Step 2236:  69%|██████▉   | 36/52 [00:00<00:00, 312.07it/s]Epoch 43 Step 2236: 100%|██████████| 52/52 [00:00<00:00, 314.46it/s]
+(val) -0.530 (test) -0.539 (loss) 0.21283
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:08.113780
+Epoch 44 Step 2288:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 44 Step 2288:  60%|█████▉    | 31/52 [00:00<00:00, 307.89it/s]Epoch 44 Step 2288: 100%|██████████| 52/52 [00:00<00:00, 311.45it/s]
+(val) -0.533 (test) -0.540 (loss) 0.21303
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:08.294153
+Epoch 45 Step 2340:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 45 Step 2340:  62%|██████▏   | 32/52 [00:00<00:00, 307.67it/s]Epoch 45 Step 2340: 100%|██████████| 52/52 [00:00<00:00, 314.99it/s]
+(val) -0.527 (test) -0.538 (loss) 0.20884
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:08.484146
+Epoch 46 Step 2392:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 46 Step 2392:  63%|██████▎   | 33/52 [00:00<00:00, 290.33it/s]Epoch 46 Step 2392: 100%|██████████| 52/52 [00:00<00:00, 313.18it/s]
+(val) -0.533 (test) -0.544 (loss) 0.20946
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:08.663002
+Epoch 47 Step 2444:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 47 Step 2444:  62%|██████▏   | 32/52 [00:00<00:00, 317.27it/s]Epoch 47 Step 2444: 100%|██████████| 52/52 [00:00<00:00, 313.54it/s]
+(val) -0.527 (test) -0.535 (loss) 0.20723
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:08.846600
+Epoch 48 Step 2496:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 48 Step 2496:  71%|███████   | 37/52 [00:00<00:00, 335.72it/s]Epoch 48 Step 2496: 100%|██████████| 52/52 [00:00<00:00, 365.65it/s]
+(val) -0.528 (test) -0.539 (loss) 0.20614
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:09.022585
+Epoch 49 Step 2548:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 49 Step 2548:  67%|██████▋   | 35/52 [00:00<00:00, 336.87it/s]Epoch 49 Step 2548: 100%|██████████| 52/52 [00:00<00:00, 346.26it/s]
+(val) -0.532 (test) -0.538 (loss) 0.20921
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:09.196701
+Epoch 50 Step 2600:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 50 Step 2600:  65%|██████▌   | 34/52 [00:00<00:00, 330.86it/s]Epoch 50 Step 2600: 100%|██████████| 52/52 [00:00<00:00, 328.83it/s]
+(val) -0.525 (test) -0.533 (loss) 0.20664
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:09.379687
+Epoch 51 Step 2652:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 51 Step 2652:  63%|██████▎   | 33/52 [00:00<00:00, 326.08it/s]Epoch 51 Step 2652: 100%|██████████| 52/52 [00:00<00:00, 355.74it/s]
+(val) -0.525 (test) -0.535 (loss) 0.20443
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:09.562016
+Epoch 52 Step 2704:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 52 Step 2704:  69%|██████▉   | 36/52 [00:00<00:00, 317.63it/s]Epoch 52 Step 2704: 100%|██████████| 52/52 [00:00<00:00, 316.77it/s]
+(val) -0.521 (test) -0.531 (loss) 0.20282
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:09.748558
+Epoch 53 Step 2756:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 53 Step 2756:  56%|█████▌    | 29/52 [00:00<00:00, 289.41it/s]Epoch 53 Step 2756: 100%|██████████| 52/52 [00:00<00:00, 311.40it/s]
+(val) -0.529 (test) -0.534 (loss) 0.20188
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:09.926965
+Epoch 54 Step 2808:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 54 Step 2808:  62%|██████▏   | 32/52 [00:00<00:00, 306.50it/s]Epoch 54 Step 2808: 100%|██████████| 52/52 [00:00<00:00, 333.25it/s]
+(val) -0.522 (test) -0.534 (loss) 0.20111
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:10.104929
+Epoch 55 Step 2860:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 55 Step 2860:  63%|██████▎   | 33/52 [00:00<00:00, 325.70it/s]Epoch 55 Step 2860: 100%|██████████| 52/52 [00:00<00:00, 339.49it/s]
+(val) -0.522 (test) -0.530 (loss) 0.20300
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:10.282787
+Epoch 56 Step 2912:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 56 Step 2912:  63%|██████▎   | 33/52 [00:00<00:00, 285.77it/s]Epoch 56 Step 2912: 100%|██████████| 52/52 [00:00<00:00, 310.34it/s]
+(val) -0.519 (test) -0.528 (loss) 0.19915
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:10.468575
+Epoch 57 Step 2964:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 57 Step 2964:  65%|██████▌   | 34/52 [00:00<00:00, 320.68it/s]Epoch 57 Step 2964: 100%|██████████| 52/52 [00:00<00:00, 334.67it/s]
+(val) -0.522 (test) -0.530 (loss) 0.20140
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:10.647027
+Epoch 58 Step 3016:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 58 Step 3016:  67%|██████▋   | 35/52 [00:00<00:00, 324.44it/s]Epoch 58 Step 3016: 100%|██████████| 52/52 [00:00<00:00, 324.19it/s]
+(val) -0.523 (test) -0.529 (loss) 0.19837
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:10.826631
+Epoch 59 Step 3068:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 59 Step 3068:  71%|███████   | 37/52 [00:00<00:00, 320.33it/s]Epoch 59 Step 3068: 100%|██████████| 52/52 [00:00<00:00, 345.55it/s]
+(val) -0.520 (test) -0.530 (loss) 0.19821
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:11.004066
+Epoch 60 Step 3120:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 60 Step 3120:  67%|██████▋   | 35/52 [00:00<00:00, 336.53it/s]Epoch 60 Step 3120: 100%|██████████| 52/52 [00:00<00:00, 331.74it/s]
+(val) -0.518 (test) -0.528 (loss) 0.19757
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:11.183518
+Epoch 61 Step 3172:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 61 Step 3172:  60%|█████▉    | 31/52 [00:00<00:00, 305.99it/s]Epoch 61 Step 3172: 100%|██████████| 52/52 [00:00<00:00, 305.83it/s]
+(val) -0.518 (test) -0.526 (loss) 0.19819
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:11.362397
+Epoch 62 Step 3224:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 62 Step 3224:  69%|██████▉   | 36/52 [00:00<00:00, 327.94it/s]Epoch 62 Step 3224: 100%|██████████| 52/52 [00:00<00:00, 360.96it/s]
+(val) -0.517 (test) -0.526 (loss) 0.19656
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:11.544754
+Epoch 63 Step 3276:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 63 Step 3276:  67%|██████▋   | 35/52 [00:00<00:00, 319.15it/s]Epoch 63 Step 3276: 100%|██████████| 52/52 [00:00<00:00, 319.19it/s]
+(val) -0.518 (test) -0.527 (loss) 0.19569
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:11.726808
+Epoch 64 Step 3328:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 64 Step 3328:  69%|██████▉   | 36/52 [00:00<00:00, 326.72it/s]Epoch 64 Step 3328: 100%|██████████| 52/52 [00:00<00:00, 356.64it/s]
+(val) -0.520 (test) -0.525 (loss) 0.19717
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:11.902309
+Epoch 65 Step 3380:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 65 Step 3380:  65%|██████▌   | 34/52 [00:00<00:00, 332.77it/s]Epoch 65 Step 3380: 100%|██████████| 52/52 [00:00<00:00, 337.98it/s]
+(val) -0.521 (test) -0.528 (loss) 0.19527
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:12.080614
+Epoch 66 Step 3432:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 66 Step 3432:  67%|██████▋   | 35/52 [00:00<00:00, 304.92it/s]Epoch 66 Step 3432: 100%|██████████| 52/52 [00:00<00:00, 347.14it/s]
+(val) -0.517 (test) -0.524 (loss) 0.19549
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:12.256969
+Epoch 67 Step 3484:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 67 Step 3484:  65%|██████▌   | 34/52 [00:00<00:00, 339.71it/s]Epoch 67 Step 3484: 100%|██████████| 52/52 [00:00<00:00, 349.90it/s]
+(val) -0.516 (test) -0.524 (loss) 0.19130
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:12.441413
+Epoch 68 Step 3536:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 68 Step 3536:  62%|██████▏   | 32/52 [00:00<00:00, 316.36it/s]Epoch 68 Step 3536: 100%|██████████| 52/52 [00:00<00:00, 333.81it/s]
+(val) -0.514 (test) -0.521 (loss) 0.19262
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:12.625407
+Epoch 69 Step 3588:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 69 Step 3588:  63%|██████▎   | 33/52 [00:00<00:00, 325.91it/s]Epoch 69 Step 3588: 100%|██████████| 52/52 [00:00<00:00, 345.74it/s]
+(val) -0.517 (test) -0.525 (loss) 0.19100
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:12.798922
+Epoch 70 Step 3640:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 70 Step 3640:  67%|██████▋   | 35/52 [00:00<00:00, 301.34it/s]Epoch 70 Step 3640: 100%|██████████| 52/52 [00:00<00:00, 312.66it/s]
+(val) -0.513 (test) -0.524 (loss) 0.19072
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:12.982024
+Epoch 71 Step 3692:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 71 Step 3692:  62%|██████▏   | 32/52 [00:00<00:00, 319.77it/s]Epoch 71 Step 3692: 100%|██████████| 52/52 [00:00<00:00, 323.63it/s]
+(val) -0.514 (test) -0.521 (loss) 0.18920
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:13.159438
+Epoch 72 Step 3744:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 72 Step 3744:  67%|██████▋   | 35/52 [00:00<00:00, 323.64it/s]Epoch 72 Step 3744: 100%|██████████| 52/52 [00:00<00:00, 346.06it/s]
+(val) -0.515 (test) -0.522 (loss) 0.18995
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:13.335850
+Epoch 73 Step 3796:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 73 Step 3796:  65%|██████▌   | 34/52 [00:00<00:00, 327.89it/s]Epoch 73 Step 3796: 100%|██████████| 52/52 [00:00<00:00, 334.80it/s]
+(val) -0.512 (test) -0.523 (loss) 0.18917
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:13.523618
+Epoch 74 Step 3848:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 74 Step 3848:  65%|██████▌   | 34/52 [00:00<00:00, 338.52it/s]Epoch 74 Step 3848: 100%|██████████| 52/52 [00:00<00:00, 349.68it/s]
+(val) -0.512 (test) -0.519 (loss) 0.18887
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:13.697790
+Epoch 75 Step 3900:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 75 Step 3900:  52%|█████▏    | 27/52 [00:00<00:00, 259.21it/s]Epoch 75 Step 3900: 100%|██████████| 52/52 [00:00<00:00, 297.10it/s]
+(val) -0.512 (test) -0.518 (loss) 0.18755
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:13.898247
+Epoch 76 Step 3952:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 76 Step 3952:  65%|██████▌   | 34/52 [00:00<00:00, 322.84it/s]Epoch 76 Step 3952: 100%|██████████| 52/52 [00:00<00:00, 324.27it/s]
+(val) -0.510 (test) -0.520 (loss) 0.18809
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:14.081882
+Epoch 77 Step 4004:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 77 Step 4004:  65%|██████▌   | 34/52 [00:00<00:00, 295.25it/s]Epoch 77 Step 4004: 100%|██████████| 52/52 [00:00<00:00, 312.18it/s]
+(val) -0.514 (test) -0.518 (loss) 0.18577
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:14.259560
+Epoch 78 Step 4056:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 78 Step 4056:  63%|██████▎   | 33/52 [00:00<00:00, 313.71it/s]Epoch 78 Step 4056: 100%|██████████| 52/52 [00:00<00:00, 347.96it/s]
+(val) -0.511 (test) -0.518 (loss) 0.18771
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:14.432936
+Epoch 79 Step 4108:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 79 Step 4108:  65%|██████▌   | 34/52 [00:00<00:00, 322.46it/s]Epoch 79 Step 4108: 100%|██████████| 52/52 [00:00<00:00, 331.07it/s]
+(val) -0.509 (test) -0.515 (loss) 0.18761
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:14.615527
+Epoch 80 Step 4160:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 80 Step 4160:  71%|███████   | 37/52 [00:00<00:00, 322.89it/s]Epoch 80 Step 4160: 100%|██████████| 52/52 [00:00<00:00, 327.09it/s]
+(val) -0.510 (test) -0.514 (loss) 0.18616
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:14.795549
+Epoch 81 Step 4212:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 81 Step 4212:  67%|██████▋   | 35/52 [00:00<00:00, 309.66it/s]Epoch 81 Step 4212: 100%|██████████| 52/52 [00:00<00:00, 311.94it/s]
+(val) -0.509 (test) -0.517 (loss) 0.18818
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:14.975458
+Epoch 82 Step 4264:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 82 Step 4264:  69%|██████▉   | 36/52 [00:00<00:00, 322.87it/s]Epoch 82 Step 4264: 100%|██████████| 52/52 [00:00<00:00, 346.69it/s]
+(val) -0.511 (test) -0.520 (loss) 0.18262
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:15.148757
+Epoch 83 Step 4316:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 83 Step 4316:  56%|█████▌    | 29/52 [00:00<00:00, 285.03it/s]Epoch 83 Step 4316: 100%|██████████| 52/52 [00:00<00:00, 312.29it/s]
+(val) -0.510 (test) -0.516 (loss) 0.18449
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:15.328467
+Epoch 84 Step 4368:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 84 Step 4368:  60%|█████▉    | 31/52 [00:00<00:00, 301.78it/s]Epoch 84 Step 4368: 100%|██████████| 52/52 [00:00<00:00, 312.00it/s]
+(val) -0.514 (test) -0.516 (loss) 0.18357
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:15.510091
+Epoch 85 Step 4420:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 85 Step 4420:  67%|██████▋   | 35/52 [00:00<00:00, 307.34it/s]Epoch 85 Step 4420: 100%|██████████| 52/52 [00:00<00:00, 304.46it/s]
+(val) -0.509 (test) -0.512 (loss) 0.18303
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:15.694081
+Epoch 86 Step 4472:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 86 Step 4472:  60%|█████▉    | 31/52 [00:00<00:00, 307.41it/s]Epoch 86 Step 4472: 100%|██████████| 52/52 [00:00<00:00, 315.20it/s]
+(val) -0.508 (test) -0.514 (loss) 0.18427
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:15.882005
+Epoch 87 Step 4524:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 87 Step 4524:  67%|██████▋   | 35/52 [00:00<00:00, 330.46it/s]Epoch 87 Step 4524: 100%|██████████| 52/52 [00:00<00:00, 343.08it/s]
+(val) -0.506 (test) -0.511 (loss) 0.18035
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:16.067269
+Epoch 88 Step 4576:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 88 Step 4576:  65%|██████▌   | 34/52 [00:00<00:00, 324.59it/s]Epoch 88 Step 4576: 100%|██████████| 52/52 [00:00<00:00, 324.69it/s]
+(val) -0.506 (test) -0.511 (loss) 0.18104
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:16.245926
+Epoch 89 Step 4628:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 89 Step 4628:  60%|█████▉    | 31/52 [00:00<00:00, 309.69it/s]Epoch 89 Step 4628: 100%|██████████| 52/52 [00:00<00:00, 317.86it/s]
+(val) -0.508 (test) -0.511 (loss) 0.18191
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:16.426699
+Epoch 90 Step 4680:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 90 Step 4680:  67%|██████▋   | 35/52 [00:00<00:00, 314.19it/s]Epoch 90 Step 4680: 100%|██████████| 52/52 [00:00<00:00, 318.54it/s]
+(val) -0.509 (test) -0.513 (loss) 0.18055
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:16.611099
+Epoch 91 Step 4732:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 91 Step 4732:  67%|██████▋   | 35/52 [00:00<00:00, 320.71it/s]Epoch 91 Step 4732: 100%|██████████| 52/52 [00:00<00:00, 328.16it/s]
+(val) -0.510 (test) -0.514 (loss) 0.18175
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:16.790730
+Epoch 92 Step 4784:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 92 Step 4784:  60%|█████▉    | 31/52 [00:00<00:00, 306.70it/s]Epoch 92 Step 4784: 100%|██████████| 52/52 [00:00<00:00, 315.21it/s]
+(val) -0.506 (test) -0.509 (loss) 0.17906
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:16.974541
+Epoch 93 Step 4836:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 93 Step 4836:  62%|██████▏   | 32/52 [00:00<00:00, 318.58it/s]Epoch 93 Step 4836: 100%|██████████| 52/52 [00:00<00:00, 352.02it/s]
+(val) -0.505 (test) -0.510 (loss) 0.17781
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:17.158203
+Epoch 94 Step 4888:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 94 Step 4888:  69%|██████▉   | 36/52 [00:00<00:00, 334.75it/s]Epoch 94 Step 4888: 100%|██████████| 52/52 [00:00<00:00, 326.38it/s]
+(val) -0.506 (test) -0.510 (loss) 0.17710
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:17.335471
+Epoch 95 Step 4940:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 95 Step 4940:  62%|██████▏   | 32/52 [00:00<00:00, 308.21it/s]Epoch 95 Step 4940: 100%|██████████| 52/52 [00:00<00:00, 328.01it/s]
+(val) -0.506 (test) -0.512 (loss) 0.17884
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:17.514861
+Epoch 96 Step 4992:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 96 Step 4992:  54%|█████▍    | 28/52 [00:00<00:00, 272.13it/s]Epoch 96 Step 4992: 100%|██████████| 52/52 [00:00<00:00, 293.75it/s]
+(val) -0.504 (test) -0.509 (loss) 0.17888
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:17.707491
+Epoch 97 Step 5044:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 97 Step 5044:  62%|██████▏   | 32/52 [00:00<00:00, 312.23it/s]Epoch 97 Step 5044: 100%|██████████| 52/52 [00:00<00:00, 320.21it/s]
+(val) -0.502 (test) -0.506 (loss) 0.17807
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:17.896766
+Epoch 98 Step 5096:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 98 Step 5096:  58%|█████▊    | 30/52 [00:00<00:00, 291.32it/s]Epoch 98 Step 5096: 100%|██████████| 52/52 [00:00<00:00, 313.90it/s]
+(val) -0.505 (test) -0.510 (loss) 0.17558
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:18.077115
+Epoch 99 Step 5148:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 99 Step 5148:  63%|██████▎   | 33/52 [00:00<00:00, 317.69it/s]Epoch 99 Step 5148: 100%|██████████| 52/52 [00:00<00:00, 353.18it/s]
+(val) -0.507 (test) -0.513 (loss) 0.17847
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:18.253762
+Epoch 100 Step 5200:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 100 Step 5200:  71%|███████   | 37/52 [00:00<00:00, 339.10it/s]Epoch 100 Step 5200: 100%|██████████| 52/52 [00:00<00:00, 331.46it/s]
+(val) -0.506 (test) -0.508 (loss) 0.17404
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:18.429472
+Epoch 101 Step 5252:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 101 Step 5252:  62%|██████▏   | 32/52 [00:00<00:00, 315.20it/s]Epoch 101 Step 5252: 100%|██████████| 52/52 [00:00<00:00, 321.40it/s]
+(val) -0.501 (test) -0.506 (loss) 0.17840
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:18.620592
+Epoch 102 Step 5304:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 102 Step 5304:  75%|███████▌  | 39/52 [00:00<00:00, 343.94it/s]Epoch 102 Step 5304: 100%|██████████| 52/52 [00:00<00:00, 357.51it/s]
+(val) -0.504 (test) -0.508 (loss) 0.17668
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:18.792185
+Epoch 103 Step 5356:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 103 Step 5356:  71%|███████   | 37/52 [00:00<00:00, 338.13it/s]Epoch 103 Step 5356: 100%|██████████| 52/52 [00:00<00:00, 348.57it/s]
+(val) -0.505 (test) -0.508 (loss) 0.17483
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:18.965409
+Epoch 104 Step 5408:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 104 Step 5408:  62%|██████▏   | 32/52 [00:00<00:00, 311.60it/s]Epoch 104 Step 5408: 100%|██████████| 52/52 [00:00<00:00, 328.68it/s]
+(val) -0.505 (test) -0.510 (loss) 0.17441
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:19.145946
+Epoch 105 Step 5460:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 105 Step 5460:  71%|███████   | 37/52 [00:00<00:00, 331.53it/s]Epoch 105 Step 5460: 100%|██████████| 52/52 [00:00<00:00, 334.48it/s]
+(val) -0.504 (test) -0.506 (loss) 0.17002
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:19.319344
+Epoch 106 Step 5512:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 106 Step 5512:  71%|███████   | 37/52 [00:00<00:00, 332.72it/s]Epoch 106 Step 5512: 100%|██████████| 52/52 [00:00<00:00, 325.98it/s]
+(val) -0.507 (test) -0.509 (loss) 0.17277
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:19.501302
+Epoch 107 Step 5564:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 107 Step 5564:  69%|██████▉   | 36/52 [00:00<00:00, 329.72it/s]Epoch 107 Step 5564: 100%|██████████| 52/52 [00:00<00:00, 342.40it/s]
+(val) -0.509 (test) -0.511 (loss) 0.17444
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:19.681323
+Epoch 108 Step 5616:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 108 Step 5616:  60%|█████▉    | 31/52 [00:00<00:00, 309.55it/s]Epoch 108 Step 5616: 100%|██████████| 52/52 [00:00<00:00, 330.49it/s]
+(val) -0.500 (test) -0.503 (loss) 0.17242
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:19.862921
+Epoch 109 Step 5668:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 109 Step 5668:  63%|██████▎   | 33/52 [00:00<00:00, 325.50it/s]Epoch 109 Step 5668: 100%|██████████| 52/52 [00:00<00:00, 331.01it/s]
+(val) -0.501 (test) -0.504 (loss) 0.17186
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:20.040955
+Epoch 110 Step 5720:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 110 Step 5720:  58%|█████▊    | 30/52 [00:00<00:00, 299.21it/s]Epoch 110 Step 5720: 100%|██████████| 52/52 [00:00<00:00, 344.18it/s]
+(val) -0.504 (test) -0.506 (loss) 0.17159
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:20.222962
+Epoch 111 Step 5772:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 111 Step 5772:  62%|██████▏   | 32/52 [00:00<00:00, 318.60it/s]Epoch 111 Step 5772: 100%|██████████| 52/52 [00:00<00:00, 321.88it/s]
+(val) -0.502 (test) -0.505 (loss) 0.17167
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:20.400329
+Epoch 112 Step 5824:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 112 Step 5824:  65%|██████▌   | 34/52 [00:00<00:00, 336.90it/s]Epoch 112 Step 5824: 100%|██████████| 52/52 [00:00<00:00, 336.12it/s]
+(val) -0.502 (test) -0.505 (loss) 0.17157
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:20.575081
+Epoch 113 Step 5876:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 113 Step 5876:  60%|█████▉    | 31/52 [00:00<00:00, 306.83it/s]Epoch 113 Step 5876: 100%|██████████| 52/52 [00:00<00:00, 336.88it/s]
+(val) -0.507 (test) -0.505 (loss) 0.17383
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:20.753530
+Epoch 114 Step 5928:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 114 Step 5928:  63%|██████▎   | 33/52 [00:00<00:00, 295.90it/s]Epoch 114 Step 5928: 100%|██████████| 52/52 [00:00<00:00, 325.22it/s]
+(val) -0.505 (test) -0.505 (loss) 0.17147
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:20.933704
+Epoch 115 Step 5980:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 115 Step 5980:  56%|█████▌    | 29/52 [00:00<00:00, 289.42it/s]Epoch 115 Step 5980: 100%|██████████| 52/52 [00:00<00:00, 307.99it/s]
+(val) -0.501 (test) -0.502 (loss) 0.17340
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:21.114013
+Epoch 116 Step 6032:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 116 Step 6032:  67%|██████▋   | 35/52 [00:00<00:00, 314.68it/s]Epoch 116 Step 6032: 100%|██████████| 52/52 [00:00<00:00, 318.76it/s]
+(val) -0.500 (test) -0.501 (loss) 0.16978
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:21.290812
+Epoch 117 Step 6084:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 117 Step 6084:  62%|██████▏   | 32/52 [00:00<00:00, 308.28it/s]Epoch 117 Step 6084: 100%|██████████| 52/52 [00:00<00:00, 340.13it/s]
+(val) -0.497 (test) -0.500 (loss) 0.16676
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:21.473874
+Epoch 118 Step 6136:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 118 Step 6136:  65%|██████▌   | 34/52 [00:00<00:00, 329.26it/s]Epoch 118 Step 6136: 100%|██████████| 52/52 [00:00<00:00, 353.26it/s]
+(val) -0.502 (test) -0.505 (loss) 0.16964
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:21.648730
+Epoch 119 Step 6188:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 119 Step 6188:  71%|███████   | 37/52 [00:00<00:00, 323.47it/s]Epoch 119 Step 6188: 100%|██████████| 52/52 [00:00<00:00, 334.42it/s]
+(val) -0.499 (test) -0.501 (loss) 0.16888
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:21.827480
+Epoch 120 Step 6240:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 120 Step 6240:  60%|█████▉    | 31/52 [00:00<00:00, 309.74it/s]Epoch 120 Step 6240: 100%|██████████| 52/52 [00:00<00:00, 327.46it/s]
+(val) -0.501 (test) -0.503 (loss) 0.16863
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:22.003332
+Epoch 121 Step 6292:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 121 Step 6292:  65%|██████▌   | 34/52 [00:00<00:00, 334.72it/s]Epoch 121 Step 6292: 100%|██████████| 52/52 [00:00<00:00, 350.56it/s]
+(val) -0.500 (test) -0.501 (loss) 0.16622
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:22.180407
+Epoch 122 Step 6344:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 122 Step 6344:  69%|██████▉   | 36/52 [00:00<00:00, 324.48it/s]Epoch 122 Step 6344: 100%|██████████| 52/52 [00:00<00:00, 329.30it/s]
+(val) -0.498 (test) -0.501 (loss) 0.16583
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:22.358885
+Epoch 123 Step 6396:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 123 Step 6396:  73%|███████▎  | 38/52 [00:00<00:00, 322.80it/s]Epoch 123 Step 6396: 100%|██████████| 52/52 [00:00<00:00, 353.14it/s]
+(val) -0.499 (test) -0.499 (loss) 0.16699
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:22.534254
+Epoch 124 Step 6448:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 124 Step 6448:  63%|██████▎   | 33/52 [00:00<00:00, 309.11it/s]Epoch 124 Step 6448: 100%|██████████| 52/52 [00:00<00:00, 332.31it/s]
+(val) -0.500 (test) -0.503 (loss) 0.16517
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:22.718838
+Epoch 125 Step 6500:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 125 Step 6500:  67%|██████▋   | 35/52 [00:00<00:00, 343.59it/s]Epoch 125 Step 6500: 100%|██████████| 52/52 [00:00<00:00, 344.15it/s]
+(val) -0.500 (test) -0.502 (loss) 0.16488
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:22.892255
+Epoch 126 Step 6552:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 126 Step 6552:  69%|██████▉   | 36/52 [00:00<00:00, 321.02it/s]Epoch 126 Step 6552: 100%|██████████| 52/52 [00:00<00:00, 322.11it/s]
+(val) -0.499 (test) -0.502 (loss) 0.16343
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:23.068691
+Epoch 127 Step 6604:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 127 Step 6604:  73%|███████▎  | 38/52 [00:00<00:00, 328.28it/s]Epoch 127 Step 6604: 100%|██████████| 52/52 [00:00<00:00, 343.48it/s]
+(val) -0.498 (test) -0.499 (loss) 0.16612
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:23.244994
+Epoch 128 Step 6656:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 128 Step 6656:  60%|█████▉    | 31/52 [00:00<00:00, 304.58it/s]Epoch 128 Step 6656: 100%|██████████| 52/52 [00:00<00:00, 321.75it/s]
+(val) -0.500 (test) -0.502 (loss) 0.16773
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:23.419174
+Epoch 129 Step 6708:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 129 Step 6708:  65%|██████▌   | 34/52 [00:00<00:00, 317.76it/s]Epoch 129 Step 6708: 100%|██████████| 52/52 [00:00<00:00, 319.65it/s]
+(val) -0.497 (test) -0.498 (loss) 0.16523
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:23.602266
+Epoch 130 Step 6760:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 130 Step 6760:  65%|██████▌   | 34/52 [00:00<00:00, 329.32it/s]Epoch 130 Step 6760: 100%|██████████| 52/52 [00:00<00:00, 336.64it/s]
+(val) -0.498 (test) -0.500 (loss) 0.16366
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:23.775725
+Epoch 131 Step 6812:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 131 Step 6812:  54%|█████▍    | 28/52 [00:00<00:00, 274.79it/s]Epoch 131 Step 6812: 100%|██████████| 52/52 [00:00<00:00, 322.06it/s]
+(val) -0.498 (test) -0.502 (loss) 0.16537
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:23.953061
+Epoch 132 Step 6864:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 132 Step 6864:  73%|███████▎  | 38/52 [00:00<00:00, 334.71it/s]Epoch 132 Step 6864: 100%|██████████| 52/52 [00:00<00:00, 338.57it/s]
+(val) -0.501 (test) -0.503 (loss) 0.16398
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:24.130259
+Epoch 133 Step 6916:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 133 Step 6916:  60%|█████▉    | 31/52 [00:00<00:00, 309.77it/s]Epoch 133 Step 6916: 100%|██████████| 52/52 [00:00<00:00, 316.28it/s]
+(val) -0.496 (test) -0.499 (loss) 0.16064
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:24.314197
+Epoch 134 Step 6968:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 134 Step 6968:  65%|██████▌   | 34/52 [00:00<00:00, 330.90it/s]Epoch 134 Step 6968: 100%|██████████| 52/52 [00:00<00:00, 336.57it/s]
+(val) -0.498 (test) -0.501 (loss) 0.16314
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:24.493986
+Epoch 135 Step 7020:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 135 Step 7020:  69%|██████▉   | 36/52 [00:00<00:00, 319.65it/s]Epoch 135 Step 7020: 100%|██████████| 52/52 [00:00<00:00, 327.26it/s]
+(val) -0.498 (test) -0.500 (loss) 0.16378
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:24.668846
+Epoch 136 Step 7072:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 136 Step 7072:  58%|█████▊    | 30/52 [00:00<00:00, 291.98it/s]Epoch 136 Step 7072: 100%|██████████| 52/52 [00:00<00:00, 307.84it/s]
+(val) -0.499 (test) -0.501 (loss) 0.16332
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:24.852091
+Epoch 137 Step 7124:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 137 Step 7124:  65%|██████▌   | 34/52 [00:00<00:00, 328.80it/s]Epoch 137 Step 7124: 100%|██████████| 52/52 [00:00<00:00, 343.37it/s]
+(val) -0.497 (test) -0.498 (loss) 0.16049
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:25.031466
+Epoch 138 Step 7176:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 138 Step 7176:  58%|█████▊    | 30/52 [00:00<00:00, 287.55it/s]Epoch 138 Step 7176: 100%|██████████| 52/52 [00:00<00:00, 304.14it/s]
+(val) -0.498 (test) -0.500 (loss) 0.16262
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:25.209218
+Epoch 139 Step 7228:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 139 Step 7228:  60%|█████▉    | 31/52 [00:00<00:00, 286.03it/s]Epoch 139 Step 7228: 100%|██████████| 52/52 [00:00<00:00, 308.71it/s]
+(val) -0.497 (test) -0.499 (loss) 0.16358
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:25.385674
+Epoch 140 Step 7280:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 140 Step 7280:  63%|██████▎   | 33/52 [00:00<00:00, 323.77it/s]Epoch 140 Step 7280: 100%|██████████| 52/52 [00:00<00:00, 337.80it/s]
+(val) -0.495 (test) -0.498 (loss) 0.16041
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:25.572890
+Epoch 141 Step 7332:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 141 Step 7332:  71%|███████   | 37/52 [00:00<00:00, 334.14it/s]Epoch 141 Step 7332: 100%|██████████| 52/52 [00:00<00:00, 350.77it/s]
+(val) -0.497 (test) -0.498 (loss) 0.16356
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:25.746094
+Epoch 142 Step 7384:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 142 Step 7384:  65%|██████▌   | 34/52 [00:00<00:00, 308.27it/s]Epoch 142 Step 7384: 100%|██████████| 52/52 [00:00<00:00, 309.25it/s]
+(val) -0.498 (test) -0.503 (loss) 0.16109
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:25.926840
+Epoch 143 Step 7436:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 143 Step 7436:  67%|██████▋   | 35/52 [00:00<00:00, 310.57it/s]Epoch 143 Step 7436: 100%|██████████| 52/52 [00:00<00:00, 312.39it/s]
+(val) -0.495 (test) -0.497 (loss) 0.16287
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:26.113322
+Epoch 144 Step 7488:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 144 Step 7488:  67%|██████▋   | 35/52 [00:00<00:00, 338.54it/s]Epoch 144 Step 7488: 100%|██████████| 52/52 [00:00<00:00, 335.00it/s]
+(val) -0.497 (test) -0.499 (loss) 0.15950
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:26.287745
+Epoch 145 Step 7540:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 145 Step 7540:  65%|██████▌   | 34/52 [00:00<00:00, 335.13it/s]Epoch 145 Step 7540: 100%|██████████| 52/52 [00:00<00:00, 338.97it/s]
+(val) -0.502 (test) -0.500 (loss) 0.16209
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:26.464534
+Epoch 146 Step 7592:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 146 Step 7592:  65%|██████▌   | 34/52 [00:00<00:00, 310.63it/s]Epoch 146 Step 7592: 100%|██████████| 52/52 [00:00<00:00, 315.45it/s]
+(val) -0.495 (test) -0.497 (loss) 0.16179
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:26.641898
+Epoch 147 Step 7644:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 147 Step 7644:  60%|█████▉    | 31/52 [00:00<00:00, 292.75it/s]Epoch 147 Step 7644: 100%|██████████| 52/52 [00:00<00:00, 309.32it/s]
+(val) -0.497 (test) -0.499 (loss) 0.16111
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:26.815743
+Epoch 148 Step 7696:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 148 Step 7696:  63%|██████▎   | 33/52 [00:00<00:00, 318.98it/s]Epoch 148 Step 7696: 100%|██████████| 52/52 [00:00<00:00, 333.83it/s]
+(val) -0.500 (test) -0.498 (loss) 0.16246
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:26.998863
+Epoch 149 Step 7748:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 149 Step 7748:  67%|██████▋   | 35/52 [00:00<00:00, 342.47it/s]Epoch 149 Step 7748: 100%|██████████| 52/52 [00:00<00:00, 341.02it/s]
+(val) -0.498 (test) -0.498 (loss) 0.16064
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:27.174780
+Epoch 150 Step 7800:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 150 Step 7800:  60%|█████▉    | 31/52 [00:00<00:00, 297.31it/s]Epoch 150 Step 7800: 100%|██████████| 52/52 [00:00<00:00, 314.70it/s]
+(val) -0.494 (test) -0.496 (loss) 0.15759
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:27.360410
+Epoch 151 Step 7852:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 151 Step 7852:  62%|██████▏   | 32/52 [00:00<00:00, 319.86it/s]Epoch 151 Step 7852: 100%|██████████| 52/52 [00:00<00:00, 344.33it/s]
+(val) -0.495 (test) -0.495 (loss) 0.16077
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:27.531693
+Epoch 152 Step 7904:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 152 Step 7904:  58%|█████▊    | 30/52 [00:00<00:00, 287.15it/s]Epoch 152 Step 7904: 100%|██████████| 52/52 [00:00<00:00, 300.64it/s]
+(val) -0.494 (test) -0.494 (loss) 0.15754
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:27.718607
+Epoch 153 Step 7956:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 153 Step 7956:  67%|██████▋   | 35/52 [00:00<00:00, 328.49it/s]Epoch 153 Step 7956: 100%|██████████| 52/52 [00:00<00:00, 344.38it/s]
+(val) -0.499 (test) -0.498 (loss) 0.15686
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:27.896678
+Epoch 154 Step 8008:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 154 Step 8008:  58%|█████▊    | 30/52 [00:00<00:00, 290.12it/s]Epoch 154 Step 8008: 100%|██████████| 52/52 [00:00<00:00, 324.60it/s]
+(val) -0.501 (test) -0.498 (loss) 0.15944
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:28.077636
+Epoch 155 Step 8060:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 155 Step 8060:  69%|██████▉   | 36/52 [00:00<00:00, 321.40it/s]Epoch 155 Step 8060: 100%|██████████| 52/52 [00:00<00:00, 328.22it/s]
+(val) -0.494 (test) -0.494 (loss) 0.16007
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:28.262317
+Epoch 156 Step 8112:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 156 Step 8112:  67%|██████▋   | 35/52 [00:00<00:00, 316.36it/s]Epoch 156 Step 8112: 100%|██████████| 52/52 [00:00<00:00, 314.60it/s]
+(val) -0.497 (test) -0.497 (loss) 0.15638
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:28.440782
+Epoch 157 Step 8164:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 157 Step 8164:  65%|██████▌   | 34/52 [00:00<00:00, 335.21it/s]Epoch 157 Step 8164: 100%|██████████| 52/52 [00:00<00:00, 349.23it/s]
+(val) -0.493 (test) -0.496 (loss) 0.15604
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:28.623775
+Epoch 158 Step 8216:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 158 Step 8216:  65%|██████▌   | 34/52 [00:00<00:00, 331.49it/s]Epoch 158 Step 8216: 100%|██████████| 52/52 [00:00<00:00, 348.46it/s]
+(val) -0.497 (test) -0.496 (loss) 0.15519
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:28.796633
+Epoch 159 Step 8268:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 159 Step 8268:  58%|█████▊    | 30/52 [00:00<00:00, 292.99it/s]Epoch 159 Step 8268: 100%|██████████| 52/52 [00:00<00:00, 320.74it/s]
+(val) -0.495 (test) -0.495 (loss) 0.15663
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:28.973935
+Epoch 160 Step 8320:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 160 Step 8320:  73%|███████▎  | 38/52 [00:00<00:00, 330.28it/s]Epoch 160 Step 8320: 100%|██████████| 52/52 [00:00<00:00, 329.08it/s]
+(val) -0.495 (test) -0.494 (loss) 0.15389
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:29.151502
+Epoch 161 Step 8372:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 161 Step 8372:  63%|██████▎   | 33/52 [00:00<00:00, 320.06it/s]Epoch 161 Step 8372: 100%|██████████| 52/52 [00:00<00:00, 342.01it/s]
+(val) -0.494 (test) -0.494 (loss) 0.15627
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:29.332234
+Epoch 162 Step 8424:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 162 Step 8424:  58%|█████▊    | 30/52 [00:00<00:00, 290.17it/s]Epoch 162 Step 8424: 100%|██████████| 52/52 [00:00<00:00, 326.54it/s]
+(val) -0.494 (test) -0.497 (loss) 0.15522
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:29.509269
+Epoch 163 Step 8476:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 163 Step 8476:  63%|██████▎   | 33/52 [00:00<00:00, 328.19it/s]Epoch 163 Step 8476: 100%|██████████| 52/52 [00:00<00:00, 325.96it/s]
+(val) -0.494 (test) -0.496 (loss) 0.15457
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:29.685214
+Epoch 164 Step 8528:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 164 Step 8528:  65%|██████▌   | 34/52 [00:00<00:00, 327.53it/s]Epoch 164 Step 8528: 100%|██████████| 52/52 [00:00<00:00, 336.00it/s]
+(val) -0.492 (test) -0.494 (loss) 0.15749
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:29.867160
+Epoch 165 Step 8580:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 165 Step 8580:  67%|██████▋   | 35/52 [00:00<00:00, 332.28it/s]Epoch 165 Step 8580: 100%|██████████| 52/52 [00:00<00:00, 338.17it/s]
+(val) -0.494 (test) -0.494 (loss) 0.15421
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:30.042628
+Epoch 166 Step 8632:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 166 Step 8632:  62%|██████▏   | 32/52 [00:00<00:00, 306.52it/s]Epoch 166 Step 8632: 100%|██████████| 52/52 [00:00<00:00, 342.65it/s]
+(val) -0.496 (test) -0.499 (loss) 0.15473
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:30.215951
+Epoch 167 Step 8684:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 167 Step 8684:  63%|██████▎   | 33/52 [00:00<00:00, 293.52it/s]Epoch 167 Step 8684: 100%|██████████| 52/52 [00:00<00:00, 301.13it/s]
+(val) -0.494 (test) -0.495 (loss) 0.15546
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:30.398730
+Epoch 168 Step 8736:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 168 Step 8736:  62%|██████▏   | 32/52 [00:00<00:00, 295.45it/s]Epoch 168 Step 8736: 100%|██████████| 52/52 [00:00<00:00, 332.08it/s]
+(val) -0.495 (test) -0.494 (loss) 0.15482
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:30.580076
+Epoch 169 Step 8788:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 169 Step 8788:  60%|█████▉    | 31/52 [00:00<00:00, 306.67it/s]Epoch 169 Step 8788: 100%|██████████| 52/52 [00:00<00:00, 315.60it/s]
+(val) -0.493 (test) -0.493 (loss) 0.15369
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:30.755257
+Epoch 170 Step 8840:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 170 Step 8840:  65%|██████▌   | 34/52 [00:00<00:00, 337.06it/s]Epoch 170 Step 8840: 100%|██████████| 52/52 [00:00<00:00, 332.52it/s]
+(val) -0.491 (test) -0.494 (loss) 0.15317
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:30.938881
+Epoch 171 Step 8892:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 171 Step 8892:  75%|███████▌  | 39/52 [00:00<00:00, 343.28it/s]Epoch 171 Step 8892: 100%|██████████| 52/52 [00:00<00:00, 357.12it/s]
+(val) -0.491 (test) -0.493 (loss) 0.15348
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:31.110507
+Epoch 172 Step 8944:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 172 Step 8944:  63%|██████▎   | 33/52 [00:00<00:00, 315.39it/s]Epoch 172 Step 8944: 100%|██████████| 52/52 [00:00<00:00, 349.04it/s]
+(val) -0.495 (test) -0.494 (loss) 0.15331
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:31.289013
+Epoch 173 Step 8996:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 173 Step 8996:  71%|███████   | 37/52 [00:00<00:00, 312.71it/s]Epoch 173 Step 8996: 100%|██████████| 52/52 [00:00<00:00, 322.88it/s]
+(val) -0.494 (test) -0.493 (loss) 0.15487
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:31.467751
+Epoch 174 Step 9048:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 174 Step 9048:  62%|██████▏   | 32/52 [00:00<00:00, 315.56it/s]Epoch 174 Step 9048: 100%|██████████| 52/52 [00:00<00:00, 349.06it/s]
+(val) -0.494 (test) -0.495 (loss) 0.15301
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:31.649724
+Epoch 175 Step 9100:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 175 Step 9100:  65%|██████▌   | 34/52 [00:00<00:00, 319.18it/s]Epoch 175 Step 9100: 100%|██████████| 52/52 [00:00<00:00, 315.08it/s]
+(val) -0.495 (test) -0.493 (loss) 0.15441
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:31.831573
+Epoch 176 Step 9152:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 176 Step 9152:  56%|█████▌    | 29/52 [00:00<00:00, 282.11it/s]Epoch 176 Step 9152: 100%|██████████| 52/52 [00:00<00:00, 306.55it/s]
+(val) -0.493 (test) -0.492 (loss) 0.15375
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:32.012404
+Epoch 177 Step 9204:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 177 Step 9204:  56%|█████▌    | 29/52 [00:00<00:00, 287.30it/s]Epoch 177 Step 9204: 100%|██████████| 52/52 [00:00<00:00, 308.60it/s]
+(val) -0.492 (test) -0.492 (loss) 0.15393
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:32.191001
+Epoch 178 Step 9256:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 178 Step 9256:  62%|██████▏   | 32/52 [00:00<00:00, 314.07it/s]Epoch 178 Step 9256: 100%|██████████| 52/52 [00:00<00:00, 325.79it/s]
+(val) -0.494 (test) -0.497 (loss) 0.15252
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:32.373546
+Epoch 179 Step 9308:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 179 Step 9308:  62%|██████▏   | 32/52 [00:00<00:00, 307.39it/s]Epoch 179 Step 9308: 100%|██████████| 52/52 [00:00<00:00, 330.49it/s]
+(val) -0.493 (test) -0.492 (loss) 0.15182
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:32.551058
+Epoch 180 Step 9360:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 180 Step 9360:  62%|██████▏   | 32/52 [00:00<00:00, 307.34it/s]Epoch 180 Step 9360: 100%|██████████| 52/52 [00:00<00:00, 323.71it/s]
+(val) -0.491 (test) -0.495 (loss) 0.15072
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:32.740173
+Epoch 181 Step 9412:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 181 Step 9412:  62%|██████▏   | 32/52 [00:00<00:00, 319.73it/s]Epoch 181 Step 9412: 100%|██████████| 52/52 [00:00<00:00, 324.15it/s]
+(val) -0.490 (test) -0.493 (loss) 0.15102
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:32.927389
+Epoch 182 Step 9464:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 182 Step 9464:  71%|███████   | 37/52 [00:00<00:00, 322.37it/s]Epoch 182 Step 9464: 100%|██████████| 52/52 [00:00<00:00, 321.59it/s]
+(val) -0.491 (test) -0.494 (loss) 0.14997
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:33.105214
+Epoch 183 Step 9516:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 183 Step 9516:  67%|██████▋   | 35/52 [00:00<00:00, 315.15it/s]Epoch 183 Step 9516: 100%|██████████| 52/52 [00:00<00:00, 327.99it/s]
+(val) -0.493 (test) -0.496 (loss) 0.14933
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:33.279466
+Epoch 184 Step 9568:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 184 Step 9568:  67%|██████▋   | 35/52 [00:00<00:00, 306.31it/s]Epoch 184 Step 9568: 100%|██████████| 52/52 [00:00<00:00, 320.11it/s]
+(val) -0.494 (test) -0.494 (loss) 0.15316
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:33.456743
+Epoch 185 Step 9620:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 185 Step 9620:  63%|██████▎   | 33/52 [00:00<00:00, 326.88it/s]Epoch 185 Step 9620: 100%|██████████| 52/52 [00:00<00:00, 353.66it/s]
+(val) -0.495 (test) -0.494 (loss) 0.15333
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:33.628579
+Epoch 186 Step 9672:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 186 Step 9672:  58%|█████▊    | 30/52 [00:00<00:00, 297.23it/s]Epoch 186 Step 9672: 100%|██████████| 52/52 [00:00<00:00, 350.54it/s]
+(val) -0.493 (test) -0.495 (loss) 0.15117
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:33.799372
+Epoch 187 Step 9724:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 187 Step 9724:  67%|██████▋   | 35/52 [00:00<00:00, 324.31it/s]Epoch 187 Step 9724: 100%|██████████| 52/52 [00:00<00:00, 325.49it/s]
+(val) -0.494 (test) -0.495 (loss) 0.14947
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:33.975305
+Epoch 188 Step 9776:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 188 Step 9776:  71%|███████   | 37/52 [00:00<00:00, 324.16it/s]Epoch 188 Step 9776: 100%|██████████| 52/52 [00:00<00:00, 346.48it/s]
+(val) -0.494 (test) -0.494 (loss) 0.15054
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:34.155334
+Epoch 189 Step 9828:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 189 Step 9828:  62%|██████▏   | 32/52 [00:00<00:00, 319.88it/s]Epoch 189 Step 9828: 100%|██████████| 52/52 [00:00<00:00, 335.65it/s]
+(val) -0.491 (test) -0.495 (loss) 0.15024
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:34.330515
+Epoch 190 Step 9880:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 190 Step 9880:  65%|██████▌   | 34/52 [00:00<00:00, 335.39it/s]Epoch 190 Step 9880: 100%|██████████| 52/52 [00:00<00:00, 334.58it/s]
+(val) -0.493 (test) -0.493 (loss) 0.15202
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:34.511340
+Epoch 191 Step 9932:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 191 Step 9932:  65%|██████▌   | 34/52 [00:00<00:00, 321.93it/s]Epoch 191 Step 9932: 100%|██████████| 52/52 [00:00<00:00, 320.40it/s]
+(val) -0.490 (test) -0.493 (loss) 0.15021
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:34.701363
+Epoch 192 Step 9984:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 192 Step 9984:  63%|██████▎   | 33/52 [00:00<00:00, 329.43it/s]Epoch 192 Step 9984: 100%|██████████| 52/52 [00:00<00:00, 326.73it/s]
+(val) -0.489 (test) -0.493 (loss) 0.15108
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:34.888783
+Epoch 193 Step 10036:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 193 Step 10036:  65%|██████▌   | 34/52 [00:00<00:00, 339.43it/s]Epoch 193 Step 10036: 100%|██████████| 52/52 [00:00<00:00, 352.55it/s]
+(val) -0.491 (test) -0.493 (loss) 0.15056
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:35.059261
+Epoch 194 Step 10088:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 194 Step 10088:  60%|█████▉    | 31/52 [00:00<00:00, 302.60it/s]Epoch 194 Step 10088: 100%|██████████| 52/52 [00:00<00:00, 336.26it/s]
+(val) -0.491 (test) -0.492 (loss) 0.14925
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:35.235316
+Epoch 195 Step 10140:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 195 Step 10140:  67%|██████▋   | 35/52 [00:00<00:00, 317.49it/s]Epoch 195 Step 10140: 100%|██████████| 52/52 [00:00<00:00, 328.09it/s]
+(val) -0.491 (test) -0.493 (loss) 0.15068
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:35.414919
+Epoch 196 Step 10192:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 196 Step 10192:  65%|██████▌   | 34/52 [00:00<00:00, 295.85it/s]Epoch 196 Step 10192: 100%|██████████| 52/52 [00:00<00:00, 325.28it/s]
+(val) -0.491 (test) -0.493 (loss) 0.14802
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:35.593140
+Epoch 197 Step 10244:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 197 Step 10244:  69%|██████▉   | 36/52 [00:00<00:00, 317.46it/s]Epoch 197 Step 10244: 100%|██████████| 52/52 [00:00<00:00, 318.95it/s]
+(val) -0.489 (test) -0.490 (loss) 0.14603
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:35.773751
+Epoch 198 Step 10296:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 198 Step 10296:  75%|███████▌  | 39/52 [00:00<00:00, 341.65it/s]Epoch 198 Step 10296: 100%|██████████| 52/52 [00:00<00:00, 345.35it/s]
+(val) -0.490 (test) -0.493 (loss) 0.14902
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:35.946926
+Epoch 199 Step 10348:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 199 Step 10348:  62%|██████▏   | 32/52 [00:00<00:00, 319.05it/s]Epoch 199 Step 10348: 100%|██████████| 52/52 [00:00<00:00, 321.44it/s]
+(val) -0.487 (test) -0.492 (loss) 0.14824
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:36.138359
+Epoch 200 Step 10400:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 200 Step 10400:  65%|██████▌   | 34/52 [00:00<00:00, 332.11it/s]Epoch 200 Step 10400: 100%|██████████| 52/52 [00:00<00:00, 343.68it/s]
+(val) -0.487 (test) -0.493 (loss) 0.14773
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:36.314253
+Epoch 201 Step 10452:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 201 Step 10452:  56%|█████▌    | 29/52 [00:00<00:00, 278.21it/s]Epoch 201 Step 10452: 100%|██████████| 52/52 [00:00<00:00, 299.44it/s]
+(val) -0.489 (test) -0.490 (loss) 0.15064
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:36.495517
+Epoch 202 Step 10504:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 202 Step 10504:  69%|██████▉   | 36/52 [00:00<00:00, 326.43it/s]Epoch 202 Step 10504: 100%|██████████| 52/52 [00:00<00:00, 329.15it/s]
+(val) -0.488 (test) -0.493 (loss) 0.14740
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:36.669448
+Epoch 203 Step 10556:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 203 Step 10556:  73%|███████▎  | 38/52 [00:00<00:00, 338.39it/s]Epoch 203 Step 10556: 100%|██████████| 52/52 [00:00<00:00, 325.50it/s]
+(val) -0.490 (test) -0.492 (loss) 0.14817
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:36.846479
+Epoch 204 Step 10608:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 204 Step 10608:  65%|██████▌   | 34/52 [00:00<00:00, 321.36it/s]Epoch 204 Step 10608: 100%|██████████| 52/52 [00:00<00:00, 327.47it/s]
+(val) -0.488 (test) -0.492 (loss) 0.14600
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:37.022028
+Epoch 205 Step 10660:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 205 Step 10660:  65%|██████▌   | 34/52 [00:00<00:00, 318.95it/s]Epoch 205 Step 10660: 100%|██████████| 52/52 [00:00<00:00, 349.80it/s]
+(val) -0.490 (test) -0.492 (loss) 0.14860
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:37.201192
+Epoch 206 Step 10712:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 206 Step 10712:  65%|██████▌   | 34/52 [00:00<00:00, 329.07it/s]Epoch 206 Step 10712: 100%|██████████| 52/52 [00:00<00:00, 345.67it/s]
+(val) -0.491 (test) -0.492 (loss) 0.14717
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:37.376468
+Epoch 207 Step 10764:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 207 Step 10764:  56%|█████▌    | 29/52 [00:00<00:00, 288.60it/s]Epoch 207 Step 10764: 100%|██████████| 52/52 [00:00<00:00, 308.64it/s]
+(val) -0.488 (test) -0.490 (loss) 0.14991
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:37.557441
+Epoch 208 Step 10816:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 208 Step 10816:  62%|██████▏   | 32/52 [00:00<00:00, 316.85it/s]Epoch 208 Step 10816: 100%|██████████| 52/52 [00:00<00:00, 321.95it/s]
+(val) -0.490 (test) -0.491 (loss) 0.14663
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:37.732884
+Epoch 209 Step 10868:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 209 Step 10868:  63%|██████▎   | 33/52 [00:00<00:00, 329.80it/s]Epoch 209 Step 10868: 100%|██████████| 52/52 [00:00<00:00, 340.59it/s]
+(val) -0.489 (test) -0.490 (loss) 0.14851
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:37.907865
+Epoch 210 Step 10920:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 210 Step 10920:  60%|█████▉    | 31/52 [00:00<00:00, 309.47it/s]Epoch 210 Step 10920: 100%|██████████| 52/52 [00:00<00:00, 339.55it/s]
+(val) -0.492 (test) -0.492 (loss) 0.14593
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:38.083835
+Epoch 211 Step 10972:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 211 Step 10972:  63%|██████▎   | 33/52 [00:00<00:00, 327.19it/s]Epoch 211 Step 10972: 100%|██████████| 52/52 [00:00<00:00, 336.63it/s]
+(val) -0.491 (test) -0.493 (loss) 0.14519
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:38.259198
+Epoch 212 Step 11024:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 212 Step 11024:  63%|██████▎   | 33/52 [00:00<00:00, 325.16it/s]Epoch 212 Step 11024: 100%|██████████| 52/52 [00:00<00:00, 344.48it/s]
+(val) -0.489 (test) -0.491 (loss) 0.14619
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:38.430654
+Epoch 213 Step 11076:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 213 Step 11076:  56%|█████▌    | 29/52 [00:00<00:00, 286.98it/s]Epoch 213 Step 11076: 100%|██████████| 52/52 [00:00<00:00, 302.57it/s]
+(val) -0.489 (test) -0.490 (loss) 0.14524
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:38.609997
+Epoch 214 Step 11128:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 214 Step 11128:  62%|██████▏   | 32/52 [00:00<00:00, 316.24it/s]Epoch 214 Step 11128: 100%|██████████| 52/52 [00:00<00:00, 327.42it/s]
+(val) -0.487 (test) -0.491 (loss) 0.14533
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:38.791682
+Epoch 215 Step 11180:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 215 Step 11180:  62%|██████▏   | 32/52 [00:00<00:00, 316.74it/s]Epoch 215 Step 11180: 100%|██████████| 52/52 [00:00<00:00, 316.17it/s]
+(val) -0.486 (test) -0.492 (loss) 0.14620
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:38.979892
+Epoch 216 Step 11232:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 216 Step 11232:  62%|██████▏   | 32/52 [00:00<00:00, 288.52it/s]Epoch 216 Step 11232: 100%|██████████| 52/52 [00:00<00:00, 325.40it/s]
+(val) -0.488 (test) -0.490 (loss) 0.14561
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:39.156583
+Epoch 217 Step 11284:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 217 Step 11284:  69%|██████▉   | 36/52 [00:00<00:00, 325.94it/s]Epoch 217 Step 11284: 100%|██████████| 52/52 [00:00<00:00, 316.01it/s]
+(val) -0.488 (test) -0.490 (loss) 0.14658
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:39.340240
+Epoch 218 Step 11336:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 218 Step 11336:  63%|██████▎   | 33/52 [00:00<00:00, 317.64it/s]Epoch 218 Step 11336: 100%|██████████| 52/52 [00:00<00:00, 324.92it/s]
+(val) -0.491 (test) -0.492 (loss) 0.14450
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:39.517678
+Epoch 219 Step 11388:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 219 Step 11388:  62%|██████▏   | 32/52 [00:00<00:00, 286.62it/s]Epoch 219 Step 11388: 100%|██████████| 52/52 [00:00<00:00, 313.65it/s]
+(val) -0.486 (test) -0.489 (loss) 0.14726
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:39.693163
+Epoch 220 Step 11440:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 220 Step 11440:  71%|███████   | 37/52 [00:00<00:00, 323.52it/s]Epoch 220 Step 11440: 100%|██████████| 52/52 [00:00<00:00, 347.50it/s]
+(val) -0.487 (test) -0.492 (loss) 0.14518
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:39.865932
+Epoch 221 Step 11492:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 221 Step 11492:  63%|██████▎   | 33/52 [00:00<00:00, 289.49it/s]Epoch 221 Step 11492: 100%|██████████| 52/52 [00:00<00:00, 295.84it/s]
+(val) -0.488 (test) -0.490 (loss) 0.14403
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:40.049480
+Epoch 222 Step 11544:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 222 Step 11544:  62%|██████▏   | 32/52 [00:00<00:00, 298.19it/s]Epoch 222 Step 11544: 100%|██████████| 52/52 [00:00<00:00, 316.78it/s]
+(val) -0.489 (test) -0.491 (loss) 0.14133
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:40.223052
+Epoch 223 Step 11596:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 223 Step 11596:  63%|██████▎   | 33/52 [00:00<00:00, 324.74it/s]Epoch 223 Step 11596: 100%|██████████| 52/52 [00:00<00:00, 345.55it/s]
+(val) -0.489 (test) -0.491 (loss) 0.14313
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:40.396013
+Epoch 224 Step 11648:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 224 Step 11648:  60%|█████▉    | 31/52 [00:00<00:00, 308.29it/s]Epoch 224 Step 11648: 100%|██████████| 52/52 [00:00<00:00, 314.69it/s]
+(val) -0.488 (test) -0.491 (loss) 0.14473
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:40.574505
+Epoch 225 Step 11700:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 225 Step 11700:  62%|██████▏   | 32/52 [00:00<00:00, 317.41it/s]Epoch 225 Step 11700: 100%|██████████| 52/52 [00:00<00:00, 326.92it/s]
+(val) -0.488 (test) -0.489 (loss) 0.14289
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:40.748341
+Epoch 226 Step 11752:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 226 Step 11752:  62%|██████▏   | 32/52 [00:00<00:00, 312.74it/s]Epoch 226 Step 11752: 100%|██████████| 52/52 [00:00<00:00, 322.04it/s]
+(val) -0.491 (test) -0.494 (loss) 0.14426
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:40.926209
+Epoch 227 Step 11804:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 227 Step 11804:  69%|██████▉   | 36/52 [00:00<00:00, 312.41it/s]Epoch 227 Step 11804: 100%|██████████| 52/52 [00:00<00:00, 319.73it/s]
+(val) -0.490 (test) -0.494 (loss) 0.14684
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:41.106220
+Epoch 228 Step 11856:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 228 Step 11856:  65%|██████▌   | 34/52 [00:00<00:00, 338.57it/s]Epoch 228 Step 11856: 100%|██████████| 52/52 [00:00<00:00, 333.13it/s]
+(val) -0.486 (test) -0.488 (loss) 0.14415
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:41.289716
+Epoch 229 Step 11908:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 229 Step 11908:  65%|██████▌   | 34/52 [00:00<00:00, 338.55it/s]Epoch 229 Step 11908: 100%|██████████| 52/52 [00:00<00:00, 341.60it/s]
+(val) -0.489 (test) -0.493 (loss) 0.14618
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:41.463002
+Epoch 230 Step 11960:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 230 Step 11960:  60%|█████▉    | 31/52 [00:00<00:00, 307.20it/s]Epoch 230 Step 11960: 100%|██████████| 52/52 [00:00<00:00, 310.83it/s]
+(val) -0.485 (test) -0.488 (loss) 0.14278
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:41.647928
+Epoch 231 Step 12012:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 231 Step 12012:  67%|██████▋   | 35/52 [00:00<00:00, 305.34it/s]Epoch 231 Step 12012: 100%|██████████| 52/52 [00:00<00:00, 316.62it/s]
+(val) -0.486 (test) -0.491 (loss) 0.14395
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:41.818940
+Epoch 232 Step 12064:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 232 Step 12064:  63%|██████▎   | 33/52 [00:00<00:00, 300.09it/s]Epoch 232 Step 12064: 100%|██████████| 52/52 [00:00<00:00, 316.63it/s]
+(val) -0.490 (test) -0.491 (loss) 0.14319
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:41.997123
+Epoch 233 Step 12116:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 233 Step 12116:  62%|██████▏   | 32/52 [00:00<00:00, 314.33it/s]Epoch 233 Step 12116: 100%|██████████| 52/52 [00:00<00:00, 319.17it/s]
+(val) -0.488 (test) -0.490 (loss) 0.14265
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:42.179174
+Epoch 234 Step 12168:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 234 Step 12168:  63%|██████▎   | 33/52 [00:00<00:00, 328.95it/s]Epoch 234 Step 12168: 100%|██████████| 52/52 [00:00<00:00, 333.50it/s]
+(val) -0.488 (test) -0.492 (loss) 0.14282
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:42.359445
+Epoch 235 Step 12220:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 235 Step 12220:  73%|███████▎  | 38/52 [00:00<00:00, 344.49it/s]Epoch 235 Step 12220: 100%|██████████| 52/52 [00:00<00:00, 332.14it/s]
+(val) -0.487 (test) -0.490 (loss) 0.14078
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:42.535316
+Epoch 236 Step 12272:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 236 Step 12272:  62%|██████▏   | 32/52 [00:00<00:00, 310.45it/s]Epoch 236 Step 12272: 100%|██████████| 52/52 [00:00<00:00, 312.38it/s]
+(val) -0.486 (test) -0.489 (loss) 0.14061
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:42.715557
+Epoch 237 Step 12324:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 237 Step 12324:  69%|██████▉   | 36/52 [00:00<00:00, 332.68it/s]Epoch 237 Step 12324: 100%|██████████| 52/52 [00:00<00:00, 325.20it/s]
+(val) -0.489 (test) -0.491 (loss) 0.14004
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:42.892760
+Epoch 238 Step 12376:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 238 Step 12376:  58%|█████▊    | 30/52 [00:00<00:00, 300.00it/s]Epoch 238 Step 12376: 100%|██████████| 52/52 [00:00<00:00, 347.41it/s]
+(val) -0.489 (test) -0.491 (loss) 0.14188
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:43.065875
+Epoch 239 Step 12428:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 239 Step 12428:  63%|██████▎   | 33/52 [00:00<00:00, 326.86it/s]Epoch 239 Step 12428: 100%|██████████| 52/52 [00:00<00:00, 336.92it/s]
+(val) -0.487 (test) -0.489 (loss) 0.14210
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:43.239576
+Epoch 240 Step 12480:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 240 Step 12480:  75%|███████▌  | 39/52 [00:00<00:00, 335.72it/s]Epoch 240 Step 12480: 100%|██████████| 52/52 [00:00<00:00, 358.33it/s]
+(val) -0.490 (test) -0.492 (loss) 0.14283
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:43.414016
+Epoch 241 Step 12532:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 241 Step 12532:  62%|██████▏   | 32/52 [00:00<00:00, 310.45it/s]Epoch 241 Step 12532: 100%|██████████| 52/52 [00:00<00:00, 320.00it/s]
+(val) -0.488 (test) -0.488 (loss) 0.13943
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:43.589374
+Epoch 242 Step 12584:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 242 Step 12584:  75%|███████▌  | 39/52 [00:00<00:00, 333.23it/s]Epoch 242 Step 12584: 100%|██████████| 52/52 [00:00<00:00, 338.61it/s]
+(val) -0.485 (test) -0.488 (loss) 0.14110
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:43.759982
+Epoch 243 Step 12636:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 243 Step 12636:  71%|███████   | 37/52 [00:00<00:00, 305.81it/s]Epoch 243 Step 12636: 100%|██████████| 52/52 [00:00<00:00, 314.66it/s]
+(val) -0.488 (test) -0.491 (loss) 0.14305
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:43.940479
+Epoch 244 Step 12688:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 244 Step 12688:  65%|██████▌   | 34/52 [00:00<00:00, 311.11it/s]Epoch 244 Step 12688: 100%|██████████| 52/52 [00:00<00:00, 331.06it/s]
+(val) -0.486 (test) -0.489 (loss) 0.14118
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:44.119235
+Epoch 245 Step 12740:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 245 Step 12740:  75%|███████▌  | 39/52 [00:00<00:00, 333.12it/s]Epoch 245 Step 12740: 100%|██████████| 52/52 [00:00<00:00, 336.44it/s]
+(val) -0.486 (test) -0.490 (loss) 0.14140
+
+[...] exp\reproduce\E2-baseline\mlp\california\4 | 0:00:44.295043
+Epoch 246 Step 12792:   0%|          | 0/52 [00:00<?, ?it/s]Epoch 246 Step 12792:  60%|█████▉    | 31/52 [00:00<00:00, 307.67it/s]Epoch 246 Step 12792: 100%|██████████| 52/52 [00:00<00:00, 321.17it/s]
+(val) -0.487 (test) -0.489 (loss) 0.14062
+
+{'function': 'bin\\model.main',
+ 'gpus': [],
+ 'n_parameters': 45553,
+ 'scores': {'train': -0.3906172751616555,
+            'val': -0.4847202608705836,
+            'test': -0.48767985119676416},
+ 'time': '0:00:44.468113'}
+
+====================================================================================================
+[<<<] exp\reproduce\E2-baseline\mlp\california\4 | 2026-11-12 16:11:03.454939
+====================================================================================================

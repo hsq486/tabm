@@ -18,3 +18,8 @@ timestamp,commit,method,dataset,seed,exit_code,duration_sec,status,report
 2026-11-10 11:21:37,51ecb5954,tabm-packed,house,1,0,281.2,ok,paper\exp\reproduce\E3\tabm-packed\house\1\report.json
 2026-11-10 11:24:20,51ecb5954,tabm-packed,house,2,0,163.5,ok,paper\exp\reproduce\E3\tabm-packed\house\2\report.json
 2026-11-12 16:09:26,b27ddd8ce,tabm,california,3,0,503.7,ok,paper/exp/reproduce/E3/tabm/california/3/report.json
+2026-11-12 16:24:24,b27ddd8ce,tabm,california,4,0,732.7,ok,paper/exp/reproduce/E3/tabm/california/4/report.json
+2026-11-12 16:35:24,fcfa91680,tabm,churn,3,0,47.5,ok,paper/exp/reproduce/E3/tabm/churn/3/report.json
+2026-11-12 16:37:09,fcfa91680,tabm,churn,4,0,54.1,ok,paper/exp/reproduce/E3/tabm/churn/4/report.json
+2026-11-12 16:40:32,fcfa91680,tabm,house,3,0,135.8,ok,paper/exp/reproduce/E3/tabm/house/3/report.json
+2026-11-12 16:42:51,fcfa91680,tabm,house,4,0,67.1,ok,paper/exp/reproduce/E3/tabm/house/4/report.json

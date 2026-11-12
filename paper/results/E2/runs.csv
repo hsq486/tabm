@@ -19,3 +19,7 @@ timestamp,commit,method,dataset,seed,exit_code,duration_sec,status,report
 2026-11-10 09:54:20,38f6b0067,mlp-piecewiselinear,house,2,0,120.4,ok,paper\exp\reproduce\E2-baseline\mlp-piecewiselinear\house\2\report.json
 2026-11-12 15:57:03,e881c6a17,mlp,california,3,0,38.6,ok,paper/exp/reproduce/E2-baseline/mlp/california/3/report.json
 2026-11-12 16:11:03,b27ddd8ce,mlp,california,4,0,51.4,ok,paper/exp/reproduce/E2-baseline/mlp/california/4/report.json
+2026-11-12 16:33:09,fcfa91680,mlp,churn,3,0,75.4,ok,paper/exp/reproduce/E2-baseline/mlp/churn/3/report.json
+2026-11-12 16:36:15,fcfa91680,mlp,churn,4,0,50.7,ok,paper/exp/reproduce/E2-baseline/mlp/churn/4/report.json
+2026-11-12 16:38:16,fcfa91680,mlp,house,3,0,67.1,ok,paper/exp/reproduce/E2-baseline/mlp/house/3/report.json
+2026-11-12 16:41:44,fcfa91680,mlp,house,4,0,72.6,ok,paper/exp/reproduce/E2-baseline/mlp/house/4/report.json
