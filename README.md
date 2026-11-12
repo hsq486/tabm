@@ -754,3 +754,91 @@ for x in sorted(
     print(x)
 """
 ```
+
+# 复现说明（课程作业）
+
+本仓库用于《数据分析与数据挖掘实践》期末复现作业，复现对象为
+*TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling*（ICLR 2025）。
+上游包代码语义未改动，新增内容集中在 `paper/configs/`、`paper/scripts/`、
+`paper/results/`、`tests/` 与 `.github/workflows/ci.yml`。
+
+## 固定版本
+
+| 项 | 值 |
+| --- | --- |
+| 上游基线 commit | `b53fd7cf2`（2025-11-07，复现开始前最后一次上游提交） |
+| 本作业实验 commit | `cba5322ba` … `49f7dd49d`（分支 `experiment/e2-baselines`） |
+| 论文版本 | ICLR 2025 正式版（arXiv v3） |
+
+## 环境
+
+- Windows 11 + conda 环境 `tabm`：Python 3.10.22、torch 2.0.1+cpu、numpy 1.26.3、
+  scikit-learn 1.3.1、pandas 2.1.1。
+- 机器无 CUDA，训练日志中 `AMP enabled: False`；全程 CPU（14 线程）。
+- `matplotlib` 只用于 E6/E9 出图，不是训练依赖。
+- 依赖清单见 `paper/environment.yaml`、`paper/pyproject.toml`；完整安装与硬件记录见
+  仓库外 `logs/environment.md`。
+
+## 数据
+
+- 使用官方数据包 `data.tar`（HuggingFace 镜像），解压到 `paper/data/<dataset>/`，
+  含 `california`、`adult`、`churn`、`house` 等。
+- SHA256：`D8038250C20A83F241BAB822C32B71C622C032B8C25559E9AB26CAEAFCA5385D`。
+- 沿用官方划分与预处理，未重新划分、未在测试集上调参；`paper/data/` 与 `paper/exp/`
+  均不入库。
+
+## 复跑命令
+
+```powershell
+cd "F:\study\大三上\数据分析课设\Tabm\paper"
+$env:OMP_NUM_THREADS="14"; $env:MKL_NUM_THREADS="14"
+$py = "D:\Anaconda\envs\tabm\python.exe"
+
+# E2 基线（MLP、MLP†，3 数据集 × 3 种子）
+.\scripts\run_e2_baselines.ps1
+# E3 主方法（TabM、TabM-packed，3 数据集 × 3 种子）
+.\scripts\run_e3_main.ps1
+# E3b 嵌入解混淆（TabM + 分段线性嵌入）
+.\scripts\run_e3b_plr.ps1
+# E4 集成规模（k=1/2/4/8/16/32）
+.\scripts\run_e4_kablation.ps1
+# E5 效率微基准 / E6 误差分析 / E7 独立实现核验 / E9 官方分布定位
+& $py scripts\benchmark_efficiency.py
+& $py scripts\analyze_errors.py; & $py scripts\plot_e6.py
+& $py scripts\verify_implementation.py
+& $py scripts\locate_effect_size.py
+```
+
+单次命令模板（以 E3 california seed=0 为例）：
+
+```powershell
+& $py bin\model.py exp\reproduce\E3\tabm\california\0.toml --force
+```
+
+## 结果位置
+
+| 实验 | 汇总 | 图表 |
+| --- | --- | --- |
+| E2 | `paper/results/E2/{runs,summary}.csv` | — |
+| E3 | `paper/results/E3/{runs,summary}.csv` | — |
+| E3b | `paper/results/E3b/{runs,summary}.csv` | — |
+| E4 | `paper/results/E4/{runs,summary}.csv` | — |
+| E5 | `paper/results/E5/benchmark.csv` | — |
+| E6 | `paper/results/E6/*.csv` | `paper/results/E6/figures/*.png` |
+| E7 | `paper/results/E7/verification.csv` | — |
+| E9 | `paper/results/E9/*.csv` | `paper/results/E9/effect_size_distribution.png` |
+
+配置、命令、逐实验结论与解读统一写在 `paper/configs/README.md`。
+
+## 主要结论与已知限制
+
+- C1（TabM 优于 MLP）：**支持** —— 3 个数据集、3 个种子全部同向；控制数值嵌入后
+  （E3b）2/3 仍成立，`house` 为失配例外并如实保留。
+- C2（参数高效）：**部分支持** —— 参数量少约 6.8×，但 CPU 上每步比 `tabm-packed` 慢 1.43×，
+  推理慢 1.36×，与「训练更快」的表述不一致。
+- C3（集成规模收益）：**部分支持** —— k=1→8 是主要收益，churn 在 k=4 饱和，k=32 收益
+  0.0024 而耗时 12 小时 39 分。
+- C4（集成优于最好单头）：**支持**。
+- 差异与限制：CPU 预算下主方法缩到 k=8、2×256，基线沿用官方调好的宽度未缩减（对 TabM
+  更严格）；CPU 无 GPU 并行导致 k 增大时墙钟超线性；未做多数据集超参搜索。
+- 仓库 `origin` 仍指向上游，尚未推送个人 fork，因此没有 PR；本地提交完整可查。

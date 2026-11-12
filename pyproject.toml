@@ -70,6 +70,10 @@ check_untyped_defs = true
 ignore_missing_imports = true
 exclude = ["^local/*"]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "paper"]
+
 [tool.pyright]
 exclude = [
     # Default rules
