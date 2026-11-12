@@ -37,17 +37,20 @@ d_block = 256
 dropout = 0.1697377329739597
 ```
 
-相对官方 `exp/tabm/california/0-evaluation/0.toml` 的差异：
+相对官方 `exp/tabm-sharetrainingbatches/california/0-evaluation/0.toml` 的差异
+（本项目从「批次共享」变体出发，因为主配置已固定 `share_training_batches=true`）：
 
 | 项目 | 原文 | 本项目 | 原因 |
 | --- | --- | --- | --- |
-| k | 32 | 8 | CPU 预算；k=8/16 预实验精度几乎相同 |
+| k | 32 | 8 | CPU 预算；E0 预实验显示 k=8→16 精度几乎不变、耗时翻倍 |
 | n_blocks | 3 | 2 | 降低 CPU 训练时间 |
-| d_block | 400 | 256 | 降低 CPU 训练时间 |
-| share_training_batches | false | true | CPU 吞吐；官方另有 `tabm-sharetrainingbatches` 变体 |
-| 硬件 | A100 | 本机 CPU | 无 GPU |
+| d_block | 352 | 256 | 降低 CPU 训练时间 |
+| 其它 | `lr`、`dropout`、`batch_size`、`patience`、`num_policy` | 与原文一致 | 不改动官方调参结果 |
 
-## 2. 实测结果
+> 注：官方非共享变体 `exp/tabm/california/` 的 `d_block` 是 400、`lr` 与 `dropout` 也不同；
+> 本项目没有使用该文件，报告引用数值时以 `tabm-sharetrainingbatches` 一套为准。
+
+## 2. E0 预实验实测结果（单次运行，非正式证据）
 
 | 配置 | 参数量 | epoch | 耗时 | test RMSE |
 | --- | --- | --- | --- | --- |
@@ -55,21 +58,34 @@ dropout = 0.1697377329739597
 | TabM k=8（主） | 79,944 | 198 | 7 分 18 秒 | 0.474324 |
 | TabM k=16（对照） | 92,304 | 181 | 13 分 47 秒 | 0.474932 |
 
-初步判定：TabM k=8 相对普通 MLP 明显降低 RMSE；k 从 8 增到 16 的收益仅 0.0006，且耗时翻倍，因此主实验固定 k=8。该结论仍需 3 个种子确认。
+初步判定：TabM k=8 相对普通 MLP 明显降低 RMSE；k 从 8 增到 16 的收益仅 0.0006，且耗时翻倍，因此主实验固定 k=8。
+
+> **E0 是单次运行的预实验**（仅用于跑通流程和确定 k），不进入汇总表、不作为证据；
+> 上述判断已由 E2/E3 的 3 种子结果复核（见 §4、§5），k=8 与 k=16 的差距在种子波动内。
 
 ## 3. 目录与命令
 
 ```text
-paper/configs/
-├── E0-tabm-k8.toml        # 主配置模板（可提交）
-└── E0-tabm-k16.toml       # 集成规模对照
+paper/configs/                 # 13 个冻结配置，均以注释标明来源与缩减项
+├── E0-tabm-k8.toml            # 预实验：k=8（单次）
+├── E0-tabm-k16.toml           # 预实验：k=16（单次）
+├── E3-tabm-<dataset>.toml     # 主方法，dataset ∈ {california, churn, house}
+├── E3-tabm-packed-<dataset>.toml
+├── E3b-tabm-plr-<dataset>.toml
+├── E4-tabm-<dataset>.toml     # dataset ∈ {california, churn}，k 由脚本替换
+└── README.md
 
-paper/exp/reproduce/
-├── E0-tabm-k8/0.toml      # 实验运行配置（exp 下被 git 忽略）
-├── E0-tabm-k8/0/          # 输出：checkpoint、预测、report.json、DONE
-├── E0-tabm-k16/0.toml
-└── E0-tabm-k16/0/
+paper/exp/reproduce/           # 运行配置与输出（被 .gitignore 排除，不入库）
+├── E2-baseline/<method>/<dataset>/<seed>.toml + <seed>.log + <seed>/
+├── E3/<method>/<dataset>/<seed>.toml + ...
+├── E3b/<dataset>/<seed>.toml + ...
+└── E4/<dataset>/k=<k>/<seed>.toml + ...
 ```
+
+**配置可追溯性**：runner 只替换模板里的 `seed = ...` 一行（E4 另外替换 `k`），
+每个种子都会把实际使用的 TOML 写到 `exp/reproduce/.../<seed>.toml` 后再交给
+`bin/model.py`，因此「3 行结果」对应「3 份实际配置 + 3 份日志 + 3 个 report.json」；
+提交号同时写入 `paper/results/*/runs.csv` 的 `commit` 列。
 
 ```powershell
 cd "F:\study\大三上\数据分析课设\Tabm\paper"
@@ -78,13 +94,20 @@ $env:OMP_NUM_THREADS="14"; $env:MKL_NUM_THREADS="14"
 & "D:\Anaconda\envs\tabm\python.exe" bin\model.py exp\reproduce\E0-tabm-k8\0.toml --force
 ```
 
-## 4. 后续矩阵（待执行）
+## 4. 实验矩阵与执行状态（全部已执行完毕）
 
-| 实验 | 数据集 | 方法 | 种子 |
-| --- | --- | --- | --- |
-| E2 基线 | california、churn、house | MLP、MLP† | 0/1/2 |
-| E3 主方法 | california、churn、house | TabM、TabM_packed | 0/1/2 |
-| E4 k 分析 | california | TabM k=1/2/4/8/16/32 | 0 |
+| 实验 | 数据集 | 方法/内容 | 种子 | 状态 |
+| --- | --- | --- | --- | --- |
+| E2 基线 | california、churn、house | MLP、MLP† | 0/1/2 | 18/18 完成 |
+| E3 主方法 | california、churn、house | TabM、TabM-packed | 0/1/2 | 18/18 完成 |
+| E3b 解混淆 | california、churn、house | TabM + 分段线性嵌入 | 0/1/2 | 9/9 完成 |
+| E4 k 分析 | california、churn | TabM，k=1/2/4/8/16/32 | 0（探索性） | 12/12 完成 |
+| E5 效率 | 合成负载（california 形状） | plain/TabM/TabM-packed | 3 次重复 | 完成 |
+| E6 误差 | 复用 E2/E3/E3b 预测 | 十分位、校准、配对胜负 | 0/1/2 | 完成 |
+| E7 独立实现 | 合成张量 | 前向等价与参数量闭式 | — | 7 项检查全通过 |
+| E9 定位 | 官方 10 个数据集的报告 | 效应量分布 | — | 完成 |
+
+下面按实验给出配置、结果与结论；表中汇总值均为 3 种子均值（E4 除外，见其小节说明）。
 
 ### E2 基线说明
 
@@ -186,6 +209,9 @@ TabM-packed 546,824 / 565,264 / 563,208，即 **TabM 少 6.5~6.8 倍参数**。
   `dropout=0.365`、`lr=4.3×10⁻³`，原本为 4×608 骨干调参，套到 2×256 后
   在 3 个种子上都变差（−392 ~ −583），best_step 也明显下降。这属于
   **配置对骨干规模的敏感性**，不能解释为「集成无效」。
+  换言之，该行检验的是「官方超参 + 缩减骨干」这一组合的效果，**不能把变差单独
+  归因于分段线性嵌入模块**；要分离嵌入本身的效应，需在 2×256 上重调
+  `n_bins / dropout / lr`。本作业未做这轮重调，作为限制写入报告。
 - 参数量：TabM+嵌入 146k~148k，仍比 MLP†（california 578k）少 3.9 倍、
   比 TabM-packed（547k）少 3.7 倍，参数效率结论不变。
 
@@ -193,6 +219,11 @@ TabM-packed 546,824 / 565,264 / 563,208，即 **TabM 少 6.5~6.8 倍参数**。
 
 12/12 成功，10:43–10:59（churn），california k=32 从 21:45 跨夜跑到 10:43（**约 12 小时 39 分钟**）。配置
 `E4-tabm-<dataset>.toml` 固定除 k 外的所有超参，以隔离集成规模效应；seed=0。
+
+> **单种子探索性实验**：为控制总耗时，E4 每个 (数据集, k) 只跑 seed=0。因此下表是
+> 「固定种子下的趋势」，用于确定 k 的取舍区间，**不构成 k 趋势的统计证据**（E3 只
+> 提供了 k=8 的 3 种子水平，没有 k 的跨种子重复）。报告引用时必须标注「seed=0，
+> 探索性」，且不能写成稳定规律。
 
 | 数据集 | k=1 | k=2 | k=4 | k=8 | k=16 | k=32 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -203,12 +234,13 @@ TabM-packed 546,824 / 565,264 / 563,208，即 **TabM 少 6.5~6.8 倍参数**。
 | churn params | 71,442 | 73,252 | 76,872 | 84,112 | 98,592 | 127,552 |
 | churn 墙钟 | 8 s | 30 s | 44 s | 2:15 | 3:49 | 7:44 |
 
-**结论（C3 部分支持）**：
+**结论（C3 部分支持；以下均为 seed=0 的探索性观察）**：
 
 - california 上 k=1 → k=8 的 RMSE 改善是主要部分（−0.0138），k=8 → k=32 只再降 0.0024，
-  且 k=16 比 k=8 反而略微变差（+0.0006）。收益递减明显，**k=8 已是本机 CPU 预算下的合理截断点**。
+  且 k=16 比 k=8 反而略微变差（+0.0006）。收益递减的形态明显，据此把 k=8 作为本机
+  CPU 预算下的截断点；但「收益递减」目前只有单种子支持。
 - churn 上 k=1 → k=2 直接跳 0.008，k=2 之后就已经很平（波动 ≤ 0.0025），k=4 达到 0.8595 后
-  不再改善。分类任务上集成规模的饱和更快。
+  不再改善。分类任务上集成规模的饱和更快（同样仅 seed=0）。
 - 参数量增长近似线性（k 每翻倍，参数量增 ~12k），**墙钟在 california 上呈超线性**：
   k=16 约 17 min，k=32 约 12.7 h（**45× 变慢**，best_step 同为 9412）。这是 CPU 无 GPU 并行时
   `share_training_batches=true` 的已知代价，不影响结论。
@@ -220,6 +252,10 @@ TabM-packed 546,824 / 565,264 / 563,208，即 **TabM 少 6.5~6.8 倍参数**。
 `runs.csv` 里的墙钟把「每步成本」和「早停留下的步数」混在一起，因此另用一个
 固定步数的微基准把两者分开：`paper/scripts/benchmark_efficiency.py`，同一份
 california 形状的合成负载（8 特征、16,512 行、batch 256、14 线程、dropout=0）。
+
+> **适用范围**：这是**合成负载的固定步数微基准**，只用于比较同一形状下的相对
+> 计算成本；它不等于任何数据集上的真实训练总耗时（不含早停步数差异），也不能
+> 外推到论文的 GPU 环境。报告只能引用「同批次内的比值」，不能引用绝对秒数。
 
 | 架构 | 参数量 | 每步 ms | 每 epoch 秒 | 推理（千样本/秒） |
 | --- | --- | --- | --- | --- |
