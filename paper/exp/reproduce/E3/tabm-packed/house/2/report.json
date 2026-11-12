@@ -1,0 +1,60 @@
+{
+    "function": "bin\\model.main",
+    "gpus": [],
+    "config": {
+        "seed": 2,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "data/house",
+            "num_policy": "noisy-quantile"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.00426725554229699,
+            "weight_decay": 0.014579531645605904
+        },
+        "model": {
+            "arch_type": "tabm-packed",
+            "k": 8,
+            "share_training_batches": true,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 2,
+                "d_block": 256,
+                "dropout": 0.0
+            }
+        }
+    },
+    "n_parameters": 563208,
+    "prediction_type": "labels",
+    "epoch_size": 57,
+    "best_step": 912,
+    "metrics": {
+        "train": {
+            "rmse": 20935.660677418327,
+            "mae": 11825.5419921875,
+            "r2": 0.8385943583166451,
+            "score": -20935.660677418327
+        },
+        "val": {
+            "rmse": 29049.161089435955,
+            "mae": 14783.099609375,
+            "r2": 0.7168257738554044,
+            "score": -29049.161089435955
+        },
+        "test": {
+            "rmse": 31032.56612012613,
+            "mae": 14849.1201171875,
+            "r2": 0.6664175342956049,
+            "score": -31032.56612012613
+        }
+    },
+    "time": "0:02:27.488864",
+    "chunk_size": null,
+    "eval_batch_size": 32768
+}

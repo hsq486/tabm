@@ -1,0 +1,29 @@
+# E3 对照：TabM-packed（k 个完全独立的 MLP，不共享权重）
+# 除 arch_type 外与 E3-tabm-house.toml 完全一致，用于隔离「权重共享」的影响。
+seed = 2
+batch_size = 256
+patience = 16
+n_epochs = -1
+gradient_clipping_norm = 1.0
+amp = true
+
+[data]
+cache = true
+path = "data/house"
+num_policy = "noisy-quantile"
+
+[optimizer]
+type = "AdamW"
+lr = 0.00426725554229699
+weight_decay = 0.014579531645605904
+
+[model]
+arch_type = "tabm-packed"
+k = 8
+share_training_batches = true
+
+[model.backbone]
+type = "MLP"
+n_blocks = 2
+d_block = 256
+dropout = 0.0

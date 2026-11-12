@@ -784,8 +784,10 @@ for x in sorted(
 - 使用官方数据包 `data.tar`（HuggingFace 镜像），解压到 `paper/data/<dataset>/`，
   含 `california`、`adult`、`churn`、`house` 等。
 - SHA256：`D8038250C20A83F241BAB822C32B71C622C032B8C25559E9AB26CAEAFCA5385D`。
-- 沿用官方划分与预处理，未重新划分、未在测试集上调参；`paper/data/` 与 `paper/exp/`
-  均不入库。
+- 沿用官方划分与预处理，未重新划分、未在测试集上调参。`paper/data/` 不入库；
+  `paper/exp/reproduce/` 下每次运行的配置、日志、`report.json`、`summary.json` 与 `DONE`
+  入库，权重、预测数组与 tfevents 由全局 `.gitignore` 规则排除，因此报告里的每个数字都能
+  对应到一个可查的运行目录。
 
 ## 复跑命令
 
@@ -807,6 +809,10 @@ $py = "D:\Anaconda\envs\tabm\python.exe"
 & $py scripts\analyze_errors.py; & $py scripts\plot_e6.py
 & $py scripts\verify_implementation.py
 & $py scripts\locate_effect_size.py
+# E1 种子 3-4 主比较 + E8 标签噪声（可中断重跑，已完成的 run 会被跳过）
+& $py scripts\run_extensions.py
+# 五种子主比较表（results/main5）与 E8 表（results/E8）
+& $py scripts\summarize_extensions.py
 ```
 
 单次命令模板（以 E3 california seed=0 为例）：
@@ -827,6 +833,11 @@ $py = "D:\Anaconda\envs\tabm\python.exe"
 | E6 | `paper/results/E6/*.csv` | `paper/results/E6/figures/*.png` |
 | E7 | `paper/results/E7/verification.csv` | — |
 | E9 | `paper/results/E9/*.csv` | `paper/results/E9/effect_size_distribution.png` |
+| 五种子主比较 | `paper/results/main5/{by_seed,summary,paired}.csv` | — |
+| E8 标签噪声 | `paper/results/E8/{by_seed,summary}.csv` | — |
+
+`paper/results/_tooling_failures.csv` 单独保存 2026-11-12 两次启动器故障产生的记录
+（0 秒退出、无任何产物），不计入任何实验结论；`runs.csv` 只保留真正执行过的 run。
 
 配置、命令、逐实验结论与解读统一写在 `paper/configs/README.md`。
 
@@ -841,4 +852,6 @@ $py = "D:\Anaconda\envs\tabm\python.exe"
 - C4（集成优于最好单头）：**支持**。
 - 差异与限制：CPU 预算下主方法缩到 k=8、2×256，基线沿用官方调好的宽度未缩减（对 TabM
   更严格）；CPU 无 GPU 并行导致 k 增大时墙钟超线性；未做多数据集超参搜索。
-- 仓库 `origin` 仍指向上游，尚未推送个人 fork，因此没有 PR；本地提交完整可查。
+- 分支与协作：`origin` 指向上游 `yandex-research/tabm` 以便逐行对照，个人 fork 为
+  `hsq486/tabm`（remote 名 `mine`）；实验分支与台账修复分支均推送到 fork 并合并
+  （PR #1、#2），`main` 含 25 个本地提交。

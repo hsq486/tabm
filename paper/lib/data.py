@@ -360,6 +360,58 @@ def standardize_labels(
     )
 
 
+def apply_train_label_noise(
+    y_train: np.ndarray,
+    *,
+    level: float,
+    seed: int,
+    regression: bool,
+) -> np.ndarray:
+    """Corrupt a copy of the training labels.
+
+    Call this only on ``data['y']['train']`` after regression labels have been
+    standardized with the clean training mean and standard deviation. ``level``
+    is then the standard deviation of additive Gaussian noise in clean-label
+    standard deviations, so 0.1 means 10% of that scale. Classification labels
+    are replaced by a different class with probability ``level``. The function
+    uses a private generator and does not touch the global random state, so
+    model initialization for a given seed stays the same as the clean run.
+    """
+    if level == 0:
+        return y_train
+    if not 0 < level <= 1:
+        raise ValueError(f'label noise level must be in (0, 1], got {level}')
+
+    # Offset from the model seed so the noise draw is determined by the run
+    # seed without reusing the same integer the training script already used.
+    rng = np.random.Generator(np.random.PCG64(seed + 1_000_003))
+    noisy = np.array(y_train, copy=True)
+    if regression:
+        noisy = noisy + rng.normal(0.0, level, size=noisy.shape).astype(noisy.dtype)
+        return noisy.astype(np.float32, copy=False)
+
+    if noisy.ndim != 1:
+        raise ValueError('classification labels must be one-dimensional')
+    classes = np.unique(noisy)
+    if classes.size < 2:
+        return noisy
+    flip = rng.random(noisy.shape[0]) < level
+    if classes.size == 2:
+        swapped = np.where(noisy == classes[0], classes[1], classes[0])
+        noisy[flip] = swapped[flip]
+        return noisy
+
+    # Draw uniformly from the classes other than the true label.
+    other_index = rng.integers(0, classes.size - 1, size=int(flip.sum()))
+    mapped = np.empty(int(flip.sum()), dtype=noisy.dtype)
+    for i, label in enumerate(noisy[flip]):
+        position = int(np.searchsorted(classes, label))
+        draw = int(other_index[i])
+        mapped[i] = classes[draw if draw < position else draw + 1]
+    noisy[flip] = mapped
+    return noisy
+
+
 def build_dataset(
     path: str | Path,
     *,

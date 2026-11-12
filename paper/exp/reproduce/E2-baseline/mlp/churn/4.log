@@ -1,0 +1,137 @@
+[1mCreating the output[0m
+[1mUsing cached dataset: build_dataset__churn__be7dd7939b3d5d037a113f40d102e721.pickle[0m
+[1mn_parameters = 2845570[0m
+[1mAMP enabled: False[0m
+====================================================================================================
+[>>>] exp\reproduce\E2-baseline\mlp\churn\4 | 2026-11-12 16:35:28.744068
+====================================================================================================
+
+{'seed': 4,
+ 'batch_size': 256,
+ 'patience': 16,
+ 'n_epochs': -1,
+ 'gradient_clipping_norm': 1.0,
+ 'amp': True,
+ 'data': {'cache': True,
+          'path': 'data/churn',
+          'num_policy': 'noisy-quantile',
+          'cat_policy': 'ordinal'},
+ 'optimizer': {'type': 'AdamW', 'lr': 0.0005068237351535733, 'weight_decay': 0.0},
+ 'model': {'arch_type': 'plain',
+           'backbone': {'type': 'MLP', 'n_blocks': 6, 'd_block': 752, 'dropout': 0.0}}}
+
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:00.000363
+Epoch 0 Step 0:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 0 Step 0:   8%|▊         | 2/25 [00:00<00:01, 12.42it/s]Epoch 0 Step 0:  16%|█▌        | 4/25 [00:00<00:01, 13.06it/s]Epoch 0 Step 0:  24%|██▍       | 6/25 [00:00<00:01, 14.14it/s]Epoch 0 Step 0:  32%|███▏      | 8/25 [00:00<00:01, 13.64it/s]Epoch 0 Step 0:  40%|████      | 10/25 [00:00<00:01, 13.44it/s]Epoch 0 Step 0:  48%|████▊     | 12/25 [00:00<00:00, 13.45it/s]Epoch 0 Step 0:  56%|█████▌    | 14/25 [00:01<00:00, 13.91it/s]Epoch 0 Step 0:  64%|██████▍   | 16/25 [00:01<00:00, 13.74it/s]Epoch 0 Step 0:  72%|███████▏  | 18/25 [00:01<00:00, 13.62it/s]Epoch 0 Step 0:  80%|████████  | 20/25 [00:01<00:00, 13.72it/s]Epoch 0 Step 0:  88%|████████▊ | 22/25 [00:01<00:00, 13.85it/s]Epoch 0 Step 0:  96%|█████████▌| 24/25 [00:01<00:00, 14.16it/s]Epoch 0 Step 0: 100%|██████████| 25/25 [00:01<00:00, 13.70it/s]
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+(val) 0.796 (test) 0.796 (loss) 0.49467
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:02.099489
+Epoch 1 Step 25:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 1 Step 25:   8%|▊         | 2/25 [00:00<00:01, 13.10it/s]Epoch 1 Step 25:  16%|█▌        | 4/25 [00:00<00:01, 13.33it/s]Epoch 1 Step 25:  24%|██▍       | 6/25 [00:00<00:01, 13.43it/s]Epoch 1 Step 25:  32%|███▏      | 8/25 [00:00<00:01, 13.95it/s]Epoch 1 Step 25:  40%|████      | 10/25 [00:00<00:01, 13.75it/s]Epoch 1 Step 25:  48%|████▊     | 12/25 [00:00<00:00, 13.76it/s]Epoch 1 Step 25:  56%|█████▌    | 14/25 [00:01<00:00, 13.86it/s]Epoch 1 Step 25:  64%|██████▍   | 16/25 [00:01<00:00, 13.72it/s]Epoch 1 Step 25:  72%|███████▏  | 18/25 [00:01<00:00, 13.80it/s]Epoch 1 Step 25:  80%|████████  | 20/25 [00:01<00:00, 14.03it/s]Epoch 1 Step 25:  88%|████████▊ | 22/25 [00:01<00:00, 13.88it/s]Epoch 1 Step 25:  96%|█████████▌| 24/25 [00:01<00:00, 13.75it/s]Epoch 1 Step 25: 100%|██████████| 25/25 [00:01<00:00, 13.73it/s]
+(val) 0.824 (test) 0.830 (loss) 0.43079
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:04.179233
+Epoch 2 Step 50:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 2 Step 50:   8%|▊         | 2/25 [00:00<00:01, 13.21it/s]Epoch 2 Step 50:  16%|█▌        | 4/25 [00:00<00:01, 13.35it/s]Epoch 2 Step 50:  24%|██▍       | 6/25 [00:00<00:01, 13.46it/s]Epoch 2 Step 50:  32%|███▏      | 8/25 [00:00<00:01, 13.92it/s]Epoch 2 Step 50:  40%|████      | 10/25 [00:00<00:01, 13.54it/s]Epoch 2 Step 50:  48%|████▊     | 12/25 [00:00<00:00, 13.63it/s]Epoch 2 Step 50:  56%|█████▌    | 14/25 [00:01<00:00, 13.51it/s]Epoch 2 Step 50:  64%|██████▍   | 16/25 [00:01<00:00, 13.94it/s]Epoch 2 Step 50:  72%|███████▏  | 18/25 [00:01<00:00, 13.83it/s]Epoch 2 Step 50:  80%|████████  | 20/25 [00:01<00:00, 14.03it/s]Epoch 2 Step 50:  88%|████████▊ | 22/25 [00:01<00:00, 13.73it/s]Epoch 2 Step 50:  96%|█████████▌| 24/25 [00:01<00:00, 13.75it/s]Epoch 2 Step 50: 100%|██████████| 25/25 [00:01<00:00, 13.70it/s]
+(val) 0.852 (test) 0.850 (loss) 0.38083
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:06.270293
+Epoch 3 Step 75:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 3 Step 75:   8%|▊         | 2/25 [00:00<00:01, 14.30it/s]Epoch 3 Step 75:  16%|█▌        | 4/25 [00:00<00:01, 13.63it/s]Epoch 3 Step 75:  24%|██▍       | 6/25 [00:00<00:01, 13.88it/s]Epoch 3 Step 75:  32%|███▏      | 8/25 [00:00<00:01, 13.60it/s]Epoch 3 Step 75:  40%|████      | 10/25 [00:00<00:01, 13.06it/s]Epoch 3 Step 75:  48%|████▊     | 12/25 [00:00<00:00, 13.39it/s]Epoch 3 Step 75:  56%|█████▌    | 14/25 [00:01<00:00, 13.54it/s]Epoch 3 Step 75:  64%|██████▍   | 16/25 [00:01<00:00, 13.81it/s]Epoch 3 Step 75:  72%|███████▏  | 18/25 [00:01<00:00, 13.74it/s]Epoch 3 Step 75:  80%|████████  | 20/25 [00:01<00:00, 13.67it/s]Epoch 3 Step 75:  88%|████████▊ | 22/25 [00:01<00:00, 13.92it/s]Epoch 3 Step 75:  96%|█████████▌| 24/25 [00:01<00:00, 13.83it/s]Epoch 3 Step 75: 100%|██████████| 25/25 [00:01<00:00, 13.62it/s]
+(val) 0.857 (test) 0.852 (loss) 0.35287
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:08.376008
+Epoch 4 Step 100:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 4 Step 100:   8%|▊         | 2/25 [00:00<00:01, 13.73it/s]Epoch 4 Step 100:  16%|█▌        | 4/25 [00:00<00:01, 14.19it/s]Epoch 4 Step 100:  24%|██▍       | 6/25 [00:00<00:01, 13.78it/s]Epoch 4 Step 100:  32%|███▏      | 8/25 [00:00<00:01, 13.35it/s]Epoch 4 Step 100:  40%|████      | 10/25 [00:00<00:01, 13.56it/s]Epoch 4 Step 100:  48%|████▊     | 12/25 [00:00<00:00, 13.51it/s]Epoch 4 Step 100:  56%|█████▌    | 14/25 [00:01<00:00, 13.52it/s]Epoch 4 Step 100:  64%|██████▍   | 16/25 [00:01<00:00, 13.90it/s]Epoch 4 Step 100:  72%|███████▏  | 18/25 [00:01<00:00, 13.71it/s]Epoch 4 Step 100:  80%|████████  | 20/25 [00:01<00:00, 13.60it/s]Epoch 4 Step 100:  88%|████████▊ | 22/25 [00:01<00:00, 13.98it/s]Epoch 4 Step 100:  96%|█████████▌| 24/25 [00:01<00:00, 13.77it/s]Epoch 4 Step 100: 100%|██████████| 25/25 [00:01<00:00, 13.76it/s]
+(val) 0.854 (test) 0.847 (loss) 0.33628
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:10.435644
+Epoch 5 Step 125:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 5 Step 125:   8%|▊         | 2/25 [00:00<00:01, 14.57it/s]Epoch 5 Step 125:  16%|█▌        | 4/25 [00:00<00:01, 13.84it/s]Epoch 5 Step 125:  24%|██▍       | 6/25 [00:00<00:01, 14.29it/s]Epoch 5 Step 125:  32%|███▏      | 8/25 [00:00<00:01, 13.62it/s]Epoch 5 Step 125:  40%|████      | 10/25 [00:00<00:01, 13.65it/s]Epoch 5 Step 125:  48%|████▊     | 12/25 [00:00<00:00, 13.79it/s]Epoch 5 Step 125:  56%|█████▌    | 14/25 [00:01<00:00, 14.09it/s]Epoch 5 Step 125:  64%|██████▍   | 16/25 [00:01<00:00, 13.81it/s]Epoch 5 Step 125:  72%|███████▏  | 18/25 [00:01<00:00, 14.27it/s]Epoch 5 Step 125:  80%|████████  | 20/25 [00:01<00:00, 13.91it/s]Epoch 5 Step 125:  88%|████████▊ | 22/25 [00:01<00:00, 13.79it/s]Epoch 5 Step 125:  96%|█████████▌| 24/25 [00:01<00:00, 14.10it/s]Epoch 5 Step 125: 100%|██████████| 25/25 [00:01<00:00, 13.84it/s]
+(val) 0.860 (test) 0.853 (loss) 0.32604
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:12.513834
+Epoch 6 Step 150:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 6 Step 150:   8%|▊         | 2/25 [00:00<00:01, 13.37it/s]Epoch 6 Step 150:  16%|█▌        | 4/25 [00:00<00:01, 13.28it/s]Epoch 6 Step 150:  24%|██▍       | 6/25 [00:00<00:01, 13.42it/s]Epoch 6 Step 150:  32%|███▏      | 8/25 [00:00<00:01, 13.79it/s]Epoch 6 Step 150:  40%|████      | 10/25 [00:00<00:01, 13.05it/s]Epoch 6 Step 150:  48%|████▊     | 12/25 [00:00<00:00, 13.51it/s]Epoch 6 Step 150:  56%|█████▌    | 14/25 [00:01<00:00, 13.50it/s]Epoch 6 Step 150:  64%|██████▍   | 16/25 [00:01<00:00, 13.77it/s]Epoch 6 Step 150:  72%|███████▏  | 18/25 [00:01<00:00, 13.80it/s]Epoch 6 Step 150:  80%|████████  | 20/25 [00:01<00:00, 14.13it/s]Epoch 6 Step 150:  88%|████████▊ | 22/25 [00:01<00:00, 13.99it/s]Epoch 6 Step 150:  96%|█████████▌| 24/25 [00:01<00:00, 13.92it/s]Epoch 6 Step 150: 100%|██████████| 25/25 [00:01<00:00, 13.74it/s]
+(val) 0.858 (test) 0.852 (loss) 0.32826
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:14.566826
+Epoch 7 Step 175:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 7 Step 175:   8%|▊         | 2/25 [00:00<00:01, 13.92it/s]Epoch 7 Step 175:  16%|█▌        | 4/25 [00:00<00:01, 13.90it/s]Epoch 7 Step 175:  24%|██▍       | 6/25 [00:00<00:01, 13.73it/s]Epoch 7 Step 175:  32%|███▏      | 8/25 [00:00<00:01, 13.83it/s]Epoch 7 Step 175:  40%|████      | 10/25 [00:00<00:01, 13.86it/s]Epoch 7 Step 175:  48%|████▊     | 12/25 [00:00<00:00, 13.67it/s]Epoch 7 Step 175:  56%|█████▌    | 14/25 [00:01<00:00, 14.05it/s]Epoch 7 Step 175:  64%|██████▍   | 16/25 [00:01<00:00, 13.80it/s]Epoch 7 Step 175:  72%|███████▏  | 18/25 [00:01<00:00, 13.70it/s]Epoch 7 Step 175:  80%|████████  | 20/25 [00:01<00:00, 14.02it/s]Epoch 7 Step 175:  88%|████████▊ | 22/25 [00:01<00:00, 13.97it/s]Epoch 7 Step 175:  96%|█████████▌| 24/25 [00:01<00:00, 13.84it/s]Epoch 7 Step 175: 100%|██████████| 25/25 [00:01<00:00, 13.86it/s]
+(val) 0.860 (test) 0.850 (loss) 0.31755
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:16.612937
+Epoch 8 Step 200:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 8 Step 200:   8%|▊         | 2/25 [00:00<00:01, 12.98it/s]Epoch 8 Step 200:  16%|█▌        | 4/25 [00:00<00:01, 14.23it/s]Epoch 8 Step 200:  24%|██▍       | 6/25 [00:00<00:01, 14.02it/s]Epoch 8 Step 200:  32%|███▏      | 8/25 [00:00<00:01, 13.41it/s]Epoch 8 Step 200:  40%|████      | 10/25 [00:00<00:01, 13.45it/s]Epoch 8 Step 200:  48%|████▊     | 12/25 [00:00<00:00, 14.02it/s]Epoch 8 Step 200:  56%|█████▌    | 14/25 [00:01<00:00, 13.86it/s]Epoch 8 Step 200:  64%|██████▍   | 16/25 [00:01<00:00, 13.70it/s]Epoch 8 Step 200:  72%|███████▏  | 18/25 [00:01<00:00, 14.02it/s]Epoch 8 Step 200:  80%|████████  | 20/25 [00:01<00:00, 13.57it/s]Epoch 8 Step 200:  88%|████████▊ | 22/25 [00:01<00:00, 13.70it/s]Epoch 8 Step 200:  96%|█████████▌| 24/25 [00:01<00:00, 13.55it/s]Epoch 8 Step 200: 100%|██████████| 25/25 [00:01<00:00, 13.70it/s]
+(val) 0.851 (test) 0.850 (loss) 0.30517
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:18.667938
+Epoch 9 Step 225:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 9 Step 225:   8%|▊         | 2/25 [00:00<00:01, 14.64it/s]Epoch 9 Step 225:  16%|█▌        | 4/25 [00:00<00:01, 13.89it/s]Epoch 9 Step 225:  24%|██▍       | 6/25 [00:00<00:01, 13.68it/s]Epoch 9 Step 225:  32%|███▏      | 8/25 [00:00<00:01, 13.99it/s]Epoch 9 Step 225:  40%|████      | 10/25 [00:00<00:01, 13.92it/s]Epoch 9 Step 225:  48%|████▊     | 12/25 [00:00<00:00, 13.65it/s]Epoch 9 Step 225:  56%|█████▌    | 14/25 [00:01<00:00, 13.82it/s]Epoch 9 Step 225:  64%|██████▍   | 16/25 [00:01<00:00, 13.79it/s]Epoch 9 Step 225:  72%|███████▏  | 18/25 [00:01<00:00, 14.35it/s]Epoch 9 Step 225:  80%|████████  | 20/25 [00:01<00:00, 13.79it/s]Epoch 9 Step 225:  88%|████████▊ | 22/25 [00:01<00:00, 13.76it/s]Epoch 9 Step 225:  96%|█████████▌| 24/25 [00:01<00:00, 14.11it/s]Epoch 9 Step 225: 100%|██████████| 25/25 [00:01<00:00, 13.92it/s]
+(val) 0.848 (test) 0.852 (loss) 0.29291
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:20.707688
+Epoch 10 Step 250:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 10 Step 250:   8%|▊         | 2/25 [00:00<00:01, 13.21it/s]Epoch 10 Step 250:  16%|█▌        | 4/25 [00:00<00:01, 13.67it/s]Epoch 10 Step 250:  24%|██▍       | 6/25 [00:00<00:01, 13.98it/s]Epoch 10 Step 250:  32%|███▏      | 8/25 [00:00<00:01, 13.80it/s]Epoch 10 Step 250:  40%|████      | 10/25 [00:00<00:01, 12.94it/s]Epoch 10 Step 250:  48%|████▊     | 12/25 [00:00<00:00, 13.30it/s]Epoch 10 Step 250:  56%|█████▌    | 14/25 [00:01<00:00, 13.55it/s]Epoch 10 Step 250:  64%|██████▍   | 16/25 [00:01<00:00, 13.70it/s]Epoch 10 Step 250:  72%|███████▏  | 18/25 [00:01<00:00, 13.90it/s]Epoch 10 Step 250:  80%|████████  | 20/25 [00:01<00:00, 13.74it/s]Epoch 10 Step 250:  88%|████████▊ | 22/25 [00:01<00:00, 13.82it/s]Epoch 10 Step 250:  96%|█████████▌| 24/25 [00:01<00:00, 13.98it/s]Epoch 10 Step 250: 100%|██████████| 25/25 [00:01<00:00, 13.79it/s]
+(val) 0.849 (test) 0.842 (loss) 0.28944
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:22.768755
+Epoch 11 Step 275:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 11 Step 275:   8%|▊         | 2/25 [00:00<00:01, 13.86it/s]Epoch 11 Step 275:  16%|█▌        | 4/25 [00:00<00:01, 14.11it/s]Epoch 11 Step 275:  24%|██▍       | 6/25 [00:00<00:01, 14.05it/s]Epoch 11 Step 275:  32%|███▏      | 8/25 [00:00<00:01, 14.19it/s]Epoch 11 Step 275:  40%|████      | 10/25 [00:00<00:01, 13.85it/s]Epoch 11 Step 275:  48%|████▊     | 12/25 [00:00<00:00, 14.19it/s]Epoch 11 Step 275:  56%|█████▌    | 14/25 [00:01<00:00, 13.36it/s]Epoch 11 Step 275:  64%|██████▍   | 16/25 [00:01<00:00, 13.67it/s]Epoch 11 Step 275:  72%|███████▏  | 18/25 [00:01<00:00, 13.72it/s]Epoch 11 Step 275:  80%|████████  | 20/25 [00:01<00:00, 13.89it/s]Epoch 11 Step 275:  88%|████████▊ | 22/25 [00:01<00:00, 13.98it/s]Epoch 11 Step 275:  96%|█████████▌| 24/25 [00:01<00:00, 13.98it/s]Epoch 11 Step 275: 100%|██████████| 25/25 [00:01<00:00, 13.86it/s]
+(val) 0.853 (test) 0.851 (loss) 0.28797
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:24.811824
+Epoch 12 Step 300:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 12 Step 300:   8%|▊         | 2/25 [00:00<00:01, 14.51it/s]Epoch 12 Step 300:  16%|█▌        | 4/25 [00:00<00:01, 14.56it/s]Epoch 12 Step 300:  24%|██▍       | 6/25 [00:00<00:01, 13.91it/s]Epoch 12 Step 300:  32%|███▏      | 8/25 [00:00<00:01, 13.87it/s]Epoch 12 Step 300:  40%|████      | 10/25 [00:00<00:01, 13.66it/s]Epoch 12 Step 300:  48%|████▊     | 12/25 [00:00<00:00, 13.63it/s]Epoch 12 Step 300:  56%|█████▌    | 14/25 [00:01<00:00, 14.03it/s]Epoch 12 Step 300:  64%|██████▍   | 16/25 [00:01<00:00, 13.58it/s]Epoch 12 Step 300:  72%|███████▏  | 18/25 [00:01<00:00, 13.97it/s]Epoch 12 Step 300:  80%|████████  | 20/25 [00:01<00:00, 13.73it/s]Epoch 12 Step 300:  88%|████████▊ | 22/25 [00:01<00:00, 13.83it/s]Epoch 12 Step 300:  96%|█████████▌| 24/25 [00:01<00:00, 13.91it/s]Epoch 12 Step 300: 100%|██████████| 25/25 [00:01<00:00, 13.86it/s]
+(val) 0.846 (test) 0.847 (loss) 0.27574
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:26.850405
+Epoch 13 Step 325:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 13 Step 325:   8%|▊         | 2/25 [00:00<00:01, 13.61it/s]Epoch 13 Step 325:  16%|█▌        | 4/25 [00:00<00:01, 13.73it/s]Epoch 13 Step 325:  24%|██▍       | 6/25 [00:00<00:01, 14.33it/s]Epoch 13 Step 325:  32%|███▏      | 8/25 [00:00<00:01, 13.97it/s]Epoch 13 Step 325:  40%|████      | 10/25 [00:00<00:01, 13.92it/s]Epoch 13 Step 325:  48%|████▊     | 12/25 [00:00<00:00, 13.59it/s]Epoch 13 Step 325:  56%|█████▌    | 14/25 [00:01<00:00, 13.61it/s]Epoch 13 Step 325:  64%|██████▍   | 16/25 [00:01<00:00, 13.89it/s]Epoch 13 Step 325:  72%|███████▏  | 18/25 [00:01<00:00, 13.67it/s]Epoch 13 Step 325:  80%|████████  | 20/25 [00:01<00:00, 14.10it/s]Epoch 13 Step 325:  88%|████████▊ | 22/25 [00:01<00:00, 13.79it/s]Epoch 13 Step 325:  96%|█████████▌| 24/25 [00:01<00:00, 14.09it/s]Epoch 13 Step 325: 100%|██████████| 25/25 [00:01<00:00, 13.87it/s]
+(val) 0.839 (test) 0.845 (loss) 0.26637
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:28.897039
+Epoch 14 Step 350:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 14 Step 350:   8%|▊         | 2/25 [00:00<00:01, 12.89it/s]Epoch 14 Step 350:  16%|█▌        | 4/25 [00:00<00:01, 13.97it/s]Epoch 14 Step 350:  24%|██▍       | 6/25 [00:00<00:01, 13.63it/s]Epoch 14 Step 350:  32%|███▏      | 8/25 [00:00<00:01, 13.58it/s]Epoch 14 Step 350:  40%|████      | 10/25 [00:00<00:01, 13.22it/s]Epoch 14 Step 350:  48%|████▊     | 12/25 [00:00<00:00, 13.52it/s]Epoch 14 Step 350:  56%|█████▌    | 14/25 [00:01<00:00, 13.88it/s]Epoch 14 Step 350:  64%|██████▍   | 16/25 [00:01<00:00, 13.59it/s]Epoch 14 Step 350:  72%|███████▏  | 18/25 [00:01<00:00, 13.66it/s]Epoch 14 Step 350:  80%|████████  | 20/25 [00:01<00:00, 14.00it/s]Epoch 14 Step 350:  88%|████████▊ | 22/25 [00:01<00:00, 13.81it/s]Epoch 14 Step 350:  96%|█████████▌| 24/25 [00:01<00:00, 13.82it/s]Epoch 14 Step 350: 100%|██████████| 25/25 [00:01<00:00, 13.70it/s]
+(val) 0.835 (test) 0.840 (loss) 0.25568
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:30.944917
+Epoch 15 Step 375:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 15 Step 375:   8%|▊         | 2/25 [00:00<00:01, 13.92it/s]Epoch 15 Step 375:  16%|█▌        | 4/25 [00:00<00:01, 14.20it/s]Epoch 15 Step 375:  24%|██▍       | 6/25 [00:00<00:01, 13.83it/s]Epoch 15 Step 375:  32%|███▏      | 8/25 [00:00<00:01, 14.30it/s]Epoch 15 Step 375:  40%|████      | 10/25 [00:00<00:01, 13.66it/s]Epoch 15 Step 375:  48%|████▊     | 12/25 [00:00<00:00, 13.90it/s]Epoch 15 Step 375:  56%|█████▌    | 14/25 [00:01<00:00, 13.73it/s]Epoch 15 Step 375:  64%|██████▍   | 16/25 [00:01<00:00, 14.05it/s]Epoch 15 Step 375:  72%|███████▏  | 18/25 [00:01<00:00, 13.81it/s]Epoch 15 Step 375:  80%|████████  | 20/25 [00:01<00:00, 14.22it/s]Epoch 15 Step 375:  88%|████████▊ | 22/25 [00:01<00:00, 13.98it/s]Epoch 15 Step 375:  96%|█████████▌| 24/25 [00:01<00:00, 13.69it/s]Epoch 15 Step 375: 100%|██████████| 25/25 [00:01<00:00, 13.89it/s]
+(val) 0.829 (test) 0.823 (loss) 0.24298
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:32.978823
+Epoch 16 Step 400:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 16 Step 400:   8%|▊         | 2/25 [00:00<00:01, 13.35it/s]Epoch 16 Step 400:  16%|█▌        | 4/25 [00:00<00:01, 14.24it/s]Epoch 16 Step 400:  24%|██▍       | 6/25 [00:00<00:01, 13.54it/s]Epoch 16 Step 400:  32%|███▏      | 8/25 [00:00<00:01, 13.73it/s]Epoch 16 Step 400:  40%|████      | 10/25 [00:00<00:01, 14.09it/s]Epoch 16 Step 400:  48%|████▊     | 12/25 [00:00<00:00, 13.53it/s]Epoch 16 Step 400:  56%|█████▌    | 14/25 [00:01<00:00, 13.94it/s]Epoch 16 Step 400:  64%|██████▍   | 16/25 [00:01<00:00, 13.73it/s]Epoch 16 Step 400:  72%|███████▏  | 18/25 [00:01<00:00, 14.09it/s]Epoch 16 Step 400:  80%|████████  | 20/25 [00:01<00:00, 13.79it/s]Epoch 16 Step 400:  88%|████████▊ | 22/25 [00:01<00:00, 13.96it/s]Epoch 16 Step 400:  96%|█████████▌| 24/25 [00:01<00:00, 13.76it/s]Epoch 16 Step 400: 100%|██████████| 25/25 [00:01<00:00, 13.79it/s]
+(val) 0.838 (test) 0.834 (loss) 0.23194
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:35.022453
+Epoch 17 Step 425:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 17 Step 425:   8%|▊         | 2/25 [00:00<00:01, 13.75it/s]Epoch 17 Step 425:  16%|█▌        | 4/25 [00:00<00:01, 13.77it/s]Epoch 17 Step 425:  24%|██▍       | 6/25 [00:00<00:01, 13.80it/s]Epoch 17 Step 425:  32%|███▏      | 8/25 [00:00<00:01, 14.28it/s]Epoch 17 Step 425:  40%|████      | 10/25 [00:00<00:01, 13.88it/s]Epoch 17 Step 425:  48%|████▊     | 12/25 [00:00<00:00, 13.76it/s]Epoch 17 Step 425:  56%|█████▌    | 14/25 [00:01<00:00, 14.02it/s]Epoch 17 Step 425:  64%|██████▍   | 16/25 [00:01<00:00, 13.79it/s]Epoch 17 Step 425:  72%|███████▏  | 18/25 [00:01<00:00, 14.18it/s]Epoch 17 Step 425:  80%|████████  | 20/25 [00:01<00:00, 13.90it/s]Epoch 17 Step 425:  88%|████████▊ | 22/25 [00:01<00:00, 13.79it/s]Epoch 17 Step 425:  96%|█████████▌| 24/25 [00:01<00:00, 14.08it/s]Epoch 17 Step 425: 100%|██████████| 25/25 [00:01<00:00, 14.00it/s]
+(val) 0.841 (test) 0.840 (loss) 0.22819
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:37.056824
+Epoch 18 Step 450:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 18 Step 450:   8%|▊         | 2/25 [00:00<00:01, 13.69it/s]Epoch 18 Step 450:  16%|█▌        | 4/25 [00:00<00:01, 14.12it/s]Epoch 18 Step 450:  24%|██▍       | 6/25 [00:00<00:01, 13.68it/s]Epoch 18 Step 450:  32%|███▏      | 8/25 [00:00<00:01, 14.20it/s]Epoch 18 Step 450:  40%|████      | 10/25 [00:00<00:01, 13.29it/s]Epoch 18 Step 450:  48%|████▊     | 12/25 [00:00<00:00, 13.88it/s]Epoch 18 Step 450:  56%|█████▌    | 14/25 [00:01<00:00, 13.70it/s]Epoch 18 Step 450:  64%|██████▍   | 16/25 [00:01<00:00, 13.56it/s]Epoch 18 Step 450:  72%|███████▏  | 18/25 [00:01<00:00, 13.94it/s]Epoch 18 Step 450:  80%|████████  | 20/25 [00:01<00:00, 13.58it/s]Epoch 18 Step 450:  88%|████████▊ | 22/25 [00:01<00:00, 13.76it/s]Epoch 18 Step 450:  96%|█████████▌| 24/25 [00:01<00:00, 14.08it/s]Epoch 18 Step 450: 100%|██████████| 25/25 [00:01<00:00, 13.87it/s]
+(val) 0.843 (test) 0.841 (loss) 0.21437
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:39.105530
+Epoch 19 Step 475:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 19 Step 475:   8%|▊         | 2/25 [00:00<00:01, 13.84it/s]Epoch 19 Step 475:  16%|█▌        | 4/25 [00:00<00:01, 14.08it/s]Epoch 19 Step 475:  24%|██▍       | 6/25 [00:00<00:01, 14.54it/s]Epoch 19 Step 475:  32%|███▏      | 8/25 [00:00<00:01, 13.87it/s]Epoch 19 Step 475:  40%|████      | 10/25 [00:00<00:01, 13.90it/s]Epoch 19 Step 475:  48%|████▊     | 12/25 [00:00<00:00, 14.17it/s]Epoch 19 Step 475:  56%|█████▌    | 14/25 [00:00<00:00, 13.96it/s]Epoch 19 Step 475:  64%|██████▍   | 16/25 [00:01<00:00, 14.18it/s]Epoch 19 Step 475:  72%|███████▏  | 18/25 [00:01<00:00, 13.96it/s]Epoch 19 Step 475:  80%|████████  | 20/25 [00:01<00:00, 14.20it/s]Epoch 19 Step 475:  88%|████████▊ | 22/25 [00:01<00:00, 14.43it/s]Epoch 19 Step 475:  96%|█████████▌| 24/25 [00:01<00:00, 14.07it/s]Epoch 19 Step 475: 100%|██████████| 25/25 [00:01<00:00, 14.09it/s]
+(val) 0.816 (test) 0.808 (loss) 0.20149
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:41.115704
+Epoch 20 Step 500:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 20 Step 500:   8%|▊         | 2/25 [00:00<00:01, 13.32it/s]Epoch 20 Step 500:  16%|█▌        | 4/25 [00:00<00:01, 14.24it/s]Epoch 20 Step 500:  24%|██▍       | 6/25 [00:00<00:01, 13.88it/s]Epoch 20 Step 500:  32%|███▏      | 8/25 [00:00<00:01, 13.67it/s]Epoch 20 Step 500:  40%|████      | 10/25 [00:00<00:01, 13.69it/s]Epoch 20 Step 500:  48%|████▊     | 12/25 [00:00<00:00, 13.60it/s]Epoch 20 Step 500:  56%|█████▌    | 14/25 [00:01<00:00, 13.97it/s]Epoch 20 Step 500:  64%|██████▍   | 16/25 [00:01<00:00, 13.79it/s]Epoch 20 Step 500:  72%|███████▏  | 18/25 [00:01<00:00, 13.57it/s]Epoch 20 Step 500:  80%|████████  | 20/25 [00:01<00:00, 13.93it/s]Epoch 20 Step 500:  88%|████████▊ | 22/25 [00:01<00:00, 13.77it/s]Epoch 20 Step 500:  96%|█████████▌| 24/25 [00:01<00:00, 14.10it/s]Epoch 20 Step 500: 100%|██████████| 25/25 [00:01<00:00, 13.80it/s]
+(val) 0.846 (test) 0.834 (loss) 0.19236
+
+[...] exp\reproduce\E2-baseline\mlp\churn\4 | 0:00:43.161063
+Epoch 21 Step 525:   0%|          | 0/25 [00:00<?, ?it/s]Epoch 21 Step 525:   8%|▊         | 2/25 [00:00<00:01, 13.20it/s]Epoch 21 Step 525:  16%|█▌        | 4/25 [00:00<00:01, 14.18it/s]Epoch 21 Step 525:  24%|██▍       | 6/25 [00:00<00:01, 13.80it/s]Epoch 21 Step 525:  32%|███▏      | 8/25 [00:00<00:01, 13.82it/s]Epoch 21 Step 525:  40%|████      | 10/25 [00:00<00:01, 14.04it/s]Epoch 21 Step 525:  48%|████▊     | 12/25 [00:00<00:00, 13.82it/s]Epoch 21 Step 525:  56%|█████▌    | 14/25 [00:01<00:00, 13.64it/s]Epoch 21 Step 525:  64%|██████▍   | 16/25 [00:01<00:00, 13.81it/s]Epoch 21 Step 525:  72%|███████▏  | 18/25 [00:01<00:00, 13.97it/s]Epoch 21 Step 525:  80%|████████  | 20/25 [00:01<00:00, 13.87it/s]Epoch 21 Step 525:  88%|████████▊ | 22/25 [00:01<00:00, 14.11it/s]Epoch 21 Step 525:  96%|█████████▌| 24/25 [00:01<00:00, 13.88it/s]Epoch 21 Step 525: 100%|██████████| 25/25 [00:01<00:00, 13.88it/s]
+(val) 0.853 (test) 0.844 (loss) 0.18189
+
+{'function': 'bin\\model.main',
+ 'gpus': [],
+ 'n_parameters': 2845570,
+ 'scores': {'train': 0.865, 'val': 0.86, 'test': 0.8525},
+ 'time': '0:00:45.198009'}
+
+====================================================================================================
+[<<<] exp\reproduce\E2-baseline\mlp\churn\4 | 2026-11-12 16:36:14.699046
+====================================================================================================

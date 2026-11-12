@@ -1,0 +1,260 @@
+﻿[1mCreating the output[0m
+[1mUsing cached dataset: build_dataset__churn__be7dd7939b3d5d037a113f40d102e721.pickle[0m
+[1mn_parameters = 71442[0m
+[1mAMP enabled: False[0m
+====================================================================================================
+[>>>] exp\reproduce\E4\churn\k=1\0 | 2026-11-11 10:43:21.050718
+====================================================================================================
+
+{'seed': 0,
+ 'batch_size': 256,
+ 'patience': 16,
+ 'n_epochs': -1,
+ 'gradient_clipping_norm': 1.0,
+ 'amp': True,
+ 'data': {'cache': True,
+          'path': 'data/churn',
+          'num_policy': 'noisy-quantile',
+          'cat_policy': 'ordinal'},
+ 'optimizer': {'type': 'AdamW', 'lr': 0.00046156856557107476, 'weight_decay': 0.0},
+ 'model': {'arch_type': 'tabm',
+           'k': 1,
+           'share_training_batches': True,
+           'backbone': {'type': 'MLP',
+                        'n_blocks': 2,
+                        'd_block': 256,
+                        'dropout': 0.03497913168507137}}}
+
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:00.001014
+System.Management.Automation.RemoteException
+Epoch 0 Step 0:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 0 Step 0:  44%|████▍     | 11/25 [00:00<00:00, 102.43it/s]
+Epoch 0 Step 0:  96%|█████████▌| 24/25 [00:00<00:00, 116.68it/s]
+Epoch 0 Step 0: 100%|██████████| 25/25 [00:00<00:00, 115.39it/s]
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+D:\Anaconda\envs\tabm\lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+(val) 0.796 (test) 0.796 (loss) 0.51575
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:00.301972
+System.Management.Automation.RemoteException
+Epoch 1 Step 25:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 1 Step 25:  52%|█████▏    | 13/25 [00:00<00:00, 129.74it/s]
+Epoch 1 Step 25: 100%|██████████| 25/25 [00:00<00:00, 129.52it/s]
+(val) 0.823 (test) 0.823 (loss) 0.43450
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:00.581352
+System.Management.Automation.RemoteException
+Epoch 2 Step 50:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 2 Step 50:  52%|█████▏    | 13/25 [00:00<00:00, 126.06it/s]
+Epoch 2 Step 50: 100%|██████████| 25/25 [00:00<00:00, 127.95it/s]
+(val) 0.824 (test) 0.828 (loss) 0.41613
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:00.858282
+System.Management.Automation.RemoteException
+Epoch 3 Step 75:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 3 Step 75:  52%|█████▏    | 13/25 [00:00<00:00, 129.99it/s]
+Epoch 3 Step 75: 100%|██████████| 25/25 [00:00<00:00, 128.47it/s]
+(val) 0.833 (test) 0.828 (loss) 0.40305
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:01.132897
+System.Management.Automation.RemoteException
+Epoch 4 Step 100:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 4 Step 100:  52%|█████▏    | 13/25 [00:00<00:00, 120.33it/s]
+Epoch 4 Step 100: 100%|██████████| 25/25 [00:00<00:00, 120.33it/s]
+(val) 0.845 (test) 0.844 (loss) 0.38724
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:01.424456
+System.Management.Automation.RemoteException
+Epoch 5 Step 125:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 5 Step 125:  52%|█████▏    | 13/25 [00:00<00:00, 127.00it/s]
+Epoch 5 Step 125: 100%|██████████| 25/25 [00:00<00:00, 129.18it/s]
+(val) 0.848 (test) 0.849 (loss) 0.36962
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:01.700048
+System.Management.Automation.RemoteException
+Epoch 6 Step 150:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 6 Step 150:  56%|█████▌    | 14/25 [00:00<00:00, 130.73it/s]
+Epoch 6 Step 150: 100%|██████████| 25/25 [00:00<00:00, 128.69it/s]
+(val) 0.856 (test) 0.856 (loss) 0.35591
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:01.979802
+System.Management.Automation.RemoteException
+Epoch 7 Step 175:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 7 Step 175:  52%|█████▏    | 13/25 [00:00<00:00, 126.31it/s]
+Epoch 7 Step 175: 100%|██████████| 25/25 [00:00<00:00, 129.80it/s]
+(val) 0.856 (test) 0.858 (loss) 0.34856
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:02.219148
+System.Management.Automation.RemoteException
+Epoch 8 Step 200:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 8 Step 200:  56%|█████▌    | 14/25 [00:00<00:00, 129.07it/s]
+Epoch 8 Step 200: 100%|██████████| 25/25 [00:00<00:00, 130.22it/s]
+(val) 0.858 (test) 0.851 (loss) 0.34355
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:02.498302
+System.Management.Automation.RemoteException
+Epoch 9 Step 225:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 9 Step 225:  52%|█████▏    | 13/25 [00:00<00:00, 128.68it/s]
+Epoch 9 Step 225: 100%|██████████| 25/25 [00:00<00:00, 129.01it/s]
+(val) 0.863 (test) 0.851 (loss) 0.33871
+🌸 New best epoch! 🌸
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:02.782127
+System.Management.Automation.RemoteException
+Epoch 10 Step 250:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 10 Step 250:  48%|████▊     | 12/25 [00:00<00:00, 117.50it/s]
+Epoch 10 Step 250:  96%|█████████▌| 24/25 [00:00<00:00, 107.34it/s]
+Epoch 10 Step 250: 100%|██████████| 25/25 [00:00<00:00, 105.74it/s]
+(val) 0.859 (test) 0.857 (loss) 0.33787
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:03.081597
+System.Management.Automation.RemoteException
+Epoch 11 Step 275:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 11 Step 275:  32%|███▏      | 8/25 [00:00<00:00, 75.65it/s]
+Epoch 11 Step 275:  72%|███████▏  | 18/25 [00:00<00:00, 89.54it/s]
+Epoch 11 Step 275: 100%|██████████| 25/25 [00:00<00:00, 90.43it/s]
+(val) 0.856 (test) 0.853 (loss) 0.33397
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:03.421824
+System.Management.Automation.RemoteException
+Epoch 12 Step 300:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 12 Step 300:  40%|████      | 10/25 [00:00<00:00, 99.33it/s]
+Epoch 12 Step 300:  80%|████████  | 20/25 [00:00<00:00, 89.37it/s]
+Epoch 12 Step 300: 100%|██████████| 25/25 [00:00<00:00, 88.42it/s]
+(val) 0.859 (test) 0.858 (loss) 0.33116
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:03.756987
+System.Management.Automation.RemoteException
+Epoch 13 Step 325:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 13 Step 325:  40%|████      | 10/25 [00:00<00:00, 92.26it/s]
+Epoch 13 Step 325:  80%|████████  | 20/25 [00:00<00:00, 86.16it/s]
+Epoch 13 Step 325: 100%|██████████| 25/25 [00:00<00:00, 87.12it/s]
+(val) 0.858 (test) 0.858 (loss) 0.32928
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:04.105899
+System.Management.Automation.RemoteException
+Epoch 14 Step 350:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 14 Step 350:  40%|████      | 10/25 [00:00<00:00, 92.05it/s]
+Epoch 14 Step 350:  80%|████████  | 20/25 [00:00<00:00, 95.72it/s]
+Epoch 14 Step 350: 100%|██████████| 25/25 [00:00<00:00, 94.49it/s]
+(val) 0.858 (test) 0.857 (loss) 0.32489
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:04.427276
+System.Management.Automation.RemoteException
+Epoch 15 Step 375:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 15 Step 375:  36%|███▌      | 9/25 [00:00<00:00, 84.00it/s]
+Epoch 15 Step 375:  72%|███████▏  | 18/25 [00:00<00:00, 80.64it/s]
+Epoch 15 Step 375: 100%|██████████| 25/25 [00:00<00:00, 84.82it/s]
+(val) 0.858 (test) 0.857 (loss) 0.32587
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:04.782824
+System.Management.Automation.RemoteException
+Epoch 16 Step 400:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 16 Step 400:  40%|████      | 10/25 [00:00<00:00, 92.81it/s]
+Epoch 16 Step 400:  80%|████████  | 20/25 [00:00<00:00, 86.06it/s]
+Epoch 16 Step 400: 100%|██████████| 25/25 [00:00<00:00, 88.18it/s]
+(val) 0.854 (test) 0.856 (loss) 0.32098
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:05.136183
+System.Management.Automation.RemoteException
+Epoch 17 Step 425:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 17 Step 425:  40%|████      | 10/25 [00:00<00:00, 97.60it/s]
+Epoch 17 Step 425:  80%|████████  | 20/25 [00:00<00:00, 82.30it/s]
+Epoch 17 Step 425: 100%|██████████| 25/25 [00:00<00:00, 89.42it/s]
+(val) 0.859 (test) 0.859 (loss) 0.31949
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:05.483121
+System.Management.Automation.RemoteException
+Epoch 18 Step 450:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 18 Step 450:  36%|███▌      | 9/25 [00:00<00:00, 87.41it/s]
+Epoch 18 Step 450:  72%|███████▏  | 18/25 [00:00<00:00, 83.53it/s]
+Epoch 18 Step 450: 100%|██████████| 25/25 [00:00<00:00, 83.76it/s]
+(val) 0.858 (test) 0.855 (loss) 0.31568
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:05.847395
+System.Management.Automation.RemoteException
+Epoch 19 Step 475:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 19 Step 475:  40%|████      | 10/25 [00:00<00:00, 90.59it/s]
+Epoch 19 Step 475:  80%|████████  | 20/25 [00:00<00:00, 86.40it/s]
+Epoch 19 Step 475: 100%|██████████| 25/25 [00:00<00:00, 89.76it/s]
+(val) 0.858 (test) 0.859 (loss) 0.31674
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:06.191086
+System.Management.Automation.RemoteException
+Epoch 20 Step 500:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 20 Step 500:  36%|███▌      | 9/25 [00:00<00:00, 86.02it/s]
+Epoch 20 Step 500:  72%|███████▏  | 18/25 [00:00<00:00, 81.25it/s]
+Epoch 20 Step 500: 100%|██████████| 25/25 [00:00<00:00, 80.76it/s]
+(val) 0.854 (test) 0.860 (loss) 0.31352
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:06.570764
+System.Management.Automation.RemoteException
+Epoch 21 Step 525:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 21 Step 525:  40%|████      | 10/25 [00:00<00:00, 91.14it/s]
+Epoch 21 Step 525:  80%|████████  | 20/25 [00:00<00:00, 83.35it/s]
+Epoch 21 Step 525: 100%|██████████| 25/25 [00:00<00:00, 81.95it/s]
+(val) 0.861 (test) 0.855 (loss) 0.30909
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:06.952164
+System.Management.Automation.RemoteException
+Epoch 22 Step 550:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 22 Step 550:  36%|███▌      | 9/25 [00:00<00:00, 83.68it/s]
+Epoch 22 Step 550:  72%|███████▏  | 18/25 [00:00<00:00, 86.02it/s]
+Epoch 22 Step 550: 100%|██████████| 25/25 [00:00<00:00, 87.96it/s]
+(val) 0.861 (test) 0.856 (loss) 0.31469
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:07.295372
+System.Management.Automation.RemoteException
+Epoch 23 Step 575:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 23 Step 575:  36%|███▌      | 9/25 [00:00<00:00, 82.21it/s]
+Epoch 23 Step 575:  80%|████████  | 20/25 [00:00<00:00, 92.96it/s]
+Epoch 23 Step 575: 100%|██████████| 25/25 [00:00<00:00, 93.59it/s]
+(val) 0.859 (test) 0.860 (loss) 0.30563
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:07.629590
+System.Management.Automation.RemoteException
+Epoch 24 Step 600:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 24 Step 600:  32%|███▏      | 8/25 [00:00<00:00, 75.03it/s]
+Epoch 24 Step 600:  64%|██████▍   | 16/25 [00:00<00:00, 77.82it/s]
+Epoch 24 Step 600:  96%|█████████▌| 24/25 [00:00<00:00, 76.98it/s]
+Epoch 24 Step 600: 100%|██████████| 25/25 [00:00<00:00, 76.62it/s]
+(val) 0.859 (test) 0.857 (loss) 0.30371
+
+[...] exp\reproduce\E4\churn\k=1\0 | 0:00:08.022619
+System.Management.Automation.RemoteException
+Epoch 25 Step 625:   0%|          | 0/25 [00:00<?, ?it/s]
+Epoch 25 Step 625:  32%|███▏      | 8/25 [00:00<00:00, 74.37it/s]
+Epoch 25 Step 625:  76%|███████▌  | 19/25 [00:00<00:00, 90.35it/s]
+Epoch 25 Step 625: 100%|██████████| 25/25 [00:00<00:00, 85.82it/s]
+(val) 0.862 (test) 0.861 (loss) 0.30191
+
+{'function': 'bin\\model.main',
+ 'gpus': [],
+ 'n_parameters': 71442,
+ 'scores': {'train': 0.864375,
+            'val': 0.8625,
+            'test': 0.851},
+ 'time': '0:00:08.363356'}
+
+====================================================================================================
+[<<<] exp\reproduce\E4\churn\k=1\0 | 2026-11-11 10:43:29.726275
+====================================================================================================

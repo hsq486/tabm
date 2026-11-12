@@ -1,0 +1,11 @@
+{
+    "function": "bin\\model.main",
+    "gpus": [],
+    "n_parameters": 2845570,
+    "scores": {
+        "train": 0.870625,
+        "val": 0.865,
+        "test": 0.856
+    },
+    "time": "0:01:28.992809"
+}
