@@ -25,8 +25,16 @@ if (-not (Test-Path $Python)) { throw "Python not found: $Python" }
 if (-not (Test-Path $Model)) { throw "model.py not found: $Model" }
 
 New-Item -ItemType Directory -Force $ResultsDir | Out-Null
-"timestamp,commit,dataset,k,exit_code,duration_sec,status,report" |
-    Set-Content -Path $CsvPath -Encoding UTF8
+# PowerShell 5 `Set-Content -Encoding UTF8` writes a BOM; keep the ledger BOM-free.
+# Only create the header once, so resuming a finished experiment cannot wipe the ledger.
+$Utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+if (-not (Test-Path $CsvPath)) {
+    [System.IO.File]::WriteAllText(
+        $CsvPath,
+        "timestamp,commit,dataset,k,exit_code,duration_sec,status,report`r`n",
+        $Utf8NoBom
+    )
+}
 
 $Commit = (git -C $Root rev-parse --short HEAD).Trim()
 $env:OMP_NUM_THREADS = "14"
@@ -85,7 +93,7 @@ foreach ($Dataset in $Datasets) {
             exit_code    = $ExitCode
             duration_sec = [math]::Round($Stopwatch.Elapsed.TotalSeconds, 1)
             status       = $Status
-            report       = $ReportPath
+            report       = "paper/" + $ReportPath.Substring($Root.Length + 1).Replace("\", "/")
         } | Export-Csv -Path $CsvPath -Append -NoTypeInformation -Encoding UTF8
     }
 }

@@ -176,6 +176,21 @@ cd "F:\study\大三上\数据分析课设\Tabm"
 
 CI 定义在 `.github/workflows/ci.yml`（ruff + pytest，Python 3.10）。
 
+### 5.1 干净目录复跑（2026-11-12 实测）
+
+在一份全新的 `git worktree`（`HEAD = f97b68c4e`，不含任何本地 `exp/` 输出）中，
+只拷入 `data/california` 后运行 E2 的 MLP 命令：
+
+```powershell
+git worktree add --detach <临时目录> HEAD
+# 拷入 paper/data/california 与 exp/mlp/california/0-evaluation/0.toml
+python bin\model.py exp\reproduce\smoke.toml --force
+```
+
+结果：`seed=0`，`test RMSE = 0.49699921464857993`，`n_parameters = 45553`，
+训练 30.3 s、端到端 41.3 s。与台账中 E2 `mlp/california/seed=0` 的
+`0.49699920415878296` 相差 `1.0e-8`（CPU 多线程归约顺序导致），可视为逐位可复现。
+
 ---
 
 ## 6. 已知差异与限制（复跑时请一并阅读）
