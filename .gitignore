@@ -180,8 +180,16 @@ events.out.tfevents.*
 **/exp/debug/*/*.*
 **/exp/debug/*/DONE
 
-# Local reproduction runs (configs are tracked under paper/configs)
-paper/exp/reproduce/
+# Local reproduction runs.
+#
+# The course requires the numbers in the report to be traceable back to the raw
+# per-run outputs, so the run configs, logs, reports and DONE markers are kept
+# in version control. The parent directory must NOT be excluded as a whole,
+# otherwise git refuses to descend into it and the `!` rules below cannot
+# re-include anything. Checkpoints, predictions and tensorboard events stay
+# ignored through the global patterns above (*.pt, *.npz, events.out.tfevents.*).
+!paper/exp/reproduce/**/*.log
+!paper/exp/reproduce/**/summary.json
 
 # Small, reviewable result ledgers (per-run raw outputs stay ignored)
 !paper/results/**/*.csv

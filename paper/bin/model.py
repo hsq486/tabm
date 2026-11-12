@@ -290,6 +290,10 @@ class Config(TypedDict):
     n_epochs: int
     gradient_clipping_norm: NotRequired[float]
     parameter_statistics: NotRequired[bool]
+    # Fraction of the clean training-label scale. 0 leaves labels unchanged.
+    # Regression: Gaussian std after clean standardization. Classification:
+    # independent flip probability. Applied to the training split only.
+    label_noise: NotRequired[float]
     # NOTE
     # Please, read these notes before using AMP and/or `torch.compile`.
     #
@@ -350,6 +354,19 @@ def main(
         )
     else:
         regression_label_stats = None
+
+    # Noise is applied after clean standardization, and only to the tensor
+    # that the loss reads. `dataset.task.labels` stays clean, so validation
+    # early stopping and the test metric are still computed on the original labels.
+    label_noise = float(config.get('label_noise', 0.0))
+    if label_noise:
+        dataset.data['y']['train'] = lib.data.apply_train_label_noise(
+            dataset.data['y']['train'],
+            level=label_noise,
+            seed=config['seed'],
+            regression=dataset.task.is_regression,
+        )
+    report['label_noise'] = label_noise
 
     # Convert binary features to categorical features.
     if dataset.n_bin_features > 0:
