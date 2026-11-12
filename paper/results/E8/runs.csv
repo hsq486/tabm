@@ -1,14 +1,2 @@
 timestamp,commit,method,dataset,noise,seed,exit_code,duration_sec,status,report
-2026-11-12 15:57:04,e881c6a17,mlp,california,0.1,0,1,0,failed,paper/exp/reproduce/E8/mlp/california/noise=0.1/0/report.json
-2026-11-12 15:57:04,e881c6a17,tabm,california,0.1,0,1,0,failed,paper/exp/reproduce/E8/tabm/california/noise=0.1/0/report.json
-2026-11-12 15:57:04,e881c6a17,mlp,california,0.1,1,1,0,failed,paper/exp/reproduce/E8/mlp/california/noise=0.1/1/report.json
-2026-11-12 15:57:04,e881c6a17,tabm,california,0.1,1,1,0,failed,paper/exp/reproduce/E8/tabm/california/noise=0.1/1/report.json
-2026-11-12 15:57:04,e881c6a17,mlp,california,0.1,2,1,0,failed,paper/exp/reproduce/E8/mlp/california/noise=0.1/2/report.json
-2026-11-12 15:57:04,e881c6a17,tabm,california,0.1,2,1,0,failed,paper/exp/reproduce/E8/tabm/california/noise=0.1/2/report.json
-2026-11-12 15:57:04,e881c6a17,mlp,california,0.2,0,1,0,failed,paper/exp/reproduce/E8/mlp/california/noise=0.2/0/report.json
-2026-11-12 15:57:04,e881c6a17,tabm,california,0.2,0,1,0,failed,paper/exp/reproduce/E8/tabm/california/noise=0.2/0/report.json
-2026-11-12 15:57:04,e881c6a17,mlp,california,0.2,1,1,0,failed,paper/exp/reproduce/E8/mlp/california/noise=0.2/1/report.json
-2026-11-12 15:57:04,e881c6a17,tabm,california,0.2,1,1,0,failed,paper/exp/reproduce/E8/tabm/california/noise=0.2/1/report.json
-2026-11-12 15:57:04,e881c6a17,mlp,california,0.2,2,1,0,failed,paper/exp/reproduce/E8/mlp/california/noise=0.2/2/report.json
-2026-11-12 15:57:04,e881c6a17,tabm,california,0.2,2,1,0,failed,paper/exp/reproduce/E8/tabm/california/noise=0.2/2/report.json
 2026-11-12 16:00:17,e881c6a17,mlp,california,0.1,0,0,30.9,ok,paper/exp/reproduce/E8/mlp/california/noise=0.1/0/report.json

@@ -204,6 +204,7 @@ def summarize_e8() -> None:
         summary.append(
             {
                 'dataset': 'california',
+                'metric': 'rmse',
                 'noise': level,
                 'mlp_mean': statistics.fmean(grouped['mlp']),
                 'mlp_std': statistics.stdev(grouped['mlp']),
@@ -222,9 +223,18 @@ def summarize_e8() -> None:
 
 
 def main() -> None:
-    """Write both summaries. Missing reports raise FileNotFoundError."""
-    summarize_main()
-    summarize_e8()
+    """Write both summaries. Missing reports are listed, not silently skipped."""
+    missing: list[str] = []
+    for task in (summarize_main, summarize_e8):
+        try:
+            task()
+        except FileNotFoundError as exc:
+            missing.append(str(exc))
+    if missing:
+        print('missing reports, nothing written for those parts:')
+        for item in missing:
+            print(f'  {item}')
+        raise SystemExit(1)
 
 
 if __name__ == '__main__':
