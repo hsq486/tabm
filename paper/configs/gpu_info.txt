@@ -1,0 +1,37 @@
+Fri Nov 13 20:02:04 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.97                 Driver Version: 555.97         CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4060 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |
+| N/A   50C    P5              8W /   90W |     446MiB /   8188MiB |     40%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A      3172    C+G   ...Chrome\Application\open_browser.exe      N/A      |
+|    0   N/A  N/A      4148    C+G   ...8043\office6\promecefpluginhost.exe      N/A      |
+|    0   N/A  N/A      5952    C+G   ...nt.CBS_cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A      6292    C+G   ...l\Doubao\Application\app\Doubao.exe      N/A      |
+|    0   N/A  N/A      7724    C+G   C:\Windows\System32\ShellHost.exe           N/A      |
+|    0   N/A  N/A     10668    C+G   D:\QQ.exe                                   N/A      |
+|    0   N/A  N/A     11836    C+G   ...CBS_cw5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A     14320    C+G   ...cw5n1h2txyewy\CrossDeviceResume.exe      N/A      |
+|    0   N/A  N/A     16148    C+G   D:\Trae CN\Trae CN.exe                      N/A      |
+|    0   N/A  N/A     17020    C+G   ...x64__qmba6cd70vzyy\ArmouryCrate.exe      N/A      |
+|    0   N/A  N/A     17668    C+G   ...on\157.0.4341.42\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     20440    C+G   ...64__v826wp6bftszj\TranslucentTB.exe      N/A      |
+|    0   N/A  N/A     23004    C+G   ...\Plugins\RadiumWMPF\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A     23744    C+G   ...on\157.0.4341.42\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A     25248    C+G   ...al\Programs\WorkBuddy\WorkBuddy.exe      N/A      |
+|    0   N/A  N/A     27800    C+G   ...\Plugins\RadiumWMPF\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A     28316    C+G   ...2txyewy\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A     33956    C+G   ... Edition 2024.3.3\bin\pycharm64.exe      N/A      |
++-----------------------------------------------------------------------------------------+
