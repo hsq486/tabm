@@ -331,6 +331,10 @@ def append_row(path: Path, row: dict) -> None:
 def summarise(matrix: str) -> None:
     rows = []
     for report in sorted((OUT_ROOT / matrix).rglob('report.json')):
+        # TabM also writes <seed>-best-head and <seed>-greedy-heads reports;
+        # keep one row per run by accepting only integer seed directories.
+        if not report.parent.name.isdigit():
+            continue
         data = json.loads(report.read_text(encoding='utf-8'))
         rel = report.relative_to(OUT_ROOT / matrix).parts
         rows.append(
