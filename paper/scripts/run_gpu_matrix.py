@@ -43,9 +43,12 @@ DATASETS = [
 CORE = ['california', 'churn', 'house']
 
 # d_block multipliers used by E13 to bracket TabM's parameter count.
+# churn needs multipliers below 1: the official MLP (6x752, 2.85M params) is
+# far wider than the official TabM (4x192, 0.19M params), so equal-parameter
+# controls must narrow the MLP, not widen it.
 EQUAL_PARAM_WIDTHS = {
     'california': [2.0, 2.5, 3.0],
-    'churn': [1.0, 1.25, 1.5],
+    'churn': [0.22, 0.26, 0.30],
     'house': [1.5, 2.0, 2.5],
 }
 E14_LR_FACTORS = [0.5, 1.0, 2.0]
@@ -276,16 +279,23 @@ def build(matrix: str, seeds: dict[str, list[int]]) -> list[Run]:
     return runs
 
 
-def prepare(run: Run) -> tuple[Path, Path]:
+def run_dir(run: Run) -> tuple[Path, Path]:
+    """Return the output directory and config path without touching the disk."""
     tag_dir = OUT_ROOT / run.matrix / run.method / run.dataset / run.tag
+    return tag_dir, tag_dir / f'{run.seed}.toml'
+
+
+def prepare(run: Run) -> tuple[Path, Path]:
+    tag_dir, config_path = run_dir(run)
     tag_dir.mkdir(parents=True, exist_ok=True)
-    config_path = tag_dir / f'{run.seed}.toml'
 
     text = run.source.read_text(encoding='utf-8')
     text = set_key(text, '', 'seed', run.seed)
     for (section, key), value in run.overrides.items():
         text = set_key(text, section, key, value)
-    config_path.write_text(text, encoding='utf-8', newline='\n')
+    # ``Path.write_text(newline=...)`` needs Python 3.10; open() works on 3.9 too.
+    with config_path.open('w', encoding='utf-8', newline='\n') as f:
+        f.write(text)
     return tag_dir, config_path
 
 
@@ -373,14 +383,16 @@ def main() -> int:
     print(f'{len(runs)} runs; python={args.python}')
     failures = 0
     for index, run in enumerate(runs, 1):
-        tag_dir, config_path = prepare(run)
+        tag_dir, config_path = run_dir(run)
         report = tag_dir / str(run.seed) / 'report.json'
-        if report.exists() and not args.force:
-            print(f'[{index}/{len(runs)}] skip (done): {config_path}')
-            continue
+        shown = config_path.relative_to(PAPER.parent).as_posix()
         if args.dry_run:
-            print(f'[{index}/{len(runs)}] dry-run: {config_path}')
+            print(f'[{index}/{len(runs)}] dry-run: {shown}')
             continue
+        if report.exists() and not args.force:
+            print(f'[{index}/{len(runs)}] skip (done): {shown}')
+            continue
+        prepare(run)
 
         print(
             f'[{index}/{len(runs)}] {run.matrix}/{run.method}/{run.dataset}/'
