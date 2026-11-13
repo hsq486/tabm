@@ -320,6 +320,7 @@ LEDGER = [
 
 def append_row(path: Path, row: dict) -> None:
     new = not path.exists()
+    path.parent.mkdir(parents=True, exist_ok=True)
     with path.open('a', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=LEDGER)
         if new:
