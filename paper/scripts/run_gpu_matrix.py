@@ -314,6 +314,7 @@ LEDGER = [
     'duration_sec',
     'status',
     'report',
+    'command',
 ]
 
 
@@ -442,6 +443,10 @@ def main() -> int:
                 'duration_sec': elapsed,
                 'status': 'ok' if ok else 'failed',
                 'report': report.relative_to(PAPER.parent).as_posix(),
+                'command': (
+                    'python bin/model.py '
+                    f'{config_path.relative_to(PAPER.parent).as_posix()} --force'
+                ),
             },
         )
 
